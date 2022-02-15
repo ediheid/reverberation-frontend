@@ -6,6 +6,7 @@ import styles from "../Navbar/navbar.module.scss";
 
 // ? Components
 import LogoLink from "./LogoLink";
+import MobileNavLinks from "./MobileNavLinks";
 
 const MobileNavigation = () => {
   // On click/toggle Hamburger Hook
@@ -24,8 +25,10 @@ const MobileNavigation = () => {
             toggled={isOpen}
             toggle={setIsOpen}
             rounded
+            hideOutline={false}
           />
         </div>
+        {isOpen && <MobileNavLinks />}
       </nav>
     </div>
   );
