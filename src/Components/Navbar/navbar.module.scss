@@ -3,9 +3,10 @@
 // @import "../../Styling/fonts.module";
 @import "../../Styling/reset.module";
 
-// ? Mobile first
+// ? Mobile first / Universal styling
 
 .navbar-container {
+  position: fixed;
   z-index: 5000;
   display: flex;
   justify-content: space-between;
@@ -23,10 +24,19 @@
   height: auto;
 }
 
-.nav-list-items {
-  background-color: red;
+.mobile-nav-dropdown-container {
+  background: $nav-dropdown;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  margin: 0 3rem 0 0;
+  height: 100vh;
+}
+
+.mobile-nav-list-items {
+  color: $white-grey;
+  list-style: none;
 }
 
 .hamburger-container {
@@ -34,4 +44,9 @@
 
   color: $white-grey;
   margin-right: 3%;
+}
+
+// * Media Queries
+// ? X-Small = Less than 576px - small mobile devices
+@include x-small {
 }

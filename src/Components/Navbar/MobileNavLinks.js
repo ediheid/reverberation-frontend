@@ -5,9 +5,9 @@ import styles from "../Navbar/navbar.module.scss";
 
 const MobileNavLinks = () => {
   return (
-    <div>
-      <div className={styles["nav-list-items"]}>
-        <ul>
+    <>
+      <div className={styles["mobile-nav-dropdown-container"]}>
+        <ul className={styles["mobile-nav-list-items"]}>
           <li>About</li>
           <li>Line-up</li>
           <li>Schedule</li>
@@ -19,7 +19,7 @@ const MobileNavLinks = () => {
           <li>Home</li>
         </ul>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -15,6 +15,7 @@ const MobileNavigation = () => {
   return (
     <div>
       <nav className={styles["navbar-container"]}>
+        {/* Logo / Link to home */}
         <LogoLink />
 
         {/* Hamburger */}
@@ -28,8 +29,8 @@ const MobileNavigation = () => {
             hideOutline={false}
           />
         </div>
-        {isOpen && <MobileNavLinks />}
       </nav>
+      {isOpen && <MobileNavLinks />}
     </div>
   );
 };
