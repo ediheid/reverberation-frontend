@@ -6,15 +6,20 @@ import {
   Navigate,
 } from "react-router-dom";
 
-import styles from "./Styling/app.module.scss";
+// // ? Styles
+// import styles from "./Styling/app.module.scss";
+
+// ? Components
+import MobileNavigation from "./Components/Navbar/MobileNavigation";
 
 const App = () => {
   return (
     <div>
       <Router>
         {/* // ! Scroll to top will go here */}
-        {/* // ! Navbar might go here if it does not need to change on other pages */}
 
+        {/* // todo: Navbar might go here if it does not need to change on other pages */}
+        <MobileNavigation />
         <main>
           <Routes>
             {/* // ! Routes will go here.. */}

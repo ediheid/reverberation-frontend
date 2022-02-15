@@ -1,0 +1,37 @@
+@import "../../Styling/variables.module";
+@import "../../Styling/mixins.module";
+// @import "../../Styling/fonts.module";
+@import "../../Styling/reset.module";
+
+// ? Mobile first
+
+.navbar-container {
+  z-index: 5000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  overflow: hidden;
+
+  background: $black;
+  height: 8rem;
+  width: 100vw;
+}
+
+.logo {
+  width: 7rem;
+  height: auto;
+}
+
+.nav-list-items {
+  background-color: red;
+
+  margin: 0 3rem 0 0;
+}
+
+.hamburger-container {
+  z-index: 10000;
+
+  color: $white-grey;
+  margin-right: 3%;
+}
