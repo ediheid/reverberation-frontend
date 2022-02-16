@@ -14,7 +14,6 @@ const MobileNavLinks = () => {
           <li>Past Events</li>
           <li>Tickets</li>
           <li>Contact</li>
-          <li>Impressum</li>
 
           <li>Home</li>
         </ul>
