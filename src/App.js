@@ -10,7 +10,7 @@ import {
 // import styles from "./Styling/app.module.scss";
 
 // ? Components
-import MobileNavigation from "./Components/Navbar/MobileNavigation";
+import Navigation from "./Components/Navbar/Navigation";
 
 const App = () => {
   return (
@@ -19,7 +19,7 @@ const App = () => {
         {/* // ! Scroll to top will go here */}
 
         {/* // todo: Navbar might go here if it does not need to change on other pages */}
-        <MobileNavigation />
+        <Navigation />
         <main>
           <Routes>
             {/* // ! Routes will go here.. */}

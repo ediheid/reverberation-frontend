@@ -1,18 +1,39 @@
-// ? Colour palette
-// ! Maybe bring in some orange or other colour?
+// ? Palette Variables - change on year according to poster
 
-// Setup variables to change colour palette for every year with the new palette
+$mauve: #a61f69;
+$sand: #d9961a;
+$brown: #bf5f0b;
+$soft-red: #d93d04;
+$bright-red: #f20505;
+$salmon: #d97b73;
+
+// ? Colour palette Permanent
 
 $black: #000000;
 $nav-dropdown: rgba(0, 0, 0, 0.9);
-
 $white-grey: #f2f2f2;
+
+$nav-links: $mauve;
 
 $mid-grey: #b7b7b7;
 
-$black-grey: #191919;
+// $black-grey: #191919;
+// $main-green: #38736d;
+// $dark-green: #275459;
+// $blue: #102940;
 
-$main-green: #38736d;
-$dark-green: #275459;
+// ? Font Variables
+// Nav Fonts
+// // $logo-home-button-font-family: Oxygen Regular, sans-serif;
+// $nav-links-font-family: Oxygen Regular, sans-serif;
 
-$blue: #102940;
+// // Home Page fonts
+// $intro-font-family: Sora SemiBold, sans-serif;
+// $sub-headings: JetBrains Mono Regular;
+
+// // main text
+// $main-font-regular-font-family: Sora Regular, sans-serif;
+// $main-font-thin-font-family: Sora Thin, sans-serif;
+// $main-font-extra-light-font-family: Sora ExtraLight, sans-serif;
+// $main-font-light-font-family: Sora Light, sans-serif;
+// $main-font-semi-bold-font-family: Sora SemiBold, sans-serif;

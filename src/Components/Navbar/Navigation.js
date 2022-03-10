@@ -7,8 +7,9 @@ import styles from "../Navbar/navbar.module.scss";
 // ? Components
 import LogoLink from "./LogoLink";
 import MobileNavLinks from "./MobileNavLinks";
+import DesktopNavLinks from "./DesktopNavLinks";
 
-const MobileNavigation = () => {
+const Navigation = () => {
   // On click/toggle Hamburger Hook
   const [isOpen, setIsOpen] = useState(false);
 
@@ -17,6 +18,8 @@ const MobileNavigation = () => {
       <nav className={styles["navbar-container"]}>
         {/* Logo / Link to home */}
         <LogoLink />
+
+        <DesktopNavLinks />
 
         {/* Hamburger */}
         <div className={styles["hamburger-container"]}>
@@ -35,4 +38,4 @@ const MobileNavigation = () => {
   );
 };
 
-export default MobileNavigation;
+export default Navigation;
