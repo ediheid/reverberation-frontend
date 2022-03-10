@@ -1,0 +1,18 @@
+.home-container {
+  width: 100vw;
+  padding-top: 8rem;
+}
+
+.main-image {
+  width: 100vw;
+  height: 30rem;
+
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+
+  background-image: url("./Static/wip2.png");
+  background-position: top;
+}
