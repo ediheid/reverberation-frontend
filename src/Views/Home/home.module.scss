@@ -13,6 +13,10 @@
   align-items: center;
   font-size: 3rem;
 
+  // !!
+  // Todo - I need an image with no border that will fit all screen sizes
   background-image: url("./Static/wip2.png");
-  background-position: top;
+  background-position: center;
+  background-repeat: no-repeat;
+  //   background-size: cover;
 }

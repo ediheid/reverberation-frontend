@@ -1,0 +1,43 @@
+@import "../../Styling/variables.module";
+@import "../../Styling/mixins.module";
+@import "../../Styling/reset.module";
+
+// ? Mobile first / Universal styling
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 18rem;
+  background-color: lighten($black, 15%);
+
+  margin-top: 50rem;
+}
+
+.copyright-span {
+  width: 60%;
+  color: $mid-grey;
+  font-weight: 400;
+  font-size: 1.3rem;
+
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.built-by {
+  color: $mauve;
+  font-size: 1.2rem;
+
+  text-align: center;
+
+  line-height: 2rem;
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: $mauve;
+  }
+}

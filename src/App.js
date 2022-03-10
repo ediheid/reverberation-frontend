@@ -13,6 +13,8 @@ import {
 import Navigation from "./Components/Navbar/Navigation";
 import Home from "./Views/Home/Home";
 
+import Footer from "./Components/Footer/Footer";
+
 const App = () => {
   return (
     <div>
@@ -31,6 +33,7 @@ const App = () => {
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </main>
+        <Footer />
         {/* // ! Footer will go here.. */}
       </Router>
     </div>
