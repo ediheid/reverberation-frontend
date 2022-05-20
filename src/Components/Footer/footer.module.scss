@@ -27,6 +27,17 @@
   margin-bottom: 3rem;
 }
 
+.impressum-link {
+  text-decoration: none;
+  color: $mid-grey;
+}
+
+@media (hover: hover) {
+  .impressum-link:hover {
+    color: $nav-links;
+  }
+}
+
 .built-by {
   color: $mauve;
   font-size: 1.2rem;
@@ -39,5 +50,13 @@
     text-decoration: none;
     font-weight: bold;
     color: $mauve;
+  }
+}
+
+@media (hover: hover) {
+  .built-by:hover {
+    transform: scale(1.1);
+    transition: ease-in-out;
+    font-weight: bold;
   }
 }

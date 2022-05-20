@@ -12,6 +12,7 @@ import {
 // ? Components
 import Navigation from "./Components/Navbar/Navigation";
 import Home from "./Views/Home/Home";
+import Impressum from "./Views/Impressum/Impressum";
 
 import Footer from "./Components/Footer/Footer";
 
@@ -27,6 +28,8 @@ const App = () => {
           <Routes>
             {/* // ! Routes will go here.. */}
             <Route path="/" exact element={<Home />} />
+
+            <Route path="/impressum" exact element={<Impressum />} />
 
             {/*  // ! Replaces Redirect in react-router-dom 6 */}
             {/* <Redirect to="/" exact /> */}
