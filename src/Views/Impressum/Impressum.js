@@ -1,22 +1,26 @@
 import React from "react";
 
+import styles from "../Impressum/impressum.module.scss";
+
 // !
 // Todo - style Impressum page and Link to footer
 const Impressum = () => {
   return (
-    <>
-      <div>
-        <h4>Impressum</h4>
-        <span>Reverberation Festival</span>
-        <span>Dresden Psych Family e.V. Sternstraße 35 01139 Dresden</span>
-        <span>Mobil: 01520 4423612</span>
-        <span>
+    <div className={styles["impressum-page-container"]}>
+      <div className={styles["content-container"]}>
+        <h4 className={styles["main-headings"]}>Impressum</h4>
+        <span className={styles["spans"]}>Reverberation Festival</span>
+        <span className={styles["spans"]}>
+          Dresden Psych Family e.V. Sternstraße 35 01139 Dresden
+        </span>
+        <span className={styles["spans"]}>Mobil: 01520 4423612</span>
+        <span className={styles["spans"]}>
           Email: booking@reverberationfest.de Planung: Dresden Psych Family e.V.
           Layout/Webdesign: Robert Schmidt Fotos: Bands
         </span>
-        <h4>Haftungsausschluss</h4>
-        <span>Inhalt des Onlineangebotes</span>
-        <p>
+        <h4 className={styles["main-headings"]}>Haftungsausschluss</h4>
+        <span className={styles["spans"]}>Inhalt des Onlineangebotes</span>
+        <p className={styles["paragraphs"]}>
           Der Autor übernimmt keinerlei Gewähr für die Aktualität, Korrektheit,
           Vollständigkeit oder Qualität der bereitgestellten Informationen.
           Haftungsansprüche gegen den Autor, welche sich auf Schäden materieller
@@ -26,14 +30,14 @@ const Impressum = () => {
           ausgeschlossen, sofern seitens des Autors kein nachweislich
           vorsätzliches oder grob fahrlässiges Verschulden vorliegt.
         </p>
-        <p>
+        <p className={styles["paragraphs"]}>
           Alle Angebote sind freibleibend und unverbindlich. Der Autor behält es
           sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne
           gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die
           Veröffentlichung zeitweise oder endgültig einzustellen.
         </p>
-        <h5>2. Verweise und Links</h5>
-        <p>
+        <h5 className={styles["sub-headings"]}>2. Verweise und Links</h5>
+        <p className={styles["paragraphs"]}>
           Bei direkten oder indirekten Verweisen auf fremde Webseiten
           („Hyperlinks“), die außerhalb des Verantwortungsbereiches des Autors
           liegen, würde eine Haftungsverpflichtung ausschließlich in dem Fall in
@@ -41,7 +45,7 @@ const Impressum = () => {
           ihm technisch möglich und zumutbar wäre, die Nutzung im Falle
           rechtswidriger Inhalte zu verhindern.
         </p>
-        <p>
+        <p className={styles["paragraphs"]}>
           Der Autor erklärt hiermit ausdrücklich, dass zum Zeitpunkt der
           Linksetzung keine illegalen Inhalte auf den zu verlinkenden Seiten
           erkennbar waren. Auf die aktuelle und zukünftige Gestaltung, die
@@ -60,15 +64,17 @@ const Impressum = () => {
           wurde, nicht derjenige, der über Links auf die jeweilige
           Veröffentlichung lediglich verweist.
         </p>
-        <h5>3. Urheber- und Kennzeichenrecht</h5>
-        <p>
+        <h5 className={styles["sub-headings"]}>
+          3. Urheber- und Kennzeichenrecht
+        </h5>
+        <p className={styles["paragraphs"]}>
           Der Autor ist bestrebt, in allen Publikationen die Urheberrechte der
           verwendeten Bilder, Grafiken, Tondokumente, Videosequenzen und Texte
           zu beachten, von ihm selbst erstellte Bilder, Grafiken, Tondokumente,
           Videosequenzen und Texte zu nutzen oder auf lizenzfreie Grafiken,
           Tondokumente, Videosequenzen und Texte zurückzugreifen.
         </p>
-        <p>
+        <p className={styles["paragraphs"]}>
           Alle innerhalb des Internetangebotes genannten und ggf. durch Dritte
           geschützten Marken- und Warenzeichen unterliegen uneingeschränkt den
           Bestimmungen des jeweils gültigen Kennzeichenrechts und den
@@ -76,15 +82,17 @@ const Impressum = () => {
           der bloßen Nennung ist nicht der Schluss zu ziehen, dass Markenzeichen
           nicht durch Rechte Dritter geschützt sind!
         </p>
-        <p>
+        <p className={styles["paragraphs"]}>
           Das Copyright für veröffentlichte, vom Autor selbst erstellte Objekte
           bleibt allein beim Autor der Seiten. Eine Vervielfältigung oder
           Verwendung solcher Grafiken, Tondokumente, Videosequenzen und Texte in
           anderen elektronischen oder gedruckten Publikationen ist ohne
           ausdrückliche Zustimmung des Autors nicht gestattet.
         </p>
-        <h5>4. Rechtswirksamkeit dieses Haftungsausschlusses</h5>
-        <p>
+        <h5 className={styles["sub-headings"]}>
+          4. Rechtswirksamkeit dieses Haftungsausschlusses
+        </h5>
+        <p className={styles["paragraphs"]}>
           Dieser Haftungsausschluss ist als Teil des Internetangebotes zu
           betrachten, von dem aus auf diese Seite verwiesen wurde. Sofern Teile
           oder einzelne Formulierungen dieses Textes der geltenden Rechtslage
@@ -92,8 +100,8 @@ const Impressum = () => {
           die übrigen Teile des Dokumentes in ihrem Inhalt und ihrer Gültigkeit
           davon unberührt.
         </p>
-        <h4>Datenschutzhinweis</h4>
-        <p>
+        <h4 className={styles["main-headings"]}>Datenschutzhinweis</h4>
+        <p className={styles["paragraphs"]}>
           Sofern innerhalb des Internetangebotes die Möglichkeit zur Eingabe
           persönlicher oder geschäftlicher Daten (Emailadressen, Namen,
           Anschriften) besteht, so erfolgt die Preisgabe dieser Daten seitens
@@ -140,7 +148,7 @@ const Impressum = () => {
           Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum
           zuvor gekürzt.
         </p>
-        <p>
+        <p className={styles["paragraphs"]}>
           Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von
           Google in den USA übertragen und dort gekürzt. Im Auftrag des
           Betreibers dieser Website wird Google diese Informationen benutzen, um
@@ -208,7 +216,7 @@ const Impressum = () => {
           https://www.e-recht24.de
         </p>
       </div>
-    </>
+    </div>
   );
 };
 
