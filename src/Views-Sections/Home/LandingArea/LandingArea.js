@@ -11,24 +11,24 @@ const LandingArea = () => {
       <div className={styles["landing-area-extra-content"]}>
         <h1
           className={`${styles["glitch"]} ${styles["main-heading"]}`}
-          data-text="REVERBERATION"
+          data-text="REVERBERATION Festival"
         >
           REVERBERATION
+          <br />
+          Festival
         </h1>
-        <h1 className={styles["glow"]}>REVERBERATION</h1>
+        <h1 className={styles["glow"]}>
+          REVERBERATION
+          <br />
+          Festival
+        </h1>
 
-        <h2
-          className={`${styles["glitch"]} ${styles["sub-headings"]}`}
-          data-text="Music & art festival in Dresden"
-        >
+        <h2 className={`${styles["glitch"]} ${styles["sub-headings"]}`}>
           Music & art festival in Dresden
         </h2>
 
-        <h2
-          className={`${styles["glitch"]} ${styles["sub-headings"]}`}
-          data-text="September 16-18, 2022"
-        >
-          September 16-18, 2022
+        <h2 className={`${styles["glitch"]} ${styles["sub-headings"]}`}>
+          September 16-18 - 2022
         </h2>
       </div>
 
