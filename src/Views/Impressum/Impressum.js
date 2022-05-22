@@ -36,6 +36,7 @@ const Impressum = () => {
             +49 1520 442 3612{" "}
           </a>
         </span>
+
         <span className={styles["spans"]}>
           E-mail:
           <a
@@ -163,34 +164,58 @@ const Impressum = () => {
           Plugins des sozialen Netzwerks Facebook, 1601 South California Avenue,
           Palo Alto, CA 94304, USA integriert. Die Facebook-Plugins erkennen Sie
           an dem Facebook-Logo oder dem „Like-Button“ („Gefällt mir“) auf
-          unserer Seite. Eine Übersicht über die Facebook-Plugins finden Sie
-          hier: http://developers.facebook.com/docs/plugins/. Wenn Sie unsere
-          Seiten besuchen, wird über das Plugin eine direkte Verbindung zwischen
-          Ihrem Browser und dem Facebook-Server hergestellt. Facebook erhält
-          dadurch die Information, dass Sie mit Ihrer IP-Adresse unsere Seite
-          besucht haben. Wenn Sie den Facebook „Like-Button“ anklicken während
-          Sie in Ihrem Facebook-Account eingeloggt sind, können Sie die Inhalte
-          unserer Seiten auf Ihrem Facebook-Profil verlinken. Dadurch kann
-          Facebook den Besuch unserer Seiten Ihrem Benutzerkonto zuordnen. Wir
-          weisen darauf hin, dass wir als Anbieter der Seiten keine Kenntnis vom
-          Inhalt der übermittelten Daten sowie deren Nutzung durch Facebook
-          erhalten. Weitere Informationen hierzu finden Sie in der
-          Datenschutzerklärung von facebook unter
-          http://de-de.facebook.com/policy.php Wenn Sie nicht wünschen, dass
-          Facebook den Besuch unserer Seiten Ihrem Facebook-Nutzerkonto zuordnen
-          kann, loggen Sie sich bitte aus Ihrem Facebook-Benutzerkonto aus.
-          Datenschutzerklärung für die Nutzung von Google Analytics Diese
-          Website benutzt Google Analytics, einen Webanalysedienst der Google
-          Inc. („Google“). Google Analytics verwendet sog. „Cookies“,
-          Textdateien, die auf Ihrem Computer gespeichert werden und die eine
-          Analyse der Benutzung der Website durch Sie ermöglichen. Die durch den
-          Cookie erzeugten Informationen über Ihre Benutzung dieser Website
-          werden in der Regel an einen Server von Google in den USA übertragen
-          und dort gespeichert. Im Falle der Aktivierung der IP-Anonymisierung
-          auf dieser Webseite wird Ihre IP-Adresse von Google jedoch innerhalb
-          von Mitgliedstaaten der Europäischen Union oder in anderen
-          Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum
-          zuvor gekürzt.
+          unserer Seite.
+          <span className={styles["spans"]}>
+            Eine Übersicht über die Facebook-Plugins finden Sie hier:
+            <a
+              className={styles["anchor-tags"]}
+              href="http://developers.facebook.com/docs/plugins/"
+              target="_blank"
+              rel="noopener noreferrer"
+              alt="Link to Facebook plugins"
+            >
+              {" "}
+              http://developers.facebook.com/docs/plugins/
+            </a>
+          </span>
+          . Wenn Sie unsere Seiten besuchen, wird über das Plugin eine direkte
+          Verbindung zwischen Ihrem Browser und dem Facebook-Server hergestellt.
+          Facebook erhält dadurch die Information, dass Sie mit Ihrer IP-Adresse
+          unsere Seite besucht haben. Wenn Sie den Facebook „Like-Button“
+          anklicken während Sie in Ihrem Facebook-Account eingeloggt sind,
+          können Sie die Inhalte unserer Seiten auf Ihrem Facebook-Profil
+          verlinken. Dadurch kann Facebook den Besuch unserer Seiten Ihrem
+          Benutzerkonto zuordnen. Wir weisen darauf hin, dass wir als Anbieter
+          der Seiten keine Kenntnis vom Inhalt der übermittelten Daten sowie
+          deren Nutzung durch Facebook erhalten.
+          <span className={styles["spans"]}>
+            Weitere Informationen hierzu finden Sie in der Datenschutzerklärung
+            von facebook unter:
+            <a
+              className={styles["anchor-tags"]}
+              href="http://de-de.facebook.com/policy.php"
+              target="_blank"
+              rel="noopener noreferrer"
+              alt="Link to Facebook privacy policy"
+            >
+              {" "}
+              http://de-de.facebook.com/policy.php
+            </a>
+          </span>
+          Wenn Sie nicht wünschen, dass Facebook den Besuch unserer Seiten Ihrem
+          Facebook-Nutzerkonto zuordnen kann, loggen Sie sich bitte aus Ihrem
+          Facebook-Benutzerkonto aus. Datenschutzerklärung für die Nutzung von
+          Google Analytics Diese Website benutzt Google Analytics, einen
+          Webanalysedienst der Google Inc. („Google“). Google Analytics
+          verwendet sog. „Cookies“, Textdateien, die auf Ihrem Computer
+          gespeichert werden und die eine Analyse der Benutzung der Website
+          durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen
+          über Ihre Benutzung dieser Website werden in der Regel an einen Server
+          von Google in den USA übertragen und dort gespeichert. Im Falle der
+          Aktivierung der IP-Anonymisierung auf dieser Webseite wird Ihre
+          IP-Adresse von Google jedoch innerhalb von Mitgliedstaaten der
+          Europäischen Union oder in anderen Vertragsstaaten des Abkommens über
+          den Europäischen Wirtschaftsraum zuvor gekürzt.
         </p>
         <p className={styles["paragraphs"]}>
           Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von
@@ -210,54 +235,100 @@ const Impressum = () => {
           Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die
           Verarbeitung dieser Daten durch Google verhindern, indem sie das unter
           dem folgenden Link verfügbare Browser-Plugin herunterladen und
-          installieren: http://tools.google.com/dlpage/gaoptout?hl=de.
-          Datenschutzerklärung für die Nutzung von Google +1 – Google wird
+          installieren:
+          <a
+            className={styles["anchor-tags"]}
+            href="http://tools.google.com/dlpage/gaoptout?hl=de"
+            target="_blank"
+            rel="noopener noreferrer"
+            alt="Link to Google tools"
+          >
+            {" "}
+            http://tools.google.com/dlpage/gaoptout?hl=de
+          </a>
+          . Datenschutzerklärung für die Nutzung von Google +1 – Google wird
           betrieben von Google inc. 1600 Amphitheatre Parkway. Mountain View, CA
           94043, USA – wenn eine Seite mit Google+ Plugin aufgerufen wird, wird
           eine Verbindung zu den Google-Servern hergestellt und es werden Daten
           an diese übermittelt – im eingeloggten Zustand ist eine unmittelbare
           Zuordnung der Daten zum Google+ Profil möglich – das Ausloggen bei
-          Google+ verhindert die Zuordnung der Daten zum Google+ Profil – Die
-          Datenschutzhinweise von Google finden Sie unter
-          http://www.google.com/intl/de/policies/privacy/ Erfassung und
-          Weitergabe von Informationen: Mithilfe der Google +1-Schaltfläche
-          können Sie Informationen weltweit veröffentlichen. über die Google
-          +1-Schaltfläche erhalten Sie und andere Nutzer personalisierte Inhalte
-          von Google und unseren Partnern. Google speichert sowohl die
-          Information, dass Sie für einen Inhalt +1 gegeben haben, als auch
-          Informationen über die Seite, die Sie beim Klicken auf +1 angesehen
-          haben. Ihre +1 können als Hinweise zusammen mit Ihrem Profilnamen und
-          Ihrem Foto in Google-Diensten, wie etwa in Suchergebnissen oder in
-          Ihrem Google-Profil, oder an anderen Stellen auf Websites und Anzeigen
-          im Internet eingeblendet werden. Google zeichnet Informationen über
-          Ihre +1-Aktivitäten auf, um die Google-Dienste für Sie und andere zu
-          verbessern. Um die Google +1-Schaltfläche verwenden zu können,
-          benötigen Sie ein weltweit sichtbares, öffentliches Google-Profil, das
-          zumindest den für das Profil gewählten Namen enthalten muss. Dieser
-          Name wird in allen Google-Diensten verwendet. In manchen Fällen kann
-          dieser Name auch einen anderen Namen ersetzen, den Sie beim Teilen von
-          Inhalten über Ihr Google-Konto verwendet haben. Die Identität Ihres
-          Google-Profils kann Nutzern angezeigt werden, die Ihre E-Mail-Adresse
-          kennen oder über andere identifizierende Informationen von Ihnen
-          verfügen. Verwendung der erfassten Informationen: Neben den oben
-          erläuterten Verwendungszwecken werden die von Ihnen bereitgestellten
-          Informationen gemäß den geltenden Google-Datenschutzbestimmungen
-          genutzt. Google veröffentlicht möglicherweise zusammengefasste
-          Statistiken über die +1-Aktivitäten der Nutzer bzw. gibt diese an
-          Nutzer und Partner weiter, wie etwa Publisher, Inserenten oder
-          verbundene Websites. Datenschutzerklärung für die Nutzung von
-          Instagram Auf unseren Seiten sind Funktionen des Dienstes Instagram
-          eingebunden. Diese Funktionen werden angeboten durch die Instagram
-          Inc., 1601 Willow Road, Menlo Park, CA, 94025, USA integriert. Wenn
-          Sie in Ihrem Instagram – Account eingeloggt sind können Sie durch
-          Anklicken des Instagram – Buttons die Inhalte unserer Seiten mit Ihrem
-          Instagram – Profil verlinken. Dadurch kann Instagram den Besuch
-          unserer Seiten Ihrem Benutzerkonto zuordnen. Wir weisen darauf hin,
-          dass wir als Anbieter der Seiten keine Kenntnis vom Inhalt der
-          übermittelten Daten sowie deren Nutzung durch Instagram erhalten.
-          Weitere Informationen hierzu finden Sie in der Datenschutzerklärung
-          von Instagram: http://instagram.com/about/legal/privacy/ Quellverweis:
-          https://www.e-recht24.de
+          Google+ verhindert die Zuordnung der Daten zum Google+ Profil –
+          <span className={styles["spans"]}>
+            Die Datenschutzhinweise von Google finden Sie unter
+            <a
+              className={styles["anchor-tags"]}
+              href="  http://www.google.com/intl/de/policies/privacy/"
+              target="_blank"
+              rel="noopener noreferrer"
+              alt="Link to Google privacy policy"
+            >
+              {" "}
+              http://www.google.com/intl/de/policies/privacy/
+            </a>
+          </span>
+          Erfassung und Weitergabe von Informationen: Mithilfe der Google
+          +1-Schaltfläche können Sie Informationen weltweit veröffentlichen.
+          über die Google +1-Schaltfläche erhalten Sie und andere Nutzer
+          personalisierte Inhalte von Google und unseren Partnern. Google
+          speichert sowohl die Information, dass Sie für einen Inhalt +1 gegeben
+          haben, als auch Informationen über die Seite, die Sie beim Klicken auf
+          +1 angesehen haben. Ihre +1 können als Hinweise zusammen mit Ihrem
+          Profilnamen und Ihrem Foto in Google-Diensten, wie etwa in
+          Suchergebnissen oder in Ihrem Google-Profil, oder an anderen Stellen
+          auf Websites und Anzeigen im Internet eingeblendet werden. Google
+          zeichnet Informationen über Ihre +1-Aktivitäten auf, um die
+          Google-Dienste für Sie und andere zu verbessern. Um die Google
+          +1-Schaltfläche verwenden zu können, benötigen Sie ein weltweit
+          sichtbares, öffentliches Google-Profil, das zumindest den für das
+          Profil gewählten Namen enthalten muss. Dieser Name wird in allen
+          Google-Diensten verwendet. In manchen Fällen kann dieser Name auch
+          einen anderen Namen ersetzen, den Sie beim Teilen von Inhalten über
+          Ihr Google-Konto verwendet haben. Die Identität Ihres Google-Profils
+          kann Nutzern angezeigt werden, die Ihre E-Mail-Adresse kennen oder
+          über andere identifizierende Informationen von Ihnen verfügen.
+          Verwendung der erfassten Informationen: Neben den oben erläuterten
+          Verwendungszwecken werden die von Ihnen bereitgestellten Informationen
+          gemäß den geltenden Google-Datenschutzbestimmungen genutzt. Google
+          veröffentlicht möglicherweise zusammengefasste Statistiken über die
+          +1-Aktivitäten der Nutzer bzw. gibt diese an Nutzer und Partner
+          weiter, wie etwa Publisher, Inserenten oder verbundene Websites.
+          Datenschutzerklärung für die Nutzung von Instagram Auf unseren Seiten
+          sind Funktionen des Dienstes Instagram eingebunden. Diese Funktionen
+          werden angeboten durch die Instagram Inc., 1601 Willow Road, Menlo
+          Park, CA, 94025, USA integriert. Wenn Sie in Ihrem Instagram – Account
+          eingeloggt sind können Sie durch Anklicken des Instagram – Buttons die
+          Inhalte unserer Seiten mit Ihrem Instagram – Profil verlinken. Dadurch
+          kann Instagram den Besuch unserer Seiten Ihrem Benutzerkonto zuordnen.
+          Wir weisen darauf hin, dass wir als Anbieter der Seiten keine Kenntnis
+          vom Inhalt der übermittelten Daten sowie deren Nutzung durch Instagram
+          erhalten.
+          <span className={styles["spans"]}>
+            Weitere Informationen hierzu finden Sie in der Datenschutzerklärung
+            von Instagram:
+            <a
+              className={styles["anchor-tags"]}
+              href="http://instagram.com/about/legal/privacy/"
+              target="_blank"
+              rel="noopener noreferrer"
+              alt="Link to Instagram privacy policy"
+            >
+              {" "}
+              http://instagram.com/about/legal/privacy/
+            </a>
+          </span>
+          <span className={styles["spans"]}>
+            Quellverweis:
+            <a
+              className={styles["anchor-tags"]}
+              href="https://www.e-recht24.de"
+              target="_blank"
+              rel="noopener noreferrer"
+              alt="Link to Quellverweis"
+            >
+              {" "}
+              https://www.e-recht24.de
+            </a>
+          </span>
         </p>
       </div>
     </div>
