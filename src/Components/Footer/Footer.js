@@ -23,6 +23,7 @@ const Footer = () => {
             href="https://www.edithsdev.com/"
             target="_blank"
             rel="noreferrer noopener"
+            alt="Link to developer site"
           >
             Edith Heidmann
           </a>
