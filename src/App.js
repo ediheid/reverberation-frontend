@@ -37,20 +37,18 @@ const App = () => {
           <ToTopButton />
 
           <Routes>
-            {/* // ! Routes will go here.. */}
             <Route path="/" exact element={<Home />} />
 
             <Route path="/impressum" exact element={<Impressum />} />
 
             <Route path="/contact" exact element={<Contact />} />
 
-            {/*  // ! Replaces Redirect in react-router-dom 6 */}
-            {/* <Redirect to="/" exact /> */}
+            {/*  Replaces Redirect in react-router-dom 6 */}
+
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </main>
         <Footer />
-        {/* // ! Footer will go here.. */}
       </Router>
     </div>
   );
