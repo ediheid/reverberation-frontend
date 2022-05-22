@@ -17,7 +17,7 @@
   height: auto;
   width: 100vw;
 
-  padding: 5rem 0 10rem 0;
+  padding: 5rem 0 6rem 0;
 
   background-color: $black;
 }
@@ -120,6 +120,51 @@
   }
   2% {
     transform: rotateX(0deg) skewX(0deg);
+  }
+}
+s
+
+// Button
+
+.button-container {
+  margin-top: 4rem;
+  height: 5rem;
+  width: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  border: $landing-ticket-button-colour 0.3rem solid;
+  background-color: transparent;
+  border-radius: 0.25em;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 $landing-ticket-button-colour,
+    0 0 0.5em 0 $landing-ticket-button-colour;
+  transition: all 0.3s;
+
+  &:active {
+    background-color: $landing-ticket-button-colour;
+  }
+}
+
+.button-a-link {
+  color: $landing-ticket-button-colour;
+  text-decoration: none;
+  font-size: 2rem;
+
+  &:active {
+    color: $white-grey;
+  }
+}
+
+@media (hover: hover) {
+  .button-container:hover {
+    background-color: $landing-ticket-button-colour;
+  }
+
+  .button-container:hover {
+    color: $white-grey;
   }
 }
 

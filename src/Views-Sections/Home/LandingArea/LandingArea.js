@@ -30,6 +30,18 @@ const LandingArea = () => {
         <h2 className={`${styles["glitch"]} ${styles["sub-headings"]}`}>
           September 16-18 - 2022
         </h2>
+
+        <button className={styles["button-container"]}>
+          <a
+            className={styles["button-a-link"]}
+            href="https://reverberation.loveyourartist.store/de/"
+            target="_blank"
+            rel="noopener noreferrer"
+            alt="Ticket Shop"
+          >
+            Ticket Shop
+          </a>
+        </button>
       </div>
 
       <div className={styles["main-image-container"]}>
