@@ -9,15 +9,59 @@ const Impressum = () => {
     <div className={styles["impressum-page-container"]}>
       <div className={styles["content-container"]}>
         <h4 className={styles["main-headings"]}>Impressum</h4>
-        <span className={styles["spans"]}>Reverberation Festival</span>
+        <h2 className={styles["company-name-heading"]}>
+          Reverberation Festival
+        </h2>
         <span className={styles["spans"]}>
           Dresden Psych Family e.V. Sternstraße 35 01139 Dresden
         </span>
-        <span className={styles["spans"]}>Mobil: 01520 4423612</span>
+
         <span className={styles["spans"]}>
-          Email: booking@reverberationfest.de Planung: Dresden Psych Family e.V.
-          Layout/Webdesign: Robert Schmidt Fotos: Bands
+          {" "}
+          Planung: Dresden Psych Family e.V.
         </span>
+
+        <span className={styles["spans"]}>Fotos: Bands</span>
+
+        <h3 className={styles["sub-headings"]}>Kontakt:</h3>
+
+        <span className={styles["spans"]}>
+          Mobil:
+          <a
+            className={styles["anchor-tags"]}
+            href="tel:+49-1520-442-3612"
+            alt="Click to call"
+          >
+            {" "}
+            +49 1520 442 3612{" "}
+          </a>
+        </span>
+        <span className={styles["spans"]}>
+          E-mail:
+          <a
+            className={styles["anchor-tags"]}
+            href="mailto:booking@reverberationfest.de"
+            alt="Email link to bookings"
+          >
+            {" "}
+            booking@reverberationfest.de
+          </a>
+        </span>
+
+        <span className={styles["spans"]}>
+          Webdesign & development:
+          <a
+            className={styles["anchor-tags"]}
+            href="https://www.edithsdev.com/home/contact"
+            target="_blank"
+            rel="noreferrer noopener"
+            alt="Link to Edith Heidmann's contact page"
+          >
+            {" "}
+            Edith Heidmann
+          </a>
+        </span>
+
         <h4 className={styles["main-headings"]}>Haftungsausschluss</h4>
         <span className={styles["spans"]}>Inhalt des Onlineangebotes</span>
         <p className={styles["paragraphs"]}>

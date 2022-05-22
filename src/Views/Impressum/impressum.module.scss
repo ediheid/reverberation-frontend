@@ -36,8 +36,13 @@
 }
 
 .sub-headings {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin: 1rem 0 1rem 0;
+}
+
+.company-name-heading {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
 }
 
 .spans,
@@ -47,5 +52,129 @@
 }
 
 .spans {
-  display: inline-block;
+  display: block;
+}
+
+.anchor-tags {
+  text-decoration: none;
+  //   color: $dark-green;
+  //   font-family: $roboto-medium-font-family;
+
+  &:active {
+    text-decoration: underline;
+    // font-family: $roboto-bold-font-family;
+  }
+}
+
+@media (hover: hover) {
+  .anchor-tags:hover {
+    text-decoration: underline;
+    // font-family: $roboto-bold-font-family;
+  }
+}
+
+// ? Media Queries
+
+@include medium {
+  .content-container {
+    margin: 5rem 0 15rem 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 1rem;
+  }
+
+  .main-headings {
+    font-size: 3rem;
+  }
+
+  .company-name-heading {
+    font-size: 2.3rem;
+  }
+
+  .sub-headings {
+    font-size: 1.6rem;
+  }
+
+  .spans,
+  .paragraphs {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+@include large {
+  .content-container {
+    margin: 5rem 0 15rem 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 1rem;
+  }
+
+  .main-headings {
+    font-size: 3rem;
+  }
+
+  .company-name-heading {
+    font-size: 2.3rem;
+  }
+
+  .sub-headings {
+    font-size: 1.6rem;
+  }
+
+  .spans,
+  .paragraphs {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+@include extra-large {
+  .content-container {
+    margin: 5rem 0 15rem 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 1rem;
+  }
+
+  .main-headings {
+    font-size: 3rem;
+  }
+
+  .company-name-heading {
+    font-size: 2.3rem;
+  }
+
+  .sub-headings {
+    font-size: 1.6rem;
+  }
+
+  .spans,
+  .paragraphs {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+@include extra-extra-large {
+  .content-container {
+    margin: 5rem 0 15rem 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 1rem;
+  }
+
+  .main-headings {
+    font-size: 3rem;
+  }
+
+  .company-name-heading {
+    font-size: 2.3rem;
+  }
+
+  .sub-headings {
+    font-size: 1.6rem;
+  }
+
+  .spans,
+  .paragraphs {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
 }

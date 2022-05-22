@@ -31,6 +31,8 @@
 .mobile-nav-dropdown-container {
   background-color: $nav-dropdown;
 
+  font-family: $nav-links-font-family;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,6 +63,10 @@
       font-weight: bold;
     }
   }
+}
+
+.desktop-nav-container {
+  font-family: $nav-links-font-family;
 }
 
 // @media (hover:hover) to solve sticky hover states on mobile devices
@@ -144,7 +150,7 @@
       cursor: pointer;
       transform: scale(1.1);
       transition: ease-in-out;
-      font-weight: bold;
+      font-family: $nav-links-hover-font-family;
     }
   }
 
@@ -154,7 +160,7 @@
       color: $nav-links;
       transform: scale(1.1);
       transition: ease-in-out;
-      font-weight: bold;
+      font-family: $nav-links-hover-font-family;
       cursor: pointer;
     }
   }
@@ -190,7 +196,7 @@
       cursor: pointer;
       transform: scale(1.1);
       transition: ease-in-out;
-      font-weight: bold;
+      font-family: $nav-links-hover-font-family;
     }
   }
 
@@ -200,7 +206,7 @@
       color: $nav-links;
       transform: scale(1.1);
       transition: ease-in-out;
-      font-weight: bold;
+      font-family: $nav-links-hover-font-family;
       cursor: pointer;
     }
   }
@@ -236,7 +242,7 @@
       cursor: pointer;
       transform: scale(1.1);
       transition: ease-in-out;
-      font-weight: bold;
+      font-family: $nav-links-hover-font-family;
     }
   }
 
@@ -246,7 +252,7 @@
       color: $nav-links;
       transform: scale(1.1);
       transition: ease-in-out;
-      font-weight: bold;
+      font-family: $nav-links-hover-font-family;
       cursor: pointer;
     }
   }

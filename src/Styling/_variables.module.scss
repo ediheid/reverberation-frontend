@@ -1,5 +1,6 @@
-// ? Palette Variables - change on year according to poster
+@import "../Styling/fonts";
 
+// ? Palette Variables - change on year according to poster
 $mauve: #a61f69;
 $sand: #d9961a;
 $brown: #bf5f0b;
@@ -25,7 +26,8 @@ $mid-grey: #b7b7b7;
 // ? Font Variables
 // Nav Fonts
 // $logo-home-button-font-family: Oxygen Regular, sans-serif;
-$nav-links-font-family: Oxygen Regular, sans-serif;
+$nav-links-font-family: "Oxygen Regular", sans-serif;
+$nav-links-hover-font-family: "Oxygen Bold", sans-serif;
 
 // Home Page fonts
 $intro-font-family: Sora SemiBold, sans-serif;
