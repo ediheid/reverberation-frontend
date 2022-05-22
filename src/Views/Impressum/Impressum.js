@@ -49,7 +49,7 @@ const Impressum = () => {
         </span>
 
         <span className={styles["spans"]}>
-          Webdesign & development:
+          Web design & web development:
           <a
             className={styles["anchor-tags"]}
             href="https://www.edithsdev.com/home/contact"

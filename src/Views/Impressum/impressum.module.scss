@@ -57,19 +57,20 @@
 
 .anchor-tags {
   text-decoration: none;
-  //   color: $dark-green;
-  //   font-family: $roboto-medium-font-family;
+  color: $mauve;
 
   &:active {
     text-decoration: underline;
-    // font-family: $roboto-bold-font-family;
+    color: $links-hover-colour;
+    font-family: $main-font-regular-font-family;
   }
 }
 
 @media (hover: hover) {
   .anchor-tags:hover {
     text-decoration: underline;
-    // font-family: $roboto-bold-font-family;
+    color: $links-hover-colour;
+    font-family: $main-font-regular-font-family;
   }
 }
 
