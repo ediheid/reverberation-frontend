@@ -1,5 +1,5 @@
 import React from "react";
-import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 import styles from "../Footer/footer.module.scss";
 
@@ -12,9 +12,9 @@ const Footer = () => {
         <span className={styles["copyright-span"]}>
           &copy; Dresden Psych Family e.V. {currentYear} | {/* // ! */}
           {/* // Todo: Add impressum page link */}{" "}
-          <HashLink to="/impressum" className={styles["impressum-link"]}>
+          <Link to="/impressum" className={styles["impressum-link"]}>
             <b>IMPRESSUM</b>{" "}
-          </HashLink>
+          </Link>
         </span>
 
         <span className={styles["built-by"]}>

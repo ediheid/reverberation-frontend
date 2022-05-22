@@ -6,8 +6,8 @@ import mainImage from "./Static/wip2.png";
 
 const Home = () => {
   return (
-    <>
-      <div className={styles["home-container"]}>
+    <div className={styles["home-container"]}>
+      <div className={styles["landing-area"]}>
         <div className={styles["main-image-container"]}>
           {/* // todo - Decide if I should use the img here or as bg image in SCSS */}
           <img
@@ -18,7 +18,7 @@ const Home = () => {
           {/* BANNER WILL GO HERE */}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

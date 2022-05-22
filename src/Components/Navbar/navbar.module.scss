@@ -25,9 +25,48 @@
   height: auto;
 }
 
+// Logo hover
 @media (hover: hover) {
   .logo:hover {
     transform: scale(1.1);
+  }
+}
+
+.right-content-nav-container {
+  display: flex;
+  align-items: center;
+
+  margin-right: 3%;
+}
+
+.social-media-links-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  justify-self: flex-end;
+
+  height: 5rem;
+  width: 5rem;
+}
+
+.social-media-links {
+  color: $mid-grey;
+  font-size: 1.8rem;
+
+  &:active {
+    transform: scale(1.1);
+    transition: ease-in-out;
+    color: $links-hover-colour;
+  }
+}
+
+// Social media links hover
+@media (hover: hover) {
+  .social-media-links:hover {
+    transform: scale(1.1);
+    transition: ease-in-out;
+    color: $links-hover-colour;
   }
 }
 
@@ -90,7 +129,7 @@
   z-index: 10000;
 
   color: $mid-grey;
-  margin-right: 3%;
+  // margin-right: 3%;
 
   &:active {
     color: $nav-links;
@@ -110,6 +149,10 @@
   .desktop-nav-container {
     display: none;
   }
+
+  .social-media-links-container {
+    margin-right: 1rem;
+  }
 }
 
 // ? Small - Less than 768px
@@ -117,12 +160,20 @@
   .desktop-nav-container {
     display: none;
   }
+
+  .social-media-links-container {
+    margin-right: 1rem;
+  }
 }
 
 // ? Medium - Less than 992px
 @include medium {
   .desktop-nav-container {
     display: none;
+  }
+
+  .social-media-links-container {
+    margin-right: 1rem;
   }
 }
 

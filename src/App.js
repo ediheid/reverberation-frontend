@@ -11,8 +11,8 @@ import {
 
 // ? Components
 import Navigation from "./Components/Navbar/Navigation";
-import Home from "./Views/Home/Home";
-import Impressum from "./Views/Impressum/Impressum";
+import Home from "./Views-Sections/Home/Home";
+import Impressum from "./Views-Sections/Impressum/Impressum";
 
 import Footer from "./Components/Footer/Footer";
 
