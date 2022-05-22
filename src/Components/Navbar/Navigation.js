@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Divide as Hamburger } from "hamburger-react";
 
 import { FaFacebookF } from "react-icons/fa";
@@ -16,9 +16,28 @@ const Navigation = () => {
   // On click/toggle Hamburger Hook
   const [isOpen, setIsOpen] = useState(false);
 
+  // Detect scroll direction to change colour on scroll up
+  const [bgChange, setBgChange] = useState(false);
+
+  const changeNavBarColor = () => {
+    if (window.scrollY > 80) {
+      setBgChange(true);
+    } else {
+      setBgChange(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeNavBarColor);
+
   return (
     <div>
-      <nav className={styles["navbar-container"]}>
+      <nav
+        className={
+          bgChange
+            ? `${styles["bg-change"]} ${styles["navbar-container"]} `
+            : `${styles["navbar-container"]} `
+        }
+      >
         {/* Logo / Link to home */}
         <LogoLink />
 

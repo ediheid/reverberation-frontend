@@ -13,18 +13,29 @@ import {
 import Navigation from "./Components/Navbar/Navigation";
 import Home from "./Views-Sections/Home/Home";
 import Impressum from "./Views-Sections/Impressum/Impressum";
+import ScrollToTop from "../src/Components/ScrollToTop/ScrollToTop";
+import ToTopButton from "./Components/ToTopButton/ToTopButton";
 
 import Footer from "./Components/Footer/Footer";
 
 const App = () => {
+  // Scroll to top on browser refresh
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div>
       <Router>
-        {/* // ! Scroll to top will go here */}
+        {/* Scrolls to top on routing */}
+        <ScrollToTop />
 
-        {/* // todo: Navbar might go here if it does not need to change on other pages */}
+        {/* Navbar */}
         <Navigation />
         <main>
+          {/* Displays scroll to top button once user has scrolled down the page // * (hamburger menu devices only) */}
+          <ToTopButton />
+
           <Routes>
             {/* // ! Routes will go here.. */}
             <Route path="/" exact element={<Home />} />

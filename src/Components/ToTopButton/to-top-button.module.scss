@@ -1,0 +1,62 @@
+@import "../../Styling/variables.module";
+@import "../../Styling/mixins.module";
+@import "../../Styling/reset.module";
+
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+
+  font-size: 3rem;
+  background: transparent;
+
+  cursor: pointer;
+
+  border: none;
+
+  z-index: 5000;
+
+  color: $back-to-top-button;
+
+  &:active {
+    color: lighten($back-to-top-button, 40%);
+    transform: scale(1.1);
+    transition: 0.1s ease-in-out;
+  }
+}
+
+@media (hover: hover) {
+  .back-to-top:hover {
+    color: lighten($back-to-top-button, 40%);
+    transform: scale(1.1);
+    transition: 0.1s ease-in-out;
+  }
+}
+
+// ? Media Queries -
+
+@include medium {
+  .back-to-top {
+    font-size: 3.5rem;
+  }
+}
+
+// ? (hide on larger screens where full navigation is shown)
+
+@include large {
+  .back-to-top {
+    display: none;
+  }
+}
+
+@include extra-large {
+  .back-to-top {
+    display: none;
+  }
+}
+
+@include extra-extra-large {
+  .back-to-top {
+    display: none;
+  }
+}

@@ -179,6 +179,20 @@
 
 // ? Large - Less than 1200px
 @include large {
+  .navbar-container,
+  .bg-change {
+    position: fixed;
+    top: 0;
+  }
+  .bg-change {
+    background-color: rgba(0, 0, 0, 0.85) !important;
+
+    // logo moves right when bg colour changes
+    .logo {
+      margin-left: 3rem;
+    }
+  }
+
   .mobile-nav-dropdown-container {
     display: none;
   }
@@ -225,6 +239,20 @@
 
 // ? Extra Large - Less than 1399px
 @include extra-large {
+  .navbar-container,
+  .bg-change {
+    position: fixed;
+    top: 0;
+  }
+
+  .bg-change {
+    background-color: rgba(0, 0, 0, 0.85) !important;
+    // logo moves right when bg colour changes
+    .logo {
+      margin-left: 3rem;
+    }
+  }
+
   .mobile-nav-dropdown-container {
     display: none;
   }
@@ -271,6 +299,20 @@
 
 // ? Extra EXTRA Large - More than 1400px
 @include extra-extra-large {
+  .navbar-container,
+  .bg-change {
+    position: fixed;
+    top: 0;
+  }
+
+  .bg-change {
+    background-color: rgba(0, 0, 0, 0.85) !important;
+    // logo moves right when bg colour changes
+    .logo {
+      margin-left: 3rem;
+    }
+  }
+
   .mobile-nav-dropdown-container {
     display: none;
   }
