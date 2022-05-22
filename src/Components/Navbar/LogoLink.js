@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 // ? Styles
 import styles from "../Navbar/navbar.module.scss";
@@ -10,13 +10,13 @@ const logo = require("./Static/logo.png");
 const LogoLink = () => {
   return (
     <>
-      <Link to="/" alt="Link to home page">
+      <HashLink smooth to="/#landing">
         <img
           className={styles["logo"]}
           src={logo}
           alt="Reverberation Festival Logo - 3 Rs"
         ></img>
-      </Link>
+      </HashLink>
     </>
   );
 };

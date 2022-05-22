@@ -16,6 +16,10 @@ const Navigation = () => {
   // On click/toggle Hamburger Hook
   const [isOpen, setIsOpen] = useState(false);
 
+  const closeNavOnClick = () => {
+    setIsOpen(false);
+  };
+
   // Detect scroll direction to change navbar bg colour on scroll
   const [bgChange, setBgChange] = useState(false);
 
@@ -87,7 +91,7 @@ const Navigation = () => {
           </div>
         </div>
       </nav>
-      {isOpen && <MobileNavLinks />}
+      {isOpen && <MobileNavLinks closeNavOnClick={closeNavOnClick} />}
     </div>
   );
 };

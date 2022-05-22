@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 
 // ? Styles
 import styles from "../Navbar/navbar.module.scss";
@@ -8,14 +9,33 @@ const DesktopNavLinks = () => {
     <>
       <div className={styles["desktop-nav-container"]}>
         <ul className={styles["desktop-nav-list-items"]}>
-          <li>About</li>
-          <li>Line-up</li>
-          <li>Schedule</li>
-          <li>Past Events</li>
-          <li>Tickets</li>
-          <li>Contact</li>
+          <HashLink smooth to="/#about">
+            <li>About</li>
+          </HashLink>
 
-          <li>Home</li>
+          <HashLink smooth to="/#line-up">
+            <li>Line-up</li>
+          </HashLink>
+
+          <HashLink smooth to="/#schedule">
+            <li>Schedule</li>
+          </HashLink>
+
+          <HashLink smooth to="/#past-events">
+            <li>Past Events</li>
+          </HashLink>
+
+          <HashLink smooth to="/#tickets">
+            <li>Tickets</li>
+          </HashLink>
+
+          <HashLink smooth to="/#contact">
+            <li>Contact</li>
+          </HashLink>
+
+          <HashLink smooth to="/#landing">
+            <li>Home</li>
+          </HashLink>
         </ul>
       </div>
     </>

@@ -98,9 +98,10 @@
   width: 100%;
 }
 
-.mobile-nav-list-items {
+.mobile-nav-list-items * {
   color: $mid-grey;
   list-style: none;
+  text-decoration: none;
 
   li {
     &:active {
@@ -113,10 +114,6 @@
   }
 }
 
-.desktop-nav-container {
-  font-family: $nav-links-font-family;
-}
-
 // @media (hover:hover) to solve sticky hover states on mobile devices
 @media (hover: hover) {
   .mobile-nav-list-items > li:hover {
@@ -124,6 +121,46 @@
     transform: scale(1.1);
     transition: ease-in-out;
     font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+.desktop-nav-container {
+  font-family: $nav-links-font-family;
+}
+
+.desktop-nav-list-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.desktop-nav-list-items * {
+  font-size: 1.5rem;
+  color: $mid-grey;
+  letter-spacing: 0.15rem;
+
+  text-decoration: none;
+  list-style: none;
+
+  li {
+    &:active {
+      color: $nav-links;
+      cursor: pointer;
+      transform: scale(1.1);
+      transition: ease-in-out;
+      font-weight: bold;
+      font-family: $nav-links-hover-font-family;
+    }
+  }
+}
+
+// @media (hover:hover) to solve sticky hover states on mobile devices
+@media (hover: hover) {
+  .desktop-nav-list-items * li:hover {
+    color: $nav-links;
+    transform: scale(1.1);
+    transition: ease-in-out;
+    font-family: $nav-links-hover-font-family;
     cursor: pointer;
   }
 }
@@ -207,37 +244,6 @@
     width: 65vw;
     margin-right: 5rem;
   }
-
-  .desktop-nav-list-items {
-    display: flex;
-    justify-content: space-around;
-
-    font-size: 1.5rem;
-    color: $mid-grey;
-    letter-spacing: 0.15rem;
-  }
-
-  .desktop-nav-list-items > li {
-    list-style: none;
-    &:active {
-      color: $nav-links;
-      cursor: pointer;
-      transform: scale(1.1);
-      transition: ease-in-out;
-      font-family: $nav-links-hover-font-family;
-    }
-  }
-
-  // @media (hover:hover) to solve sticky hover states on mobile devices
-  @media (hover: hover) {
-    .desktop-nav-list-items > li:hover {
-      color: $nav-links;
-      transform: scale(1.1);
-      transition: ease-in-out;
-      font-family: $nav-links-hover-font-family;
-      cursor: pointer;
-    }
-  }
 }
 
 // ? Extra Large - Less than 1399px
@@ -267,37 +273,6 @@
     width: 60vw;
     margin-right: 5rem;
   }
-
-  .desktop-nav-list-items {
-    display: flex;
-    justify-content: space-around;
-
-    font-size: 1.5rem;
-    color: $mid-grey;
-    letter-spacing: 0.15rem;
-  }
-
-  .desktop-nav-list-items > li {
-    list-style: none;
-    &:active {
-      color: $nav-links;
-      cursor: pointer;
-      transform: scale(1.1);
-      transition: ease-in-out;
-      font-family: $nav-links-hover-font-family;
-    }
-  }
-
-  // @media (hover:hover) to solve sticky hover states on mobile devices
-  @media (hover: hover) {
-    .desktop-nav-list-items > li:hover {
-      color: $nav-links;
-      transform: scale(1.1);
-      transition: ease-in-out;
-      font-family: $nav-links-hover-font-family;
-      cursor: pointer;
-    }
-  }
 }
 
 // ? Extra EXTRA Large - More than 1400px
@@ -326,36 +301,5 @@
   .desktop-nav-container {
     width: 55vw;
     margin-right: 5rem;
-  }
-
-  .desktop-nav-list-items {
-    display: flex;
-    justify-content: space-around;
-
-    font-size: 1.5rem;
-    color: $mid-grey;
-    letter-spacing: 0.15rem;
-  }
-
-  .desktop-nav-list-items > li {
-    list-style: none;
-    &:active {
-      color: $nav-links;
-      cursor: pointer;
-      transform: scale(1.1);
-      transition: ease-in-out;
-      font-family: $nav-links-hover-font-family;
-    }
-  }
-
-  // @media (hover:hover) to solve sticky hover states on mobile devices
-  @media (hover: hover) {
-    .desktop-nav-list-items > li:hover {
-      color: $nav-links;
-      transform: scale(1.1);
-      transition: ease-in-out;
-      font-family: $nav-links-hover-font-family;
-      cursor: pointer;
-    }
   }
 }
