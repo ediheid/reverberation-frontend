@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 // ? Styles
 import styles from "../Navbar/navbar.module.scss";
@@ -68,7 +69,7 @@ const MobileNavLinks = (props) => {
             </motion.li>
           </HashLink>
 
-          <HashLink smooth to="/#contact" onClick={props.closeNavOnClick}>
+          <Link smooth to="/contact" onClick={props.closeNavOnClick}>
             <motion.li
               initial={animateFrom}
               animate={animateTo}
@@ -76,7 +77,7 @@ const MobileNavLinks = (props) => {
             >
               Contact
             </motion.li>
-          </HashLink>
+          </Link>
 
           <HashLink smooth to="/#landing" onClick={props.closeNavOnClick}>
             <motion.li

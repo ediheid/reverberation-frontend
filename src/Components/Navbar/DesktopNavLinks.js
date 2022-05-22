@@ -1,5 +1,6 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 // ? Styles
 import styles from "../Navbar/navbar.module.scss";
@@ -29,9 +30,9 @@ const DesktopNavLinks = () => {
             <li>Tickets</li>
           </HashLink>
 
-          <HashLink smooth to="/#contact">
+          <Link smooth to="/contact">
             <li>Contact</li>
-          </HashLink>
+          </Link>
 
           <HashLink smooth to="/#landing">
             <li>Home</li>
