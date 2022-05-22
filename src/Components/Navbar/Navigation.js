@@ -16,7 +16,7 @@ const Navigation = () => {
   // On click/toggle Hamburger Hook
   const [isOpen, setIsOpen] = useState(false);
 
-  // Detect scroll direction to change colour on scroll up
+  // Detect scroll direction to change navbar bg colour on scroll
   const [bgChange, setBgChange] = useState(false);
 
   const changeNavBarColor = () => {
@@ -28,6 +28,13 @@ const Navigation = () => {
   };
 
   window.addEventListener("scroll", changeNavBarColor);
+
+  // Closes mobile nav dropdown if it is open and the user scrolls down the page past 100px
+  window.onscroll = function () {
+    if (window.scrollY > 100) {
+      setIsOpen(false);
+    }
+  };
 
   return (
     <div>
