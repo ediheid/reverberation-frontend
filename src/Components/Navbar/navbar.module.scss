@@ -42,7 +42,7 @@
 .social-media-links-container {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 
   justify-self: flex-end;
 
@@ -52,7 +52,7 @@
 
 .social-media-links {
   color: $mid-grey;
-  font-size: 1.8rem;
+  font-size: 2rem;
 
   &:active {
     transform: scale(1.1);
