@@ -17,7 +17,7 @@
 
 // * Medium = Less than 992px - tablets
 @mixin medium {
-  @media (min-width: 769px) and (max-width: 992px) {
+  @media (min-width: 768px) and (max-width: 992px) {
     @content;
   }
 }
@@ -39,6 +39,13 @@
 // * Extra EXTRA Large = More than 1400px - medium desktops
 @mixin extra-extra-large {
   @media (min-width: 1400px) {
+    @content;
+  }
+}
+
+//  Special Media Query for extra small devices
+@mixin extra-extra-small {
+  @media (max-width: 320px) {
     @content;
   }
 }
