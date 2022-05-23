@@ -29,7 +29,7 @@ const LandingArea = () => {
 
         <h2 className={styles["sub-headings"]}>September 16-18 · 2022</h2>
 
-        <button className={styles["button-container"]}>
+        {/* <button className={styles["button-container"]}>
           <a
             className={styles["button-a-link"]}
             href="https://reverberation.loveyourartist.store/de/"
@@ -39,11 +39,14 @@ const LandingArea = () => {
           >
             Ticket Shop
           </a>
-        </button>
+        </button> */}
+
+        <button className={styles["explore-button"]}>Ticket Shop</button>
       </div>
 
       {/* <div className={styles["main-image-container"]}>
         <img
+
           className={styles["main-image"]}
           src={mainImage}
           alt="Banner.  Artwork by Artourette"
