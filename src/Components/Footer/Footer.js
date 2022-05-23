@@ -35,6 +35,19 @@ const Footer = () => {
           </Link>
         </span>
 
+        {/* Artworks by */}
+        <span className={styles["built-by"]}>
+          All posters and artworks by <br />
+          <a
+            href="https://artourette.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+            alt="Link to artist site"
+          >
+            Artourette
+          </a>
+        </span>
+
         {/* Built by */}
         <span className={styles["built-by"]}>
           Website designed and developed by <br />

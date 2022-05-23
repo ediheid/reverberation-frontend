@@ -50,13 +50,27 @@ const Impressum = () => {
         </span>
 
         <span className={styles["spans"]}>
+          Posters and Artworks:
+          <a
+            className={styles["anchor-tags"]}
+            href="https://artourette.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+            alt="Link to artist website"
+          >
+            {" "}
+            Artourette
+          </a>
+        </span>
+
+        <span className={styles["spans"]}>
           Web design & web development:
           <a
             className={styles["anchor-tags"]}
-            href="https://www.edithsdev.com/home/contact"
+            href="https://www.edithsdev.com/"
             target="_blank"
             rel="noreferrer noopener"
-            alt="Link to Edith Heidmann's contact page"
+            alt="Link to designer/developer website"
           >
             {" "}
             Edith Heidmann
