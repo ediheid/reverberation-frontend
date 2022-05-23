@@ -14,15 +14,15 @@ const Home = () => {
     <div className={styles["home-container"]}>
       <LandingArea />
 
-      <About />
-
       <LineUp />
 
       <Schedule />
 
+      <Tickets />
+
       <PastEvents />
 
-      <Tickets />
+      <About />
     </div>
   );
 };

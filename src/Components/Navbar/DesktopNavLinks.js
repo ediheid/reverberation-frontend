@@ -10,10 +10,6 @@ const DesktopNavLinks = () => {
     <>
       <div className={styles["desktop-nav-container"]}>
         <ul className={styles["desktop-nav-list-items"]}>
-          <HashLink smooth to="/#about">
-            <li>About</li>
-          </HashLink>
-
           <HashLink smooth to="/#line-up">
             <li>Line-up</li>
           </HashLink>
@@ -22,12 +18,16 @@ const DesktopNavLinks = () => {
             <li>Schedule</li>
           </HashLink>
 
+          <HashLink smooth to="/#tickets">
+            <li>Tickets</li>
+          </HashLink>
+
           <HashLink smooth to="/#past-events">
             <li>Past Events</li>
           </HashLink>
 
-          <HashLink smooth to="/#tickets">
-            <li>Tickets</li>
+          <HashLink smooth to="/#about">
+            <li>About</li>
           </HashLink>
 
           <Link smooth to="/contact">

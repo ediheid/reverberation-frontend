@@ -19,16 +19,6 @@ const MobileNavLinks = (props) => {
           animate={animateTo}
           transition={{ delay: 0.05 }}
         >
-          <HashLink smooth to="/#about" onClick={props.closeNavOnClick}>
-            <motion.li
-              initial={animateFrom}
-              animate={animateTo}
-              transition={{ delay: 0.08 }}
-            >
-              About
-            </motion.li>
-          </HashLink>
-
           <HashLink smooth to="/#line-up" onClick={props.closeNavOnClick}>
             <motion.li
               initial={animateFrom}
@@ -49,6 +39,16 @@ const MobileNavLinks = (props) => {
             </motion.li>
           </HashLink>
 
+          <HashLink smooth to="/#tickets" onClick={props.closeNavOnClick}>
+            <motion.li
+              initial={animateFrom}
+              animate={animateTo}
+              transition={{ delay: 0.2 }}
+            >
+              Tickets
+            </motion.li>
+          </HashLink>
+
           <HashLink smooth to="/#past-events" onClick={props.closeNavOnClick}>
             <motion.li
               initial={animateFrom}
@@ -59,13 +59,13 @@ const MobileNavLinks = (props) => {
             </motion.li>
           </HashLink>
 
-          <HashLink smooth to="/#tickets" onClick={props.closeNavOnClick}>
+          <HashLink smooth to="/#about" onClick={props.closeNavOnClick}>
             <motion.li
               initial={animateFrom}
               animate={animateTo}
-              transition={{ delay: 0.2 }}
+              transition={{ delay: 0.08 }}
             >
-              Tickets
+              About
             </motion.li>
           </HashLink>
 

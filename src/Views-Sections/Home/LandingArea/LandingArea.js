@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "../LandingArea/landing-area.module.scss";
 
-import mainImage from "../Static/wip2.png";
+import mainImage from "../Static/poster-bg.png";
 
 const LandingArea = () => {
   return (
