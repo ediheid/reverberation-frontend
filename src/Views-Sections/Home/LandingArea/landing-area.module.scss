@@ -3,9 +3,11 @@
 @import "../../../Styling/reset.module";
 
 .landing-area-container {
-  height: 80vh;
+  height: 100vh;
   width: 100vw;
   //   height: 100vh;
+
+  background-color: $black;
 }
 
 .landing-area-extra-content {
@@ -14,7 +16,7 @@
   justify-content: center;
   align-items: center;
 
-  height: 100%;
+  height: 70%;
   width: 100%;
 
   background-color: $black;
@@ -23,7 +25,7 @@
 // Headings
 
 .main-heading {
-  font-size: 3.7rem;
+  font-size: 3.4rem;
   text-align: center;
 
   font-family: $intro-font-family;
@@ -235,7 +237,7 @@
 
 @include small {
   .landing-area-container {
-    height: 85vh;
+    background-color: $black;
   }
 
   .main-heading {
@@ -249,7 +251,7 @@
 
 @include medium {
   .landing-area-container {
-    height: 90vh;
+    background-color: $black;
   }
 
   .main-heading {
@@ -263,7 +265,11 @@
 
 @include large {
   .landing-area-container {
-    height: 100vh;
+    background-color: $black;
+  }
+
+  .landing-area-extra-content {
+    height: 100%;
   }
 
   .main-heading {
@@ -277,7 +283,11 @@
 
 @include extra-large {
   .landing-area-container {
-    height: 100vh;
+    background-color: $black;
+  }
+
+  .landing-area-extra-content {
+    height: 100%;
   }
   .main-heading {
     font-size: 7.5rem;
@@ -290,7 +300,11 @@
 
 @include extra-extra-large {
   .landing-area-container {
-    height: 100vh;
+    background-color: $black;
+  }
+
+  .landing-area-extra-content {
+    height: 100%;
   }
 
   .main-heading {
