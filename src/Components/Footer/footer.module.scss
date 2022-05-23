@@ -12,9 +12,9 @@
 
   width: 100vw;
   height: auto;
-  background-color: lighten($black, 15%);
+  background-color: $footer-bg;
 
-  padding: 8rem 0 8rem 0;
+  padding: 10rem 0 5rem 0;
 
   // margin-top: 50rem;
 }
@@ -31,7 +31,7 @@
 }
 
 .social-media-links {
-  color: $mid-grey;
+  color: $footer-social-media-links;
   font-size: 2.5rem;
 
   &:active {
@@ -50,9 +50,45 @@
   }
 }
 
+// Button
+
+.button-container {
+  margin-bottom: 3.5rem;
+  height: 4rem;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: $footer-contact-button-colour 0.3rem solid;
+  background-color: transparent;
+  border-radius: 0.25em;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 $footer-contact-button-colour,
+    0 0 0.5em 0 $footer-contact-button-colour;
+  transition: all 0.3s;
+  &:active {
+    transform: scale(1.1);
+    transition: ease-in-out;
+  }
+}
+
+.button-a-link {
+  color: $footer-contact-button-colour;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+@media (hover: hover) {
+  .button-container:hover {
+    transform: scale(1.1);
+    transition: ease-in-out;
+  }
+}
+
 .copyright-span {
   width: 60%;
-  color: $mid-grey;
+  color: $footer-text;
   font-weight: 400;
   font-size: 1.4rem;
 
@@ -65,7 +101,7 @@
 
 .impressum-link {
   text-decoration: none;
-  color: $mid-grey;
+  color: $footer-links;
 
   font-family: $main-font-semi-bold-font-family;
 }
@@ -80,13 +116,13 @@
   font-size: 1.3rem;
   text-align: center;
   font-family: $main-font-thin-font-family;
-  color: $mid-grey;
+  color: $footer-text;
   line-height: 2rem;
 
   a {
     text-decoration: none;
     font-weight: bold;
-    color: $mid-grey;
+    color: $footer-links;
     font-family: $main-font-semi-bold-font-family;
   }
 }
