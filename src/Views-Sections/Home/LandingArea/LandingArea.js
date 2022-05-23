@@ -42,13 +42,13 @@ const LandingArea = () => {
         </button>
       </div>
 
-      <div className={styles["main-image-container"]}>
+      {/* <div className={styles["main-image-container"]}>
         <img
           className={styles["main-image"]}
           src={mainImage}
           alt="Banner.  Artwork by Artourette"
         ></img>
-      </div>
+      </div> */}
     </div>
   );
 };
