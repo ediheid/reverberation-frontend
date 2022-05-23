@@ -1,0 +1,18 @@
+@import "../../../Styling/variables.module";
+@import "../../../Styling/mixins.module";
+@import "../../../Styling/reset.module";
+
+.line-up-container {
+  width: 100vw;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: $black;
+
+  padding: 6rem 0 6rem 0;
+
+  color: $mid-grey;
+}
