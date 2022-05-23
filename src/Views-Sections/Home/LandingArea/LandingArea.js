@@ -27,7 +27,7 @@ const LandingArea = () => {
           Music & arts festival in Dresden
         </h2>
 
-        <h2 className={styles["sub-headings"]}>September 16-18 - 2022</h2>
+        <h2 className={styles["sub-headings"]}>September 16-18 · 2022</h2>
 
         <button className={styles["button-container"]}>
           <a
