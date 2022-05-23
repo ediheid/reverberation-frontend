@@ -1,0 +1,93 @@
+@import "../../../Styling/variables.module";
+@import "../../../Styling/mixins.module";
+@import "../../../Styling/reset.module";
+
+.past-events-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100vw;
+  height: auto;
+  background-color: $black;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 90%;
+  max-width: 150rem;
+
+  //   border: solid red 2px;
+
+  padding: 6rem 0 6rem 0;
+}
+
+.images-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-img {
+  object-fit: contain;
+
+  max-width: 100%;
+
+  margin: 10rem 0 5.5rem 0;
+
+  &:nth-of-type(1) {
+    margin-top: 5rem;
+  }
+}
+
+.poster-img {
+  width: 60%;
+}
+
+// ? Media Queries
+
+@include small {
+  .content-container {
+    width: 85%;
+  }
+}
+
+@include medium {
+  .content-container {
+    width: 80%;
+  }
+}
+
+@include large {
+  .content-container {
+    width: 80%;
+  }
+
+  .text-img {
+    margin-bottom: 6rem;
+  }
+}
+
+@include extra-large {
+  .content-container {
+    width: 70%;
+  }
+
+  .text-img {
+    margin-bottom: 6rem;
+  }
+}
+
+@include extra-extra-large {
+  .content-container {
+    width: 70%;
+  }
+
+  .text-img {
+    margin-bottom: 7rem;
+  }
+}
