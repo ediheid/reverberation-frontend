@@ -18,7 +18,7 @@
 }
 
 .section-heading {
-  @include psych-sub-heading;
+  @include section-headings;
 
   padding-bottom: 3rem;
 }
