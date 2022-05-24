@@ -1,0 +1,19 @@
+@import "../../../Styling/variables.module";
+@import "../../../Styling/mixins.module";
+@import "../../../Styling/reset.module";
+
+.schedule-section-container {
+  width: 100vw;
+
+  // ! Will be auto once I have content
+  height: 50rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.schedule-heading {
+  @include psych-sub-heading;
+}

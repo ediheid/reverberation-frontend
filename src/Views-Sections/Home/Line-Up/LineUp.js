@@ -5,7 +5,7 @@ import styles from "../Line-Up/line-up.module.scss";
 const LineUp = () => {
   return (
     <div className={styles["line-up-container"]} id="line-up">
-      <h2 className={styles["section-heading"]}>To be announced</h2>
+      <h2 className={styles["section-heading"]}>Line-up</h2>
 
       <div className={styles["bands-container"]}>
         {/* // ! Will make an array of bands and info and then map below - this is just for testing purposes */}
