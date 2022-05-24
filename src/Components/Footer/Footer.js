@@ -12,19 +12,6 @@ const Footer = () => {
   return (
     <>
       <div className={styles["footer-container"]}>
-        {/* <button className={styles["button-container"]}>
-          <Link
-            className={styles["button-a-link"]}
-            smooth
-            to="/contact"
-            // href="https://reverberation.loveyourartist.store/de/"
-            // target="_blank"
-            // rel="noopener noreferrer"
-            alt="Contact section"
-          >
-            Contact
-          </Link>
-        </button> */}
         {/* Copyright and Impressum */}
         <span className={styles["copyright-span"]}>
           &copy; Dresden Psych Family e.V. {currentYear}
@@ -48,7 +35,7 @@ const Footer = () => {
 
         {/* Artworks by */}
         <span className={styles["built-by"]}>
-          All posters and artworks by <br />
+          Festival posters and artworks by <br />
           <a
             href="https://artourette.com/"
             target="_blank"
@@ -58,6 +45,20 @@ const Footer = () => {
             Artourette
           </a>
         </span>
+
+        {/* Memorial wall by */}
+        <span className={styles["built-by"]}>
+          Memorial wall banners by <br />
+          <a
+            href="https://instagram.com/fluxxwildly?igshid=YmMyMTA2M2Y="
+            target="_blank"
+            rel="noreferrer noopener"
+            alt="Link to artist site"
+          >
+            Flux Wildly
+          </a>
+        </span>
+
         {/* Built by */}
         <span className={styles["built-by"]}>
           Website designed and developed by <br />

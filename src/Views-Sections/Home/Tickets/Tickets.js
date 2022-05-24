@@ -8,8 +8,16 @@ const Tickets = () => {
       <div className={styles["bg-img-container"]}>
         <div className={styles["content-container"]}>
           <h2 className={styles["tickets-heading"]}>
-            Tickets section will go here
+            Early bird tickets available from 3.6.22
           </h2>
+          <a
+            href="https://reverberation.loveyourartist.store/de/"
+            target="_blank"
+            rel="noopener noreferrer"
+            alt="Link to Ticket Shop"
+          >
+            <button className={styles["ticket-button"]}>To ticket shop</button>
+          </a>
         </div>
       </div>
     </div>

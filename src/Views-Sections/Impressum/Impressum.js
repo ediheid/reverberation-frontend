@@ -50,7 +50,7 @@ const Impressum = () => {
         </span>
 
         <span className={styles["spans"]}>
-          Posters and Artworks:
+          Festival posters (excluding 2021) and artworks by
           <a
             className={styles["anchor-tags"]}
             href="https://artourette.com/"
