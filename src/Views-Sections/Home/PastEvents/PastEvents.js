@@ -23,64 +23,14 @@ import text2021 from "../PastEvents/Static/2021-text.png";
 import poster2021 from "../PastEvents/Static/2021-poster.png";
 
 const years = [
-  // 2014
+  // 2021
   {
-    id: 2014,
-    textSrc: text2014,
-    textAlt: "2014 information text banner",
-    posterSrc: poster2014,
-    posterAlt:
-      "2014 festival poster - green background with illustration of elephant and yellow writing",
-  },
+    id: 2021,
+    textSrc: text2021,
+    textAlt: "2021 information text banner",
 
-  // 2015
-  {
-    id: 2015,
-    textSrc: text2015,
-    textAlt: "2015 information text banner",
-    posterSrc: poster2015,
-    posterAlt:
-      "2015 festival poster - painted background with illustration of two elephants and white writing",
-  },
-
-  // 2016
-  {
-    id: 2016,
-    textSrc: text2016,
-    textAlt: "2016 information text banner",
-
-    posterSrc: poster2016,
-    posterAlt: "2016 festival poster - ",
-  },
-
-  // 2017
-  {
-    id: 2017,
-    textSrc: text2017,
-    textAlt: "2017 information text banner",
-
-    posterSrc: poster2017,
-    posterAlt: "2017 festival poster - ",
-  },
-
-  // 2018
-  {
-    id: 2018,
-    textSrc: text2018,
-    textAlt: "2018 information text banner",
-
-    posterSrc: poster2018,
-    posterAlt: "2018 festival poster - ",
-  },
-
-  // 2019
-  {
-    id: 2019,
-    textSrc: text2019,
-    textAlt: "2019 information text banner",
-
-    posterSrc: poster2019,
-    posterAlt: "2019 festival poster - ",
+    posterSrc: poster2021,
+    posterAlt: "2021 festival poster - ",
   },
 
   // 2020
@@ -93,14 +43,64 @@ const years = [
     posterAlt: "2020 festival poster - ",
   },
 
-  // 2021
+  // 2019
   {
-    id: 2021,
-    textSrc: text2021,
-    textAlt: "2021 information text banner",
+    id: 2019,
+    textSrc: text2019,
+    textAlt: "2019 information text banner",
 
-    posterSrc: poster2021,
-    posterAlt: "2021 festival poster - ",
+    posterSrc: poster2019,
+    posterAlt: "2019 festival poster - ",
+  },
+
+  // 2018
+  {
+    id: 2018,
+    textSrc: text2018,
+    textAlt: "2018 information text banner",
+
+    posterSrc: poster2018,
+    posterAlt: "2018 festival poster - ",
+  },
+
+  // 2017
+  {
+    id: 2017,
+    textSrc: text2017,
+    textAlt: "2017 information text banner",
+
+    posterSrc: poster2017,
+    posterAlt: "2017 festival poster - ",
+  },
+
+  // 2016
+  {
+    id: 2016,
+    textSrc: text2016,
+    textAlt: "2016 information text banner",
+
+    posterSrc: poster2016,
+    posterAlt: "2016 festival poster - ",
+  },
+
+  // 2015
+  {
+    id: 2015,
+    textSrc: text2015,
+    textAlt: "2015 information text banner",
+    posterSrc: poster2015,
+    posterAlt:
+      "2015 festival poster - painted background with illustration of two elephants and white writing",
+  },
+
+  // 2014
+  {
+    id: 2014,
+    textSrc: text2014,
+    textAlt: "2014 information text banner",
+    posterSrc: poster2014,
+    posterAlt:
+      "2014 festival poster - green background with illustration of elephant and yellow writing",
   },
 ];
 
