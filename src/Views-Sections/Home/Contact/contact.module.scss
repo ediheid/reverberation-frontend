@@ -1,0 +1,20 @@
+@import "../../../Styling/variables.module";
+@import "../../../Styling/mixins.module";
+@import "../../../Styling/reset.module";
+
+.contact-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  // Todo: decide on bg or bg colour depending on what content will be there
+
+  width: 100vw;
+  // ! Will be auto
+  height: 50rem;
+}
+
+.contact-heading {
+  @include psych-sub-heading;
+}
