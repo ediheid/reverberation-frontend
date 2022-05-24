@@ -118,15 +118,15 @@ const PastEvents = () => {
         {years.map((year) => (
           <div className={styles["images-content-container"]}>
             <img
-              className={styles["poster-img"]}
-              src={year.posterSrc}
-              alt={year.posterAlt}
-            ></img>
-
-            <img
               className={styles["text-img"]}
               src={year.textSrc}
               alt={year.textAlt}
+            ></img>
+
+            <img
+              className={styles["poster-img"]}
+              src={year.posterSrc}
+              alt={year.posterAlt}
             ></img>
           </div>
         ))}
