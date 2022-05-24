@@ -6,21 +6,24 @@
   width: 100vw;
   height: auto;
 
-  margin: 10rem 0 10rem 0;
+  padding: 15rem 0 10rem 0;
 
   display: flex;
   justify-content: center;
+
+  background-image: url("../../Views-Sections/Home/Static/poster-bg.png");
 }
 
 .content-container {
   width: 80%;
   max-width: 200rem;
 
+  padding: 5rem;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-  border: solid 3px red;
+  //   background-color: $black;
 }
 
 .sub-heading-container {
@@ -28,6 +31,12 @@
 
   display: flex;
   justify-content: center;
+}
+
+.section-headings {
+  @include section-headings;
+
+  color: $headings-gallery-colour;
 }
 
 .img-container {

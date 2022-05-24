@@ -151,7 +151,7 @@ const Gallery = () => {
     <div className={styles["gallery-page-container"]}>
       <div className={styles["content-container"]}>
         <div className={styles["sub-heading-container"]}>
-          <h3>Day 1</h3>
+          <h3 className={styles["section-headings"]}>2021 · Day 1</h3>
         </div>
 
         {photosDay1.map((photo) => (
