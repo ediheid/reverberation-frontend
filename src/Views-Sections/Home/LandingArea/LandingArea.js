@@ -2,8 +2,6 @@ import React from "react";
 
 import styles from "../LandingArea/landing-area.module.scss";
 
-import mainImage from "../Static/poster-bg.png";
-
 const LandingArea = () => {
   return (
     <div className={styles["landing-area-container"]} id="landing">
@@ -29,35 +27,15 @@ const LandingArea = () => {
 
         <h2 className={styles["sub-headings"]}>September 16-18 · 2022</h2>
 
-        {/* <button className={styles["button-container"]}>
-          <a
-            className={styles["button-a-link"]}
-            href="https://reverberation.loveyourartist.store/de/"
-            target="_blank"
-            rel="noopener noreferrer"
-            alt="Ticket Shop"
-          >
-            Ticket Shop
-          </a>
-        </button> */}
         <a
           href="https://reverberation.loveyourartist.store/de/"
           target="_blank"
           rel="noopener noreferrer"
           alt="Link to Ticket Shop"
         >
-          <button className={styles["explore-button"]}>Ticket Shop</button>
+          <button className={styles["main-button"]}>Ticket Shop</button>
         </a>
       </div>
-
-      {/* <div className={styles["main-image-container"]}>
-        <img
-
-          className={styles["main-image"]}
-          src={mainImage}
-          alt="Banner.  Artwork by Artourette"
-        ></img>
-      </div> */}
     </div>
   );
 };

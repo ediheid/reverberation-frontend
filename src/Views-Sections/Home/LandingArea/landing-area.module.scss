@@ -113,50 +113,50 @@
 
 // Button
 
-.button-container {
-  margin-top: 5rem;
-  height: 4rem;
-  width: 15rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  border: $landing-ticket-button-colour 0.3rem solid;
-  background-color: transparent;
-  border-radius: 0.25em;
-  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
-  box-shadow: inset 0 0 0.5em 0 $landing-ticket-button-colour,
-    0 0 0.5em 0 $landing-ticket-button-colour;
-  transition: all 0.3s;
-  &:active {
-    background-color: $landing-ticket-button-colour;
-  }
-}
+// .button-container {
+//   margin-top: 5rem;
+//   height: 4rem;
+//   width: 15rem;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   cursor: pointer;
+//   border: $landing-ticket-button-colour 0.3rem solid;
+//   background-color: transparent;
+//   border-radius: 0.25em;
+//   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+//   box-shadow: inset 0 0 0.5em 0 $landing-ticket-button-colour,
+//     0 0 0.5em 0 $landing-ticket-button-colour;
+//   transition: all 0.3s;
+//   &:active {
+//     background-color: $landing-ticket-button-colour;
+//   }
+// }
 
-.button-a-link {
-  color: $landing-ticket-button-colour;
-  text-decoration: none;
-  font-size: 2rem;
-  &:active {
-    color: $white-grey;
-  }
-}
+// .button-a-link {
+//   color: $landing-ticket-button-colour;
+//   text-decoration: none;
+//   font-size: 2rem;
+//   &:active {
+//     color: $white-grey;
+//   }
+// }
 
-@media (hover: hover) {
-  .button-container:hover {
-    background-color: $landing-ticket-button-colour;
-    transform: scale(1.1);
-  }
+// @media (hover: hover) {
+//   .button-container:hover {
+//     background-color: $landing-ticket-button-colour;
+//     transform: scale(1.1);
+//   }
 
-  .button-a-link:hover {
-    color: $white-grey;
-  }
-}
+//   .button-a-link:hover {
+//     color: $white-grey;
+//   }
+// }
 
-// ! Testing explore button
+// Button
 
 /* From uiverse.io */
-.explore-button {
+.main-button {
   --glow-color: rgb(217, 176, 255);
   --glow-spread-color: rgba(191, 123, 255, 0.781);
   --enhanced-glow-color: rgb(231, 206, 255);
@@ -179,7 +179,7 @@
   transition: all 0.3s;
 }
 
-.explore-button::after {
+.main-button::after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -193,7 +193,7 @@
   transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
 }
 
-.explore-button:hover {
+.main-button:hover {
   color: var(--btn-color);
   background-color: var(--glow-color);
   box-shadow: 0 0 1em 0.25em var(--glow-color),
@@ -201,27 +201,11 @@
     inset 0 0 0.75em 0.25em var(--glow-color);
 }
 
-.explore-button:active {
+.main-button:active {
   box-shadow: 0 0 0.6em 0.25em var(--glow-color),
     0 0 2.5em 2em var(--glow-spread-color),
     inset 0 0 0.5em 0.25em var(--glow-color);
 }
-
-// Image section
-
-// Todo: Style once I have new poster
-
-// .main-image-container {
-//   // border: 1rem solid $black;
-//   height: 50vh;
-// }
-
-// .main-image {
-//   width: 100%;
-//   height: 100%;
-//   object-fit: cover;
-//   object-position: top;
-// }
 
 // ? Media queries
 
