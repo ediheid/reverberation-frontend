@@ -69,7 +69,7 @@ const MobileNavLinks = (props) => {
             </motion.li>
           </HashLink>
 
-          <Link smooth to="/contact" onClick={props.closeNavOnClick}>
+          <HashLink smooth to="/#contact" onClick={props.closeNavOnClick}>
             <motion.li
               initial={animateFrom}
               animate={animateTo}
@@ -77,7 +77,7 @@ const MobileNavLinks = (props) => {
             >
               Contact
             </motion.li>
-          </Link>
+          </HashLink>
 
           <HashLink smooth to="/#landing" onClick={props.closeNavOnClick}>
             <motion.li

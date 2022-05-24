@@ -44,7 +44,7 @@ const App = () => {
 
             <Route path="/dsgvo" exact element={<Dsgvo />} />
 
-            <Route path="/contact" exact element={<Contact />} />
+            {/* <Route path="/contact" exact element={<Contact />} /> */}
 
             {/*  Replaces Redirect in react-router-dom 6 */}
 

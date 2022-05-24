@@ -30,9 +30,9 @@ const DesktopNavLinks = () => {
             <li>About</li>
           </HashLink>
 
-          <Link smooth to="/contact">
+          <HashLink smooth to="/#contact">
             <li>Contact</li>
-          </Link>
+          </HashLink>
 
           <HashLink smooth to="/#landing">
             <li>Home</li>

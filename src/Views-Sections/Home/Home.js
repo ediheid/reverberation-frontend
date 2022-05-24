@@ -7,6 +7,7 @@ import Schedule from "./Schedule/Schedule";
 import PastEvents from "./PastEvents/PastEvents";
 import Tickets from "./Tickets/Tickets";
 import About from "./About/About";
+import Contact from "./Contact/Contact";
 
 const Home = () => {
   return (
@@ -23,6 +24,8 @@ const Home = () => {
       <PastEvents />
 
       <About />
+
+      <Contact />
     </div>
   );
 };

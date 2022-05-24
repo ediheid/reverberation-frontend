@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 import { FaFacebookF } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
@@ -28,9 +29,9 @@ const Footer = () => {
             <b>DSGVO</b>
           </Link>
 
-          <Link to="/contact" className={styles["footer-links"]}>
+          <HashLink to="/#contact" className={styles["footer-links"]}>
             <b>CONTACT</b>
-          </Link>
+          </HashLink>
         </div>
 
         {/* Artworks by */}
