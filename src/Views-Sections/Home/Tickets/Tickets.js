@@ -4,11 +4,12 @@ import styles from "../Tickets/tickets.module.scss";
 
 const Tickets = () => {
   return (
-    <div className={styles["tickets-section-container"]}>
+    <div className={styles["tickets-section-container"]} id="tickets">
       <div className={styles["bg-img-container"]}>
         <div className={styles["content-container"]}>
-          {" "}
-          Tickets section will go here
+          <h2 className={styles["tickets-heading"]}>
+            Tickets section will go here
+          </h2>
         </div>
       </div>
     </div>
