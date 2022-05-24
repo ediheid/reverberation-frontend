@@ -2,7 +2,7 @@
 @import "../../../Styling/mixins.module";
 @import "../../../Styling/reset.module";
 
-.tickets-section-container {
+.about-section-container {
   width: 100vw;
   height: auto;
 
@@ -42,7 +42,7 @@
   padding: 8rem 5rem 5rem 5rem;
 }
 
-.tickets-heading {
+.about-heading {
   @include psych-sub-heading;
 }
 
