@@ -34,6 +34,10 @@ const DesktopNavLinks = () => {
             <li>Contact</li>
           </HashLink>
 
+          <Link smooth to="/gallery">
+            <li>Gallery</li>
+          </Link>
+
           <HashLink smooth to="/#landing">
             <li>Home</li>
           </HashLink>

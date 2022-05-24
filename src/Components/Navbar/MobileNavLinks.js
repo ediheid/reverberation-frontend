@@ -23,7 +23,7 @@ const MobileNavLinks = (props) => {
             <motion.li
               initial={animateFrom}
               animate={animateTo}
-              transition={{ delay: 0.11 }}
+              transition={{ delay: 0.08 }}
             >
               Line-up
             </motion.li>
@@ -43,7 +43,7 @@ const MobileNavLinks = (props) => {
             <motion.li
               initial={animateFrom}
               animate={animateTo}
-              transition={{ delay: 0.2 }}
+              transition={{ delay: 0.17 }}
             >
               Tickets
             </motion.li>
@@ -53,7 +53,7 @@ const MobileNavLinks = (props) => {
             <motion.li
               initial={animateFrom}
               animate={animateTo}
-              transition={{ delay: 0.17 }}
+              transition={{ delay: 0.2 }}
             >
               Past Events
             </motion.li>
@@ -63,7 +63,7 @@ const MobileNavLinks = (props) => {
             <motion.li
               initial={animateFrom}
               animate={animateTo}
-              transition={{ delay: 0.08 }}
+              transition={{ delay: 0.23 }}
             >
               About
             </motion.li>
@@ -73,17 +73,27 @@ const MobileNavLinks = (props) => {
             <motion.li
               initial={animateFrom}
               animate={animateTo}
-              transition={{ delay: 0.23 }}
+              transition={{ delay: 0.27 }}
             >
               Contact
             </motion.li>
           </HashLink>
 
+          <Link to="/gallery" onClick={props.closeNavOnClick}>
+            <motion.li
+              initial={animateFrom}
+              animate={animateTo}
+              transition={{ delay: 0.3 }}
+            >
+              Gallery
+            </motion.li>
+          </Link>
+
           <HashLink smooth to="/#landing" onClick={props.closeNavOnClick}>
             <motion.li
               initial={animateFrom}
               animate={animateTo}
-              transition={{ delay: 0.26 }}
+              transition={{ delay: 0.32 }}
             >
               Home
             </motion.li>

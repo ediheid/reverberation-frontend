@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import styles from "../PastEvents/past-events.module.scss";
 
@@ -129,6 +130,10 @@ const PastEvents = () => {
             ></img>
           </div>
         ))}
+
+        <Link to="/gallery" alt="Link to festival image gallery page">
+          <button className={styles["links-button"]}>Festival Gallery</button>
+        </Link>
       </div>
     </div>
   );

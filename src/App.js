@@ -15,9 +15,9 @@ import Home from "./Views-Sections/Home/Home";
 import Impressum from "./Views-Sections/Impressum/Impressum";
 import ScrollToTop from "../src/Components/ScrollToTop/ScrollToTop";
 import ToTopButton from "./Components/ToTopButton/ToTopButton";
-import Contact from "./Views-Sections/Home/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import Dsgvo from "./Views-Sections/DSGVO/Dsgvo";
+import Gallery from "./Views-Sections/Gallery/Gallery";
 
 const App = () => {
   // Scroll to top on browser refresh
@@ -44,7 +44,7 @@ const App = () => {
 
             <Route path="/dsgvo" exact element={<Dsgvo />} />
 
-            {/* <Route path="/contact" exact element={<Contact />} /> */}
+            <Route path="/gallery" exact element={<Gallery />} />
 
             {/*  Replaces Redirect in react-router-dom 6 */}
 
