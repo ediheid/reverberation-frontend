@@ -19,6 +19,8 @@
 
 .section-heading {
   @include psych-sub-heading;
+
+  padding-bottom: 3rem;
 }
 
 .bands-container {
@@ -26,7 +28,7 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  margin: 10rem 0 5rem 0;
+  margin: 10rem 0 10rem 0;
 
   width: 80%;
   height: auto;
