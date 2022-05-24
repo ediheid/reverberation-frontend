@@ -49,3 +49,11 @@
     @content;
   }
 }
+
+// ? UI
+
+@mixin psych-sub-heading {
+  font-size: 3rem;
+  font-family: $section-subheadings;
+  letter-spacing: 0.5rem;
+}

@@ -12,7 +12,11 @@
 
   background-color: $black;
 
-  padding: 10rem 0 6rem 0;
+  padding: 6rem 0 6rem 0;
 
   color: $mid-grey;
+}
+
+.section-heading {
+  @include psych-sub-heading;
 }

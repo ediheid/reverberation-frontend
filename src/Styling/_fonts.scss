@@ -158,3 +158,23 @@
   src: local("Sora ExtraBold"),
     url("../Fonts/sora-3-cufonfonts-webfont/Sora-ExtraBold.woff") format("woff");
 }
+
+// PsychoArt
+
+@font-face {
+  font-family: "Psychoart Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Psychoart Regular"),
+    url("../Fonts/psychoart-font/PsychoartRegular-jEPJ7.ttf");
+}
+
+// Bougerose display
+
+@font-face {
+  font-family: "bougerose display";
+  font-style: normal;
+  font-weight: normal;
+  src: local("bougerose display"),
+    url("../Fonts/psychoart-font/bougerose-display.otf");
+}
