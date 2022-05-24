@@ -17,6 +17,7 @@ import ScrollToTop from "../src/Components/ScrollToTop/ScrollToTop";
 import ToTopButton from "./Components/ToTopButton/ToTopButton";
 import Contact from "./Views-Sections/Home/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
+import Dsgvo from "./Views-Sections/DSGVO/Dsgvo";
 
 const App = () => {
   // Scroll to top on browser refresh
@@ -40,6 +41,8 @@ const App = () => {
             <Route path="/" exact element={<Home />} />
 
             <Route path="/impressum" exact element={<Impressum />} />
+
+            <Route path="/dsgvo" exact element={<Dsgvo />} />
 
             <Route path="/contact" exact element={<Contact />} />
 

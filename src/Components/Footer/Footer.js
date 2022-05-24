@@ -25,15 +25,26 @@ const Footer = () => {
             Contact
           </Link>
         </button> */}
-
         {/* Copyright and Impressum */}
         <span className={styles["copyright-span"]}>
-          &copy; Dresden Psych Family e.V. {currentYear} | {/* // ! */}
-          {/* // Todo: Add impressum page link */}{" "}
-          <Link to="/impressum" className={styles["impressum-link"]}>
+          &copy; Dresden Psych Family e.V. {currentYear}
+        </span>
+
+        {/*  Impressum */}
+
+        <div className={styles["links-container"]}>
+          <Link to="/impressum" className={styles["footer-links"]}>
             <b>IMPRESSUM</b>{" "}
           </Link>
-        </span>
+
+          <Link to="/dsgvo" className={styles["footer-links"]}>
+            <b>DSGVO</b>
+          </Link>
+
+          <Link to="/contact" className={styles["footer-links"]}>
+            <b>CONTACT</b>
+          </Link>
+        </div>
 
         {/* Artworks by */}
         <span className={styles["built-by"]}>
@@ -47,7 +58,6 @@ const Footer = () => {
             Artourette
           </a>
         </span>
-
         {/* Built by */}
         <span className={styles["built-by"]}>
           Website designed and developed by <br />
@@ -60,7 +70,6 @@ const Footer = () => {
             Edith Heidmann
           </a>
         </span>
-
         {/* Social media links */}
         <div className={styles["social-media-links-container"]}>
           <a
