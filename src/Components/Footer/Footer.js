@@ -53,7 +53,7 @@ const Footer = () => {
             href="https://instagram.com/fluxxwildly?igshid=YmMyMTA2M2Y="
             target="_blank"
             rel="noreferrer noopener"
-            alt="Link to artist site"
+            alt="Link to Flux Wildly instagram"
           >
             Flux Wildly
           </a>

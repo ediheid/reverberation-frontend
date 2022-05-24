@@ -18,8 +18,7 @@ import text2019 from "../PastEvents/Static/2019-text.png";
 import poster2019 from "../PastEvents/Static/2019-poster.png";
 import text2020 from "../PastEvents/Static/2020-text.png";
 import poster2020 from "../PastEvents/Static/2020-poster.png";
-// !!! Missing text for 2021..
-// import text2021 from "../PastEvents/Static/2021-text.png";
+import text2021 from "../PastEvents/Static/2021-text.png";
 import poster2021 from "../PastEvents/Static/2021-poster.png";
 
 const years = [
@@ -96,10 +95,8 @@ const years = [
   // 2021
   {
     id: 2021,
-
-    // !! Missing text for 2021..
-    // textSrc: text2021,
-    // textAlt: "2021 information text banner",
+    textSrc: text2021,
+    textAlt: "2021 information text banner",
 
     posterSrc: poster2021,
     posterAlt: "2021 festival poster - ",
@@ -120,14 +117,15 @@ const PastEvents = () => {
         {years.map((year) => (
           <div className={styles["images-content-container"]}>
             <img
-              className={styles["text-img"]}
-              src={year.textSrc}
-              alt={year.textAlt}
-            ></img>
-            <img
               className={styles["poster-img"]}
               src={year.posterSrc}
               alt={year.posterAlt}
+            ></img>
+
+            <img
+              className={styles["text-img"]}
+              src={year.textSrc}
+              alt={year.textAlt}
             ></img>
           </div>
         ))}
