@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <>
       <div className={styles["footer-container"]}>
-        <button className={styles["button-container"]}>
+        {/* <button className={styles["button-container"]}>
           <Link
             className={styles["button-a-link"]}
             smooth
@@ -24,7 +24,7 @@ const Footer = () => {
           >
             Contact
           </Link>
-        </button>
+        </button> */}
 
         {/* Copyright and Impressum */}
         <span className={styles["copyright-span"]}>

@@ -52,32 +52,32 @@
 
 // Button
 
-.button-container {
-  margin-bottom: 3.5rem;
-  height: 4rem;
-  width: 10rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  border: $footer-contact-button-colour 0.3rem solid;
-  background-color: transparent;
-  border-radius: 0.25em;
-  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
-  box-shadow: inset 0 0 0.5em 0 $footer-contact-button-colour,
-    0 0 0.5em 0 $footer-contact-button-colour;
-  transition: all 0.3s;
-  &:active {
-    transform: scale(1.1);
-    transition: ease-in-out;
-  }
-}
+// .button-container {
+//   margin-bottom: 3.5rem;
+//   height: 4rem;
+//   width: 10rem;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   cursor: pointer;
+//   border: $footer-contact-button-colour 0.3rem solid;
+//   background-color: transparent;
+//   border-radius: 0.25em;
+//   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+//   box-shadow: inset 0 0 0.5em 0 $footer-contact-button-colour,
+//     0 0 0.5em 0 $footer-contact-button-colour;
+//   transition: all 0.3s;
+//   &:active {
+//     transform: scale(1.1);
+//     transition: ease-in-out;
+//   }
+// }
 
-.button-a-link {
-  color: $footer-contact-button-colour;
-  text-decoration: none;
-  font-size: 2rem;
-}
+// .button-a-link {
+//   color: $footer-contact-button-colour;
+//   text-decoration: none;
+//   font-size: 2rem;
+// }
 
 @media (hover: hover) {
   .button-container:hover {
