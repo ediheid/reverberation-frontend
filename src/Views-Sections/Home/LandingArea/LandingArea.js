@@ -40,8 +40,14 @@ const LandingArea = () => {
             Ticket Shop
           </a>
         </button> */}
-
-        <button className={styles["explore-button"]}>Ticket Shop</button>
+        <a
+          href="https://reverberation.loveyourartist.store/de/"
+          target="_blank"
+          rel="noopener noreferrer"
+          alt="Link to Ticket Shop"
+        >
+          <button className={styles["explore-button"]}>Ticket Shop</button>
+        </a>
       </div>
 
       {/* <div className={styles["main-image-container"]}>
