@@ -40,8 +40,11 @@
   text-align: center;
   padding-top: 2rem;
   font-family: $sub-headings;
-
   color: $sand;
+
+  &:nth-of-type(1) {
+    padding-top: 3rem;
+  }
 }
 
 .text-effect {
