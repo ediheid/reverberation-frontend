@@ -29,8 +29,12 @@
   //   background-color: $black;
 }
 
+.list-container {
+  width: 100vw;
+}
+
 .sub-heading-container {
-  width: 100%;
+  width: 100vw;
 
   display: flex;
   justify-content: center;
