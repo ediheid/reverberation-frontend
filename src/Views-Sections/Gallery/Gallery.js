@@ -4,6 +4,7 @@ import styles from "../Gallery/gallery.module.scss";
 
 import Gallery2021Day1 from "./Gallery2021Day1";
 import Gallery2021Day2 from "./Gallery2021Day2";
+import Gallery2021Day3 from "./Gallery2021Day3";
 
 const Gallery = () => {
   const [page, setPage] = useState("");
@@ -17,6 +18,10 @@ const Gallery = () => {
       id: "2021Day2",
       component: <Gallery2021Day2 />,
     },
+    {
+      id: "2021Day3",
+      component: <Gallery2021Day3 />,
+    },
   ];
 
   // Todo: get index of object and pass into switch statement
@@ -24,12 +29,15 @@ const Gallery = () => {
   let pageClick = (event) => {
     // event.preventDefault();
 
-    switch (event.target.name) {
+    switch (event.target.value) {
       case "2021Day1":
         setPage(pages[0].component);
         break;
       case "2021Day2":
         setPage(pages[1].component);
+        break;
+      case "2021Day3":
+        setPage(pages[2].component);
         break;
       default:
         break;
@@ -47,24 +55,28 @@ const Gallery = () => {
           <ul>
             <h3>2021</h3>
             <li>
-              <button onClick={pageClick} value="2021Day1" name="2021Day1">
+              <button onClick={pageClick} value="2021Day1">
                 Day 1
               </button>
             </li>
 
             <li>
-              <button onClick={pageClick} value="2021Day2" name="2021Day2">
+              <button onClick={pageClick} value="2021Day2">
                 Day 2
               </button>
             </li>
 
-            <li>Day 3</li>
+            <li>
+              {" "}
+              <button onClick={pageClick} value="2021Day3">
+                Day 3
+              </button>
+            </li>
           </ul>
         </div>
 
+        {/*  Conditionally render gallery page Component */}
         <div>{page}</div>
-
-        {/* <Gallery2021Day1 /> */}
       </div>
     </div>
   );
