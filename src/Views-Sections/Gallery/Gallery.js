@@ -27,8 +27,6 @@ const Gallery = () => {
   // Todo: get index of object and pass into switch statement
 
   let pageClick = (event) => {
-    // event.preventDefault();
-
     switch (event.target.value) {
       case "2021Day1":
         setPage(pages[0].component);
@@ -47,40 +45,50 @@ const Gallery = () => {
   return (
     <div className={styles["gallery-page-container"]}>
       <div className={styles["header-container"]}>
-        ouhfgoivuabdfivbadfoiuvgoifbvifbv
-      </div>
-
-      <div className={styles["sub-heading-container"]}>
         {/* <h3 className={styles["section-headings"]}>Gallery</h3> */}
 
         <div className={styles["list-container"]}>
-          <ul className={styles["ul"]}>
+          <div className={styles["container-2021"]}>
             <h3>2021</h3>
-            <li>
-              <button onClick={pageClick} value="2021Day1">
-                Day 1
-              </button>
-            </li>
+            <ul className={styles["ul"]}>
+              <li>
+                <button
+                  className={styles["gallery-buttons"]}
+                  onClick={pageClick}
+                  value="2021Day1"
+                >
+                  Day 1
+                </button>
+              </li>
 
-            <li>
-              <button onClick={pageClick} value="2021Day2">
-                Day 2
-              </button>
-            </li>
+              <li>
+                <button
+                  className={styles["gallery-buttons"]}
+                  onClick={pageClick}
+                  value="2021Day2"
+                >
+                  Day 2
+                </button>
+              </li>
 
-            <li>
-              {" "}
-              <button onClick={pageClick} value="2021Day3">
-                Day 3
-              </button>
-            </li>
-          </ul>
+              <li>
+                {" "}
+                <button
+                  className={styles["gallery-buttons"]}
+                  onClick={pageClick}
+                  value="2021Day3"
+                >
+                  Day 3
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
       <div className={styles["content-container"]}>
-        {/* // ? Conditionally render gallery page Component */}
-        <div>{page}</div>
+        {/* Display Day on render until new day is selected to render */}
+        {page === "" ? <Gallery2021Day1 /> : <div>{page}</div>}
       </div>
     </div>
   );

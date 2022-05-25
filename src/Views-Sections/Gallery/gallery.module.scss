@@ -34,38 +34,83 @@
 
 .header-container {
   width: 100%;
-  height: 30rem;
-  background-color: red;
-}
-
-.sub-heading-container {
-  width: 100vw;
-  height: fit-content;
-
-  background-color: $nav-dropdown;
-
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+
+  padding: 5rem 0 5rem 0;
+
+  background-color: $nav-dropdown;
 }
 
 .section-headings {
   @include section-headings;
 }
 
-// .list-container {
-//   width: 100vw;
+.list-container {
+  width: 100%;
 
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
+  display: flex;
+  justify-content: center;
 
-//   // padding: 5rem 0 5rem 0;
-// }
+  // !! Justify content 'space-around' once more years are added
 
-.ul {
+  // padding: 5rem 0 5rem 0;
+
   h3 {
     @include section-headings;
+  }
+}
+
+.container-2021 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25rem;
+}
+
+.ul {
+  display: flex;
+  justify-content: space-around;
+
+  width: 100%;
+  margin: 1rem;
+
+  list-style: none;
+}
+
+.gallery-buttons {
+  color: $mauve;
+  background-color: transparent;
+
+  border: none;
+  // border: solid 2px $mauve;
+  outline: none;
+
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  margin: 0 0.5rem 0 0.5rem;
+
+  border-radius: 0.5rem;
+
+  font-family: $nav-links;
+  font-size: 1.6rem;
+
+  cursor: pointer;
+
+  &:active {
+    transform: scale(1.1);
+    transition: ease-in-out;
+    color: $salmon;
+  }
+}
+
+@media (hover: hover) {
+  .gallery-buttons:hover {
+    transform: scale(1.1);
+    transition: ease-in-out;
+    color: $salmon;
   }
 }
 
@@ -73,7 +118,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  // margin-top: 5rem;
+  margin-top: 5rem;
 }
 
 .img-container {
@@ -85,6 +130,8 @@
 
   border-radius: 0.5rem;
 }
+
+// ? Media Queries
 
 @include large {
   .gallery-page-container {
@@ -101,5 +148,11 @@
 @include extra-extra-large {
   .gallery-page-container {
     padding-top: 8rem;
+  }
+}
+
+@include extra-extra-small {
+  .img-container {
+    width: 20rem;
   }
 }
