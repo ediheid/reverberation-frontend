@@ -6,10 +6,14 @@
   width: 100vw;
   height: auto;
 
-  padding: 15rem 0 10rem 0;
+  // padding-top: 8rem;
+
+  padding: 0 0 10rem 0;
 
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   background-image: url("../../Views-Sections/Home/Static/poster-bg.png");
 
@@ -19,31 +23,57 @@
 
 .content-container {
   width: 80%;
-  max-width: 200rem;
 
-  padding: 5rem;
+  // padding: 5rem;
 
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  //   background-color: $black;
+  align-items: center;
 }
 
-.list-container {
-  width: 100vw;
+.header-container {
+  width: 100%;
+  height: 30rem;
+  background-color: red;
 }
 
 .sub-heading-container {
   width: 100vw;
+  height: fit-content;
+
+  background-color: $nav-dropdown;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 .section-headings {
   @include section-headings;
+}
 
-  color: $headings-gallery-colour;
+// .list-container {
+//   width: 100vw;
+
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+
+//   // padding: 5rem 0 5rem 0;
+// }
+
+.ul {
+  h3 {
+    @include section-headings;
+  }
+}
+
+.component-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  // margin-top: 5rem;
 }
 
 .img-container {
@@ -54,4 +84,22 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
   border-radius: 0.5rem;
+}
+
+@include large {
+  .gallery-page-container {
+    padding-top: 8rem;
+  }
+}
+
+@include extra-large {
+  .gallery-page-container {
+    padding-top: 8rem;
+  }
+}
+
+@include extra-extra-large {
+  .gallery-page-container {
+    padding-top: 8rem;
+  }
 }

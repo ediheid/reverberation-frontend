@@ -148,7 +148,7 @@ const photosDay1 = [
 
 const Gallery2021Day1 = () => {
   return (
-    <div>
+    <div className={styles["component-container"]}>
       {/* <div className={styles["sub-heading-container"]}>
         <h3 className={styles["section-headings"]}>2021 · Day 1</h3>
       </div> */}

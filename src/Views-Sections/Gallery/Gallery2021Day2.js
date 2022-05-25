@@ -293,7 +293,7 @@ const photosDay2 = [
 
 const Gallery2021Day2 = () => {
   return (
-    <div>
+    <div className={styles["component-container"]}>
       {photosDay2.map((photo) => (
         <img
           className={styles["img-container"]}

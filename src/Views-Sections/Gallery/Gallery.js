@@ -46,13 +46,15 @@ const Gallery = () => {
 
   return (
     <div className={styles["gallery-page-container"]}>
-      <div className={styles["content-container"]}>
-        <div className={styles["sub-heading-container"]}>
-          <h3 className={styles["section-headings"]}>Gallery</h3>
-        </div>
+      <div className={styles["header-container"]}>
+        ouhfgoivuabdfivbadfoiuvgoifbvifbv
+      </div>
+
+      <div className={styles["sub-heading-container"]}>
+        {/* <h3 className={styles["section-headings"]}>Gallery</h3> */}
 
         <div className={styles["list-container"]}>
-          <ul>
+          <ul className={styles["ul"]}>
             <h3>2021</h3>
             <li>
               <button onClick={pageClick} value="2021Day1">
@@ -74,8 +76,10 @@ const Gallery = () => {
             </li>
           </ul>
         </div>
+      </div>
 
-        {/*  Conditionally render gallery page Component */}
+      <div className={styles["content-container"]}>
+        {/* // ? Conditionally render gallery page Component */}
         <div>{page}</div>
       </div>
     </div>

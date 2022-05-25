@@ -108,7 +108,7 @@ const photosDay3 = [
 
 const Gallery2021Day3 = () => {
   return (
-    <div>
+    <div className={styles["component-container"]}>
       {photosDay3.map((photo) => (
         <img
           className={styles["img-container"]}
