@@ -47,6 +47,19 @@ const Footer = () => {
           </a>
         </span>
 
+        {/* Photos by */}
+        <span className={styles["built-by"]}>
+          Gallery event photography by <br />
+          <a
+            href="https://instagram.com/annieanback?igshid=YmMyMTA2M2Y="
+            target="_blank"
+            rel="noreferrer noopener"
+            alt="Link to artist site"
+          >
+            Aneta Navrátilová
+          </a>
+        </span>
+
         {/* Memorial wall by */}
         <span className={styles["built-by"]}>
           Memorial wall banners by <br />

@@ -21,7 +21,49 @@ const Impressum = () => {
           Planung: Dresden Psych Family e.V.
         </span>
 
-        <span className={styles["spans"]}>Fotos: Bands</span>
+        <span className={styles["spans"]}>
+          Festival posters (excluding 2021) and artworks:
+          <a
+            className={styles["anchor-tags"]}
+            href="https://artourette.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+            alt="Link to artist website"
+          >
+            {" "}
+            Artourette
+          </a>
+        </span>
+
+        <span className={styles["spans"]}>
+          Gallery event photography:
+          <a
+            className={styles["anchor-tags"]}
+            href="https://instagram.com/annieanback?igshid=YmMyMTA2M2Y="
+            target="_blank"
+            rel="noreferrer noopener"
+            alt="Link to artist website"
+          >
+            {" "}
+            Aneta Navrátilová
+          </a>
+        </span>
+
+        <span className={styles["spans"]}>Line-up Fotos: Bands</span>
+
+        <span className={styles["spans"]}>
+          Web design & web development:
+          <a
+            className={styles["anchor-tags"]}
+            href="https://www.edithsdev.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+            alt="Link to designer/developer website"
+          >
+            {" "}
+            Edith Heidmann
+          </a>
+        </span>
 
         <h3 className={styles["sub-headings"]}>Kontakt:</h3>
 
@@ -46,34 +88,6 @@ const Impressum = () => {
           >
             {" "}
             booking@reverberationfest.de
-          </a>
-        </span>
-
-        <span className={styles["spans"]}>
-          Festival posters (excluding 2021) and artworks by
-          <a
-            className={styles["anchor-tags"]}
-            href="https://artourette.com/"
-            target="_blank"
-            rel="noreferrer noopener"
-            alt="Link to artist website"
-          >
-            {" "}
-            Artourette
-          </a>
-        </span>
-
-        <span className={styles["spans"]}>
-          Web design & web development:
-          <a
-            className={styles["anchor-tags"]}
-            href="https://www.edithsdev.com/"
-            target="_blank"
-            rel="noreferrer noopener"
-            alt="Link to designer/developer website"
-          >
-            {" "}
-            Edith Heidmann
           </a>
         </span>
 
