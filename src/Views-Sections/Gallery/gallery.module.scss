@@ -136,6 +136,79 @@ color: $black;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
   border-radius: 0.5rem;
+
+  cursor: pointer;
+}
+
+.modal-content-container {
+  position: relative;
+
+}
+
+.modal-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+
+ 
+  border-radius: 0.5rem;
+
+}
+
+.next-button,
+.previous-button,
+.close-modal-button {
+  position: absolute;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 3.5rem;
+
+  cursor: pointer;
+}
+
+.next-button {
+  top: 45%;
+  right: 1rem;
+
+  &:active {
+    color: $links-hover-colour;
+  }
+}
+
+.previous-button {
+  top: 45%;
+  left: 1rem;
+
+  &:active {
+    color: $links-hover-colour;
+  }
+}
+
+.close-modal-button {
+  top: 1rem;
+  right: 1rem;
+
+  &:active {
+    color: $links-hover-colour;
+  }
+}
+
+.close-modal-button * {
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+@media (hover: hover) {
+  .close-modal-button:hover,
+  .next-button:hover,
+  .previous-button:hover {
+    color: $links-hover-colour;
+    transform: scale(1.2);
+  }
 }
 
 // ? Media Queries
@@ -148,6 +221,18 @@ color: $black;
 
   .section-headings{
     margin: 1.5rem 0 1.5rem 0;
+  }
+
+  .next-button,
+  .previous-button {
+    font-size: 4.5rem;
+  }
+
+  .modal-content-container {
+    height: auto;
+    width: 70vw;
+
+    object-fit: cover;
   }
 }
 
@@ -162,6 +247,20 @@ color: $black;
   .section-headings{
     margin: 2rem 0 2rem 0;
   }
+
+  .next-button,
+  .previous-button {
+    font-size: 4.5rem;
+  }
+
+  .modal-content-container {
+    height: auto;
+    width: 70vw;
+
+    object-fit: cover;
+  }
+
+
 }
 
 @include extra-extra-large {
@@ -173,6 +272,15 @@ background-attachment: fixed;
 
   .section-headings{
     margin: 2.5rem 0 2.5rem 0;
+  }
+
+  .class-section {
+    margin: 30rem 0 0 0;
+  }
+
+  .next-button,
+  .previous-button {
+    font-size: 4.5rem;
   }
 }
 

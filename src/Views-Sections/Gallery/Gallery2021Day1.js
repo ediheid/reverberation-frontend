@@ -218,8 +218,10 @@ const Gallery2021Day1 = () => {
 
       width: "80%",
       maxWidth: "100rem",
-      backgroundColor: "white",
+      backgroundColor: "transparent",
       border: "none",
+
+    
     },
   };
 
