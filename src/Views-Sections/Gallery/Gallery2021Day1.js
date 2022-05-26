@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useState} from "react";
+import Modal from "react-modal";
 
 import styles from "../Gallery/gallery.module.scss";
 
@@ -35,118 +36,195 @@ const photosDay1 = [
   {
     img: img1,
     alt: "Insert image description here",
+id: 1,
+
   },
   {
     img: img2,
     alt: "Insert image description here",
+    id: 2,
   },
   {
     img: img3,
     alt: "Insert image description here",
+    id: 3,
   },
   {
     img: img4,
     alt: "Insert image description here",
+    id: 4,
   },
   {
     img: img5,
     alt: "Insert image description here",
+    id: 5,
   },
   {
     img: img6,
     alt: "Insert image description here",
+    id: 6,
   },
   {
     img: img7,
     alt: "Insert image description here",
+    id: 7,
   },
   {
     img: img8,
     alt: "Insert image description here",
+    id: 8,
   },
   {
     img: img9,
     alt: "Insert image description here",
+    id: 9,
   },
   {
     img: img10,
     alt: "Insert image description here",
+    id: 10,
   },
   {
     img: img11,
     alt: "Insert image description here",
+    id: 11,
   },
   {
     img: img12,
     alt: "Insert image description here",
+    id: 12,
   },
   {
     img: img13,
     alt: "Insert image description here",
+    id: 13,
   },
   {
     img: img14,
     alt: "Insert image description here",
+    id: 14,
   },
   {
     img: img15,
     alt: "Insert image description here",
+    id: 15,
   },
   {
     img: img16,
     alt: "Insert image description here",
+    id: 16,
   },
   {
     img: img17,
     alt: "Insert image description here",
+    id: 17,
   },
   {
     img: img18,
     alt: "Insert image description here",
+    id: 18,
   },
   {
     img: img19,
     alt: "Insert image description here",
+    id: 19,
   },
   {
     img: img20,
     alt: "Insert image description here",
+    id: 20,
   },
   {
     img: img21,
     alt: "Insert image description here",
+    id: 21,
   },
   {
     img: img22,
     alt: "Insert image description here",
+    id: 22,
   },
   {
     img: img23,
     alt: "Insert image description here",
+    id: 23,
   },
   {
     img: img24,
     alt: "Insert image description here",
+    id: 24,
   },
   {
     img: img25,
     alt: "Insert image description here",
+    id: 25,
   },
   {
     img: img26,
     alt: "Insert image description here",
+    id: 26,
   },
   {
     img: img27,
     alt: "Insert image description here",
+    id: 27,
   },
   {
     img: img28,
     alt: "Insert image description here",
+    id: 28,
   },
 ];
 
 const Gallery2021Day1 = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  // Current will be used to get set the image id from the index of the images array - set with onClick event for modal
+  const [current, setCurrent] = useState(0);
+
+
+    // Handle open/close state of modal
+    const openModal = () => {
+      setIsModalOpen(true);
+    };
+  
+    const closeModal = () => {
+      setIsModalOpen(false);
+    };
+  
+    // variable and functions to click through modal slideshow
+    const length = photosDay1.length;
+  
+    const nextSlide = () => {
+      setCurrent(current === length - 1 ? 0 : current + 1);
+    };
+  
+    const previousSlide = () => {
+      setCurrent(current === 0 ? length - 1 : current - 1);
+    };
+
+  // Modal custom styles
+  const customStyles = {
+    content: {
+      top: "50%",
+      left: "50%",
+      right: "auto",
+      bottom: "auto",
+      marginRight: "-50%",
+      transform: "translate(-50%, -50%)",
+
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+
+      width: "80%",
+      maxWidth: "100rem",
+      backgroundColor: "white",
+      border: "none",
+    },
+  };
+
+
+
   return (
     <div className={styles["component-container"]}>
  
@@ -155,13 +233,60 @@ const Gallery2021Day1 = () => {
 
 
 
-      {photosDay1.map((photo) => (
+      {photosDay1.map((photo, index) => {
+
+// Ids update to index number here so the order can be rearranged
+photo.id = index;
+
+return(
         <img
           className={styles["img-container"]}
           src={photo.img}
           alt={photo.img}
+          key={photo.id}
+
+          onClick={()=> openModal(setCurrent(photo.id))}
         ></img>
-      ))}
+        
+);
+        
+})}
+
+
+
+
+
+    {/* Modal */}
+    <Modal
+        isOpen={isModalOpen}
+        onRequestClose={closeModal}
+        style={customStyles}
+      >
+        <div className={styles["modal-content-container"]}>
+          <button onClick={closeModal} className={styles["close-modal-button"]}>
+            {/* <RiCloseCircleFill /> */}
+            close
+          </button>
+
+          <button onClick={previousSlide} className={styles["previous-button"]}>
+           back
+          </button>
+
+          <button onClick={nextSlide} className={styles["next-button"]}>
+           next
+          </button>
+
+      
+
+          <img
+            className={styles["modal-img"]}
+            src={photosDay1[current].img}
+            // Alt tag is in gallery view
+            alt=""
+          ></img>
+        </div>
+      </Modal>
+
     </div>
   );
 };
