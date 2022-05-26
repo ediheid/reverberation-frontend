@@ -45,9 +45,7 @@
   background-color: $nav-dropdown;
 }
 
-.section-headings {
-  @include section-headings;
-}
+
 
 .list-container {
   width: 100%;
@@ -61,6 +59,8 @@
 
   h3 {
     @include section-headings;
+
+   
   }
 }
 
@@ -121,6 +121,12 @@
   margin-top: 5rem;
 }
 
+.section-headings {
+  @include section-headings;
+  margin: 1rem 0 1rem 0;
+color: $black;
+}
+
 .img-container {
   width: 30rem;
 
@@ -133,9 +139,14 @@
 
 // ? Media Queries
 
+
 @include large {
   .gallery-page-container {
     padding-top: 8rem;
+  }
+
+  .section-headings{
+    margin: 1.5rem 0 1.5rem 0;
   }
 }
 
@@ -143,11 +154,19 @@
   .gallery-page-container {
     padding-top: 8rem;
   }
+
+  .section-headings{
+    margin: 2rem 0 2rem 0;
+  }
 }
 
 @include extra-extra-large {
   .gallery-page-container {
     padding-top: 8rem;
+  }
+
+  .section-headings{
+    margin: 2.5rem 0 2.5rem 0;
   }
 }
 
