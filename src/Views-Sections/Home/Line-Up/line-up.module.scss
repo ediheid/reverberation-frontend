@@ -4,7 +4,10 @@
 
 .line-up-container {
   width: 100vw;
-  height: auto;
+
+  // !!!
+  // Todo: Change to auto when there is content
+  height: 100vh;
 
   display: flex;
   flex-direction: column;
@@ -12,7 +15,7 @@
 
   background-color: $black;
 
-  padding: 6rem 0 10rem 0;
+  padding: 10rem 0 10rem 0;
 
   color: $mid-grey;
 }
