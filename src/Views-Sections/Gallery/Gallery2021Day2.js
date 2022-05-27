@@ -1,4 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from "react-modal";
+import { AiFillCloseSquare } from "react-icons/ai";
+import { BiChevronRight } from "react-icons/bi";
+import { BiChevronLeft } from "react-icons/bi";
 
 import styles from "../Gallery/gallery.module.scss";
 
@@ -80,230 +84,361 @@ const photosDay2 = [
   {
     img: img33,
     alt: "Insert image description here",
+    id: 1,
   },
   {
     img: img34,
     alt: "Insert image description here",
+    id: 2,
   },
   {
     img: img35,
     alt: "Insert image description here",
+    id: 3,
   },
   {
     img: img36,
     alt: "Insert image description here",
+    id: 4,
   },
   {
     img: img37,
     alt: "Insert image description here",
+    id: 5,
   },
   {
     img: img38,
     alt: "Insert image description here",
+    id: 6,
   },
   {
     img: img39,
     alt: "Insert image description here",
+    id: 7,
   },
   {
     img: img40,
     alt: "Insert image description here",
+    id: 8,
   },
   {
     img: img41,
     alt: "Insert image description here",
+    id: 9,
   },
   {
     img: img42,
     alt: "Insert image description here",
+    id: 10,
   },
   {
     img: img43,
     alt: "Insert image description here",
+    id: 11,
   },
   {
     img: img44,
     alt: "Insert image description here",
+    id: 12,
   },
   {
     img: img45,
     alt: "Insert image description here",
+    id: 13,
   },
   {
     img: img46,
     alt: "Insert image description here",
+    id: 14,
   },
   {
     img: img47,
     alt: "Insert image description here",
+    id: 15,
   },
   {
     img: img48,
     alt: "Insert image description here",
+    id: 16,
   },
   {
     img: img49,
     alt: "Insert image description here",
+    id: 17,
   },
   {
     img: img50,
     alt: "Insert image description here",
+    id: 18,
   },
   {
     img: img51,
     alt: "Insert image description here",
+    id: 19,
   },
   {
     img: img52,
     alt: "Insert image description here",
+    id: 20,
   },
   {
     img: img53,
     alt: "Insert image description here",
+    id: 21,
   },
   {
     img: img54,
     alt: "Insert image description here",
+    id: 22,
   },
   {
     img: img55,
     alt: "Insert image description here",
+    id: 23,
   },
   {
     img: img56,
     alt: "Insert image description here",
+    id: 24,
   },
   {
     img: img57,
     alt: "Insert image description here",
+    id: 25,
   },
   {
     img: img58,
     alt: "Insert image description here",
+    id: 26,
   },
   {
     img: img59,
     alt: "Insert image description here",
+    id: 27,
   },
   {
     img: img60,
     alt: "Insert image description here",
+    id: 28,
   },
   {
     img: img61,
     alt: "Insert image description here",
+    id: 29,
   },
   {
     img: img62,
     alt: "Insert image description here",
+    id: 30,
   },
   {
     img: img63,
     alt: "Insert image description here",
+    id: 31,
   },
   {
     img: img64,
     alt: "Insert image description here",
+    id: 32,
   },
   {
     img: img65,
     alt: "Insert image description here",
+    id: 33,
   },
   {
     img: img66,
     alt: "Insert image description here",
+    id: 34,
   },
   {
     img: img67,
     alt: "Insert image description here",
+    id: 35,
   },
   {
     img: img68,
     alt: "Insert image description here",
+    id: 36,
   },
   {
     img: img69,
     alt: "Insert image description here",
+    id: 37,
   },
   {
     img: img70,
     alt: "Insert image description here",
+    id: 38,
   },
   {
     img: img71,
     alt: "Insert image description here",
+    id: 39,
   },
   {
     img: img72,
     alt: "Insert image description here",
+    id: 40,
   },
   {
     img: img73,
     alt: "Insert image description here",
+    id: 41,
   },
   {
     img: img74,
     alt: "Insert image description here",
+    id: 42,
   },
   {
     img: img75,
     alt: "Insert image description here",
+    id: 43,
   },
   {
     img: img76,
     alt: "Insert image description here",
+    id: 44,
   },
   {
     img: img77,
     alt: "Insert image description here",
+    id: 45,
   },
   {
     img: img78,
     alt: "Insert image description here",
+    id: 46,
   },
   {
     img: img79,
     alt: "Insert image description here",
+    id: 47,
   },
   {
     img: img80,
     alt: "Insert image description here",
+    id: 48,
   },
   {
     img: img81,
     alt: "Insert image description here",
+    id: 49,
   },
   {
     img: img82,
     alt: "Insert image description here",
+    id: 50,
   },
   {
     img: img83,
     alt: "Insert image description here",
+    id: 51,
   },
   {
     img: img84,
     alt: "Insert image description here",
+    id: 52,
   },
   {
     img: img85,
     alt: "Insert image description here",
+    id: 53,
   },
 ];
 
 const Gallery2021Day2 = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  // Current will be used to get set the image id from the index of the images array - set with onClick event for modal
+  const [current, setCurrent] = useState(0);
+
+  // Handle open/close state of modal
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  // variable and functions to click through modal slideshow
+  const length = photosDay2.length;
+
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+
+  const previousSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+
+  // Modal custom styles
+  const customStyles = {
+    content: {
+      top: "50%",
+      left: "50%",
+      right: "auto",
+      bottom: "auto",
+      marginRight: "-50%",
+      transform: "translate(-50%, -50%)",
+
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+
+      width: "80%",
+      maxWidth: "100rem",
+      backgroundColor: "transparent",
+      border: "none",
+    },
+  };
   return (
     <div className={styles["component-container"]}>
+      <h3 className={styles["section-headings"]}>2021 · Day 2</h3>
 
-<h3 className={styles["section-headings"]}>2021 · Day 2</h3>
+      {photosDay2.map((photo, index) => {
+        // Ids update to index number here so the order can be rearranged
+        photo.id = index;
 
-      {photosDay2.map((photo) => (
-        <img
-          className={styles["img-container"]}
-          src={photo.img}
-          alt={photo.img}
-        ></img>
-      ))}
+        return (
+          <img
+            className={styles["img-container"]}
+            src={photo.img}
+            alt={photo.img}
+            key={photo.id}
+            onClick={() => openModal(setCurrent(photo.id))}
+          ></img>
+        );
+      })}
+
+      {/* Modal */}
+      <Modal
+        isOpen={isModalOpen}
+        onRequestClose={closeModal}
+        style={customStyles}
+      >
+        <div className={styles["modal-content-container"]}>
+          <button onClick={closeModal} className={styles["close-modal-button"]}>
+            <AiFillCloseSquare />
+          </button>
+
+          <button onClick={nextSlide} className={styles["next-button"]}>
+            <BiChevronRight />
+          </button>
+
+          <button onClick={previousSlide} className={styles["previous-button"]}>
+            <BiChevronLeft />
+          </button>
+
+          <img
+            className={styles["modal-img"]}
+            src={photosDay2[current].img}
+            // Alt tag is in gallery view
+            alt=""
+          ></img>
+        </div>
+      </Modal>
     </div>
   );
 };
