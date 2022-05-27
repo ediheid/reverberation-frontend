@@ -1,5 +1,8 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Modal from "react-modal";
+import { AiFillCloseSquare } from "react-icons/ai";
+import { BiChevronRight } from "react-icons/bi";
+import { BiChevronLeft } from "react-icons/bi";
 
 import styles from "../Gallery/gallery.module.scss";
 
@@ -36,8 +39,7 @@ const photosDay1 = [
   {
     img: img1,
     alt: "Insert image description here",
-id: 1,
-
+    id: 1,
   },
   {
     img: img2,
@@ -181,26 +183,25 @@ const Gallery2021Day1 = () => {
   // Current will be used to get set the image id from the index of the images array - set with onClick event for modal
   const [current, setCurrent] = useState(0);
 
+  // Handle open/close state of modal
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
 
-    // Handle open/close state of modal
-    const openModal = () => {
-      setIsModalOpen(true);
-    };
-  
-    const closeModal = () => {
-      setIsModalOpen(false);
-    };
-  
-    // variable and functions to click through modal slideshow
-    const length = photosDay1.length;
-  
-    const nextSlide = () => {
-      setCurrent(current === length - 1 ? 0 : current + 1);
-    };
-  
-    const previousSlide = () => {
-      setCurrent(current === 0 ? length - 1 : current - 1);
-    };
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  // variable and functions to click through modal slideshow
+  const length = photosDay1.length;
+
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+
+  const previousSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
 
   // Modal custom styles
   const customStyles = {
@@ -220,65 +221,46 @@ const Gallery2021Day1 = () => {
       maxWidth: "100rem",
       backgroundColor: "transparent",
       border: "none",
-
-    
     },
   };
 
-
-
   return (
     <div className={styles["component-container"]}>
- 
-        <h3 className={styles["section-headings"]}>2021 · Day 1</h3>
-     
-
-
+      <h3 className={styles["section-headings"]}>2021 · Day 1</h3>
 
       {photosDay1.map((photo, index) => {
+        // Ids update to index number here so the order can be rearranged
+        photo.id = index;
 
-// Ids update to index number here so the order can be rearranged
-photo.id = index;
+        return (
+          <img
+            className={styles["img-container"]}
+            src={photo.img}
+            alt={photo.img}
+            key={photo.id}
+            onClick={() => openModal(setCurrent(photo.id))}
+          ></img>
+        );
+      })}
 
-return(
-        <img
-          className={styles["img-container"]}
-          src={photo.img}
-          alt={photo.img}
-          key={photo.id}
-
-          onClick={()=> openModal(setCurrent(photo.id))}
-        ></img>
-        
-);
-        
-})}
-
-
-
-
-
-    {/* Modal */}
-    <Modal
+      {/* Modal */}
+      <Modal
         isOpen={isModalOpen}
         onRequestClose={closeModal}
         style={customStyles}
       >
         <div className={styles["modal-content-container"]}>
           <button onClick={closeModal} className={styles["close-modal-button"]}>
-            {/* <RiCloseCircleFill /> */}
-            close
-          </button>
-
-          <button onClick={previousSlide} className={styles["previous-button"]}>
-           back
+            <AiFillCloseSquare />
           </button>
 
           <button onClick={nextSlide} className={styles["next-button"]}>
-           next
+            <BiChevronRight />
           </button>
 
-      
+          <button onClick={previousSlide} className={styles["previous-button"]}>
+            <BiChevronLeft />
+          </button>
 
           <img
             className={styles["modal-img"]}
@@ -288,7 +270,6 @@ return(
           ></img>
         </div>
       </Modal>
-
     </div>
   );
 };
