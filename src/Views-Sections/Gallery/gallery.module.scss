@@ -78,9 +78,9 @@
 }
 
 .gallery-buttons {
-  // color: $mauve;
-@include gradient-text-from-palette;
-  // background-color: transparent;
+  color: $mauve;
+
+  background-color: transparent;
 
   border: none;
   // border: solid 2px $mauve;
@@ -99,8 +99,8 @@
   &:active {
     transform: scale(1.1);
     transition: ease-in-out;
-      // color: $salmon;
-      @include gradient-text-from-palette-opposite-direction;
+      color: $salmon;
+  
   }
 }
 
@@ -108,8 +108,8 @@
   .gallery-buttons:hover {
     transform: scale(1.1);
     transition: ease-in-out;
-    // color: $salmon;
-    @include gradient-text-from-palette-opposite-direction;
+    color: $salmon;
+    
   }
 }
 
@@ -130,7 +130,7 @@
   letter-spacing: 0.3rem;
   text-align: center;
   margin: 1rem 0 1rem 0;
-  color: $black !important;
+  color: $black;
   width: 100vw;
 }
 
