@@ -80,8 +80,7 @@
 .gallery-buttons {
   // color: $mauve;
 @include gradient-text-from-palette;
-
-  background-color: transparent;
+  // background-color: transparent;
 
   border: none;
   // border: solid 2px $mauve;
@@ -100,7 +99,8 @@
   &:active {
     transform: scale(1.1);
     transition: ease-in-out;
-    color: $salmon;
+      // color: $salmon;
+      @include gradient-text-from-palette-opposite-direction;
   }
 }
 
@@ -121,9 +121,16 @@
 }
 
 .section-headings {
-  @include section-headings;
+  // @include section-headings;
+
+  font-size: 3rem;
+  line-height: 5rem;
+  // font-family: $section-subheadings;
+  font-family: $main-font-semi-bold-font-family;
+  letter-spacing: 0.3rem;
+  text-align: center;
   margin: 1rem 0 1rem 0;
-  color: $black;
+  color: $black !important;
   width: 100vw;
 }
 
@@ -209,6 +216,27 @@
 
 // ? Media Queries
 
+@include x-small{
+  .section-headings {
+    font-size: 2rem;
+  }
+}
+
+@include small{
+  .section-headings {
+    font-size: 2rem;
+  }
+}
+
+@include medium{
+  .section-headings {
+    font-size: 2.5rem;
+  }
+}
+
+
+
+
 @include large {
   .gallery-page-container {
     padding-top: 8rem;
@@ -264,6 +292,7 @@
 
   .section-headings {
     margin: 2.5rem 0 2.5rem 0;
+    font-size: 3.5rem;
   }
 
   .class-section {
