@@ -78,7 +78,9 @@
 }
 
 .gallery-buttons {
-  color: $mauve;
+  // color: $mauve;
+@include gradient-text-from-palette;
+
   background-color: transparent;
 
   border: none;
@@ -106,7 +108,8 @@
   .gallery-buttons:hover {
     transform: scale(1.1);
     transition: ease-in-out;
-    color: $salmon;
+    // color: $salmon;
+    @include gradient-text-from-palette-opposite-direction;
   }
 }
 

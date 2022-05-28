@@ -58,7 +58,17 @@
   // font-family: $section-subheadings;
   font-family: $main-font-semi-bold-font-family;
   letter-spacing: 0.3rem;
-  color: lighten($mid-grey, 10%);
+  // color: lighten($mid-grey, 10%);
+  background: linear-gradient(
+    to right, 
+
+    hsl(5, 57%, 65%),
+    hsl(0, 0%, 72%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
   text-align: center;
 
   width: 80%;
@@ -109,4 +119,43 @@
     box-shadow: 0 0 0.6em 0.25em lighten($salmon, 5%), 0 0 2.5em 2em $salmon,
       inset 0 0 0.5em 0.25em lighten($salmon, 5%);
   }
+}
+
+@mixin gradient-text-from-palette {
+  background: linear-gradient(
+    to right, 
+
+    hsl(5, 57%, 65%),
+    hsl(327, 69%, 39%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin gradient-text-from-palette-opposite-direction {
+  background: linear-gradient(
+    to left, 
+
+    hsl(5, 57%, 65%),
+    hsl(327, 69%, 39%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+@mixin gradient-text-green {
+
+
+  background: linear-gradient(
+    to right, 
+    hsl(98 100% 62%), 
+    hsl(204 100% 59%)
+
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ 
+  
 }

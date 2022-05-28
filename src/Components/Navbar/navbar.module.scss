@@ -107,7 +107,8 @@
 
   li {
     &:active {
-      color: $nav-links;
+      // color: $nav-links;
+      @include gradient-text-from-palette;
       cursor: pointer;
       transform: scale(1.1);
       transition: ease-in-out;
@@ -118,8 +119,9 @@
 
 // @media (hover:hover) to solve sticky hover states on mobile devices
 @media (hover: hover) {
-  .mobile-nav-list-items > li:hover {
-    color: $nav-links;
+  .mobile-nav-list-items * li:hover {
+    // color: $nav-links;
+    @include gradient-text-from-palette;
     transform: scale(1.1);
     transition: ease-in-out;
     font-weight: bold;
@@ -146,7 +148,8 @@
 
   li {
     &:active {
-      color: $nav-links;
+      // color: $nav-links;
+      @include gradient-text-from-palette;
       cursor: pointer;
       transform: scale(1.1);
       transition: ease-in-out;
@@ -159,7 +162,8 @@
 // @media (hover:hover) to solve sticky hover states on mobile devices
 @media (hover: hover) {
   .desktop-nav-list-items * li:hover {
-    color: $nav-links;
+    // color: $nav-links;
+    @include gradient-text-from-palette;
     transform: scale(1.1);
     transition: ease-in-out;
     font-family: $nav-links-hover-font-family;

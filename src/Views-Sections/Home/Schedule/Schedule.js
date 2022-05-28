@@ -7,8 +7,10 @@ const Schedule = () => {
     <div className={styles["schedule-section-container"]} id="schedule">
       <h2 className={styles["schedule-heading"]}>
         {" "}
-        Schedule section will go here
+        Schedule
       </h2>
+
+      <h2 className={styles["schedule-heading"]}>To be Announced</h2>
     </div>
   );
 };

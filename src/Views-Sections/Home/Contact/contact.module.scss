@@ -14,4 +14,6 @@
 
 .contact-heading {
   @include section-headings;
+
+@include gradient-text-from-palette;
 }

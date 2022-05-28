@@ -34,6 +34,7 @@
   color: $footer-social-media-links;
   font-size: 2.5rem;
 
+
   &:active {
     transform: scale(1.1);
     transition: ease-in-out;
@@ -136,8 +137,10 @@
   a {
     text-decoration: none;
     font-weight: bold;
-    color: $footer-links;
+    // color: $footer-links;
     font-family: $main-font-semi-bold-font-family;
+    @include gradient-text-from-palette;
+   
   }
 }
 
@@ -146,6 +149,9 @@
     transform: scale(1.1);
     transition: ease-in-out;
     font-weight: bold;
-    color: $footer-links-hover-colour;
+    // color: $footer-links-hover-colour;
+
+@include gradient-text-from-palette-opposite-direction;
+
   }
 }
