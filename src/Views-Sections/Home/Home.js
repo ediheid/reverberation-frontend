@@ -23,9 +23,13 @@ const Home = () => {
 
       <PastEvents />
 
-      <About />
+      <div className={styles["about-contact-bg-container"]}>
+        <About />
 
-      <Contact />
+        {/* <div style={{ height: "50px", backgroundColor: "black" }}></div> */}
+
+        <Contact />
+      </div>
     </div>
   );
 };

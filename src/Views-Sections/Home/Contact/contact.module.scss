@@ -6,14 +6,115 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+
+  // Commented out so it sticks to the top (and bottom of 'about' as they share a background
+  // justify-content: center;
 
   width: 100vw;
   height: 100vh;
+
+  position: relative;
+}
+
+.content-container {
+  width: 100vw;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $overlay-container-colour;
+
+  padding: 7rem 0 7rem 0;
 }
 
 .contact-heading {
   @include section-headings;
 
-@include gradient-text-from-palette;
+  margin-bottom: 1rem;
 }
+
+.contact-div {
+  margin-bottom: 2rem;
+
+  width: 30rem;
+
+  // border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-text,
+.anchor-tags {
+  display: block;
+
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+
+  text-align: center;
+
+  font-family: $main-font-regular-font-family;
+}
+
+.contact-text {
+  color: $contact-name-text;
+}
+
+.anchor-tags {
+  color: $contact-links-colour;
+  // text-decoration: none;
+
+  &:active {
+    font-family: $main-font-semi-bold-font-family;
+    text-decoration: underline;
+    color: $light-links-hover-colour;
+  }
+}
+
+@media (hover: hover) {
+  .anchor-tags:hover {
+    font-family: $main-font-semi-bold-font-family;
+    text-decoration: underline;
+    color: $light-links-hover-colour;
+  }
+}
+
+.contact-text {
+  @include contact-text;
+}
+
+// @include medium {
+//   .anchor-tags,
+//   .contact-text {
+//     font-size: 2rem;
+//     line-height: 2.8rem;
+//   }
+// }
+
+// @include large {
+//   .anchor-tags,
+//   .contact-text {
+//     font-size: 2rem;
+//     line-height: 2.8rem;
+//   }
+// }
+
+// @include extra-large {
+//   .anchor-tags,
+//   .contact-text {
+//     font-size: 1.8rem;
+//     line-height: 2.8rem;
+//   }
+// }
+
+// @include extra-extra-large {
+//   .anchor-tags,
+//   .contact-text {
+//     font-size: 2rem;
+//     line-height: 2.8rem;
+//   }
+// }
