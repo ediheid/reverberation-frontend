@@ -26,7 +26,7 @@ const Footer = () => {
           </Link>
 
           <Link to="/dsgvo" className={styles["footer-links"]}>
-            <b>DSGVO</b>
+            <b>GDPR</b>
           </Link>
 
           <HashLink to="/#contact" className={styles["footer-links"]}>

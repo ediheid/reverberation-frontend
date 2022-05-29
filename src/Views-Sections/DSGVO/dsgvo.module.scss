@@ -2,7 +2,7 @@
 @import "../../Styling/mixins.module";
 @import "../../Styling/reset.module";
 
-.impressum-page-container {
+.dsgvo-page-container {
   width: 100vw;
 
   display: flex;
@@ -32,24 +32,37 @@
 
 .sub-headings {
   font-size: 1.5rem;
-  margin: 1rem 0 1rem 0;
+  margin: 0 0 2rem 0;
+  font-family: $main-font-semi-bold-font-family;
 }
 
-.company-name-heading {
-  font-size: 2rem;
+.list-headings {
+  font-family: $main-font-regular-font-family;
   margin-bottom: 1rem;
+  //   display: block;
 }
 
 .spans,
-.paragraphs {
+.paragraphs,
+.list,
+.nested-list {
   font-size: 1.3rem;
   line-height: 2.5rem;
-
   font-family: $main-font-thin-font-family;
+  margin-bottom: 2rem;
 }
 
 .spans {
   display: block;
+}
+
+.list {
+  list-style: none inside;
+}
+
+.nested-list {
+  list-style: circle inside;
+  margin: 0 0 1rem 3rem;
 }
 
 .anchor-tags {
@@ -74,10 +87,6 @@
 // ? Media Queries
 
 @include medium {
-  .impressum-page-container {
-    padding-top: 5rem;
-  }
-
   .content-container {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 1rem;
@@ -85,10 +94,6 @@
 
   .main-headings {
     font-size: 3rem;
-  }
-
-  .company-name-heading {
-    font-size: 2.3rem;
   }
 
   .sub-headings {
@@ -103,10 +108,6 @@
 }
 
 @include large {
-  .impressum-page-container {
-    padding-top: 15rem;
-  }
-
   .content-container {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 1rem;
@@ -114,10 +115,6 @@
 
   .main-headings {
     font-size: 3rem;
-  }
-
-  .company-name-heading {
-    font-size: 2.3rem;
   }
 
   .sub-headings {
@@ -132,10 +129,6 @@
 }
 
 @include extra-large {
-  .impressum-page-container {
-    padding-top: 15rem;
-  }
-
   .content-container {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 1rem;
@@ -143,10 +136,6 @@
 
   .main-headings {
     font-size: 3rem;
-  }
-
-  .company-name-heading {
-    font-size: 2.3rem;
   }
 
   .sub-headings {
@@ -161,10 +150,6 @@
 }
 
 @include extra-extra-large {
-  .impressum-page-container {
-    padding-top: 20rem;
-  }
-
   .content-container {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 1rem;
@@ -172,10 +157,6 @@
 
   .main-headings {
     font-size: 3rem;
-  }
-
-  .company-name-heading {
-    font-size: 2.3rem;
   }
 
   .sub-headings {

@@ -2,8 +2,6 @@ import React from "react";
 
 import styles from "../Impressum/impressum.module.scss";
 
-// !
-// Todo - style Impressum page and Link to footer
 const Impressum = () => {
   return (
     <div className={styles["impressum-page-container"]}>
