@@ -49,6 +49,7 @@
 }
 
 .contact-text,
+.name-text,
 .anchor-tags {
   display: block;
 
@@ -60,8 +61,13 @@
   font-family: $main-font-regular-font-family;
 }
 
-.contact-text {
+.contact-text,
+.name-text {
   color: $contact-name-text;
+}
+
+.name-text {
+  font-family: $main-font-semi-bold-font-family;
 }
 
 .anchor-tags {
@@ -87,34 +93,30 @@
   @include contact-text;
 }
 
-// @include medium {
-//   .anchor-tags,
-//   .contact-text {
-//     font-size: 2rem;
-//     line-height: 2.8rem;
-//   }
-// }
+@include medium {
+  .address-heading {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
 
-// @include large {
-//   .anchor-tags,
-//   .contact-text {
-//     font-size: 2rem;
-//     line-height: 2.8rem;
-//   }
-// }
+@include large {
+  .address-heading {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
 
-// @include extra-large {
-//   .anchor-tags,
-//   .contact-text {
-//     font-size: 1.8rem;
-//     line-height: 2.8rem;
-//   }
-// }
+@include extra-large {
+  .address-heading {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+}
 
-// @include extra-extra-large {
-//   .anchor-tags,
-//   .contact-text {
-//     font-size: 2rem;
-//     line-height: 2.8rem;
-//   }
-// }
+@include extra-extra-large {
+  .address-heading {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}

@@ -144,26 +144,6 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-  @include medium {
-    font-size: 2rem;
-    line-height: 2.8rem;
-  }
-
-  @include large {
-    font-size: 2rem;
-    line-height: 2.8rem;
-  }
-
-  @include extra-large {
-    font-size: 1.8rem;
-    line-height: 2.8rem;
-  }
-
-  @include extra-extra-large {
-    font-size: 2rem;
-    line-height: 2.8rem;
-  }
 }
 
 @mixin links-button {
