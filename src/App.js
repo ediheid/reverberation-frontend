@@ -43,7 +43,7 @@ const App = () => {
           <CookieConsent
             location="bottom"
             buttonText="Got it!"
-            cookieName="myAwesomeCookieName2"
+            // cookieName="myAwesomeCookieName2"
             style={{ background: "#f2f2f2" }}
             buttonStyle={{
               color: "#f2f2f2",
