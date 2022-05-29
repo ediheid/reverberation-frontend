@@ -87,6 +87,10 @@
 // ? Media Queries
 
 @include medium {
+  .dsgvo-page-container {
+    padding-top: 5rem;
+  }
+
   .content-container {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 1rem;
@@ -108,6 +112,10 @@
 }
 
 @include large {
+  .dsgvo-page-container {
+    padding-top: 15rem;
+  }
+
   .content-container {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 1rem;
@@ -129,6 +137,10 @@
 }
 
 @include extra-large {
+  .dsgvo-page-container {
+    padding-top: 15rem;
+  }
+
   .content-container {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 1rem;
@@ -150,6 +162,10 @@
 }
 
 @include extra-extra-large {
+  .dsgvo-page-container {
+    padding-top: 20rem;
+  }
+
   .content-container {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 1rem;
