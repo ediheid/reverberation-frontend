@@ -38,11 +38,15 @@
 
   background-color: $overlay-container-colour;
 
-  padding: 8rem 5rem 5rem 5rem;
+  padding: 7rem;
 }
 
 .about-heading {
   @include section-headings;
+}
+
+.about-text {
+  @include section-text;
 }
 
 // ? Media Queries
