@@ -18,6 +18,7 @@
 
   color: $back-to-top-button;
 
+
   &:active {
     color: lighten($back-to-top-button, 40%);
     transform: scale(1.1);
