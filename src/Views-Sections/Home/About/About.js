@@ -9,12 +9,11 @@ const About = () => {
         <div className={styles["content-container"]}>
           <h2 className={styles["about-heading"]}>About</h2>
           <p className={styles["about-text"]}>
-            Reverberation Fest is an annual music and arts festival taking place
-            over the course of three days in the city of Dresden in Germany.{" "}
+            Founded in 2014, Reverberation Fest is a 3 day music and arts festival held annually in Dresden, Germany.
           </p>
           <p className={styles["about-text"]}>
-            It connects music with theater, performance, dance and other forms
-            of art and was founded in 2014.
+            Showcasing and connecting local and international music acts with theater, performance, dance and other forms
+            of art.
           </p>
         </div>
       </div>
