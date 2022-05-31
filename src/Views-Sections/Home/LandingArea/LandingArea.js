@@ -21,7 +21,7 @@ const LandingArea = () => {
           <div className={styles["spotlight"]}></div>
         </div>
 
-        <h2 className={styles["sub-headings"]}>Festival for Music & Arts</h2>
+        {/* <h2 className={styles["sub-headings"]}>Festival for Music & Arts</h2> */}
 
         <h2 className={styles["sub-headings"]}>
           Dresden · 16.09 - 18.09 · 2022
