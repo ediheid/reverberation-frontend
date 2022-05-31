@@ -9,7 +9,7 @@ import {
 
 import CookieConsent from "react-cookie-consent";
 
-// // ? Styles
+// Cookie consent styling
 import styles from "./Styling/app.module.scss";
 
 // ? Components
@@ -55,7 +55,7 @@ const App = () => {
             expires={150}
           >
             <span className={styles["privacy-consent-text"]}>
-              By continuing to use this website you agree to our
+            To make this website work, we log user data. By using our site, you agree to our 
             </span>
 
             <Link
