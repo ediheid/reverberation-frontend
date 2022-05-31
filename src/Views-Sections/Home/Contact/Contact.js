@@ -34,6 +34,8 @@ const Contact = () => {
             <a
               className={styles["anchor-tags"]}
               href="mailto:julian@reverberationfest.de"
+              target="_blank"
+              rel="noopener noreferrer"
               alt="link to mail julian@reverberationfest.de"
             >
               julian@reverberationfest.de
@@ -47,6 +49,8 @@ const Contact = () => {
             <a
               className={styles["anchor-tags"]}
               href="mailto:robin@reverberationfest.de"
+              target="_blank"
+              rel="noopener noreferrer"
               alt="link to mail robin@reverberationfest.de"
             >
               robin@reverberationfest.de
@@ -60,6 +64,8 @@ const Contact = () => {
             <a
               className={styles["anchor-tags"]}
               href="mailto:hannes@reverberationfest.de"
+              target="_blank"
+              rel="noopener noreferrer"
               alt="link to mail hannes@reverberationfest.de"
             >
               hannes@reverberationfest.de
