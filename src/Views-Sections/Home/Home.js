@@ -15,21 +15,25 @@ const Home = () => {
     <div className={styles["home-container"]}>
       <LandingArea />
 
+      {/* <Tickets /> */}
+
       <LineUp />
 
       <Schedule />
 
-      <Tickets />
+      <About />
+
+    
 
       <PastEvents />
 
-      <div className={styles["about-contact-bg-container"]}>
-        <About />
+      {/* <div className={styles["about-contact-bg-container"]}> */}
+     
 
         {/* <div style={{ height: "50px", backgroundColor: "black" }}></div> */}
 
         <Contact />
-      </div>
+      {/* </div> */}
     </div>
   );
 };

@@ -177,7 +177,8 @@ const Gallery2021Day3 = () => {
 
   return (
     <div className={styles["component-container"]}>
-      <h3 className={styles["section-headings"]}>2021 · Day 3</h3>
+                {/* Made year correction here but not in the Component names or styles */}
+      <h3 className={styles["section-headings"]}>2020 · Day 3</h3>
 
       {photosDay3.map((photo, index) => {
         // Ids update to index number here so the order can be rearranged

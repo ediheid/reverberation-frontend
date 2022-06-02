@@ -16,7 +16,7 @@ const Tickets = () => {
             rel="noopener noreferrer"
             alt="Link to Ticket Shop"
           >
-            <button className={styles["links-button"]}>To ticket shop</button>
+            <button className={styles["links-button"]}>Buy now</button>
           </a>
         </div>
       </div>

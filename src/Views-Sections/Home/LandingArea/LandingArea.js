@@ -27,6 +27,8 @@ const LandingArea = () => {
           Dresden · 16.09 - 18.09 · 2022
         </h2>
 
+        <h2 className={styles["sub-headings"]}>Early bird tickets available from 3.6.22</h2>
+
         <a
           href="https://reverberation.loveyourartist.store/de/"
           target="_blank"

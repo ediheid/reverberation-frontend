@@ -20,11 +20,13 @@
 
   // !!! Need a higher resolution image!
 
-  background-image: url("../Static/poster-bg.png");
-  background-position: center;
-  // background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
+background-color: $black;
+
+  // background-image: url("../Static/poster-bg.png");
+  // background-position: center;
+  // // background-attachment: fixed;
+  // background-size: cover;
+  // background-repeat: no-repeat;
 }
 
 .content-container {
@@ -36,7 +38,8 @@
   align-items: center;
   justify-content: center;
 
-  background-color: $overlay-container-colour;
+  // background-color: $overlay-container-colour;
+background-color: $black;
 
   padding: 8rem 5rem 5rem 5rem;
 }

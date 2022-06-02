@@ -6,14 +6,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
-  // Commented out so it sticks to the top (and bottom of 'about' as they share a background
-  // justify-content: center;
+  position: relative;
 
   width: 100vw;
   height: 100vh;
 
-  position: relative;
+  background-image: url("../Static/poster-bg.png");
+  background-position: center;
+  // background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .content-container {
@@ -108,6 +112,10 @@
 }
 
 @include extra-large {
+  .contact-section-container {
+    background-attachment: fixed;
+  }
+
   .address-heading {
     font-size: 1.8rem;
     line-height: 2.8rem;
@@ -115,6 +123,10 @@
 }
 
 @include extra-extra-large {
+  .contact-section-container {
+    background-attachment: fixed;
+  }
+
   .address-heading {
     font-size: 2rem;
     line-height: 2.8rem;

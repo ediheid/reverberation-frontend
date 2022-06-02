@@ -18,16 +18,16 @@ const DesktopNavLinks = () => {
             <li>Schedule</li>
           </HashLink>
 
-          <HashLink smooth to="/#tickets">
+          <HashLink smooth to="/#landing">
             <li>Tickets</li>
-          </HashLink>
-
-          <HashLink smooth to="/#past-events">
-            <li>Past Events</li>
           </HashLink>
 
           <HashLink smooth to="/#about">
             <li>About</li>
+          </HashLink>
+
+          <HashLink smooth to="/#past-events">
+            <li>Past Events</li>
           </HashLink>
 
           <HashLink smooth to="/#contact">
@@ -37,7 +37,7 @@ const DesktopNavLinks = () => {
           <Link smooth to="/gallery">
             <li>Gallery</li>
           </Link>
-
+        
           <HashLink smooth to="/#landing">
             <li>Home</li>
           </HashLink>

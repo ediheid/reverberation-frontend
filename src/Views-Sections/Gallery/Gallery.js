@@ -49,7 +49,8 @@ const Gallery = () => {
 
         <div className={styles["list-container"]}>
           <div className={styles["container-2021"]}>
-            <h3>2021</h3>
+            {/* Made year correction here but not in the Component names or styles */}
+            <h3>2020</h3>
             <ul className={styles["ul"]}>
               <li>
                 <button

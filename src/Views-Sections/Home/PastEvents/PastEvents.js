@@ -131,9 +131,9 @@ const PastEvents = () => {
           </div>
         ))}
 
-        <Link to="/gallery" alt="Link to festival image gallery page">
+        {/* <Link to="/gallery" alt="Link to festival image gallery page">
           <button className={styles["links-button"]}>Festival Gallery</button>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

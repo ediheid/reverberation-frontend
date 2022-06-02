@@ -12,6 +12,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+    background-image: url("../Static/poster-bg.png");
+  background-position: center;
+  // background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .content-container {
@@ -36,15 +42,26 @@
   @include section-text;
 }
 
+
+
+
 // ? Media Queries
 
 @include extra-large {
+  .about-section-container {
+    background-attachment: fixed;
+  }
+
   .content-container {
     margin: 20rem 0 20rem 0;
   }
 }
 
 @include extra-extra-large {
+  .about-section-container {
+    background-attachment: fixed;
+  }
+
   .content-container {
     margin: 20rem 0 20rem 0;
   }
