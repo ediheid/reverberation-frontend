@@ -39,7 +39,7 @@ const MobileNavLinks = (props) => {
             </motion.li>
           </HashLink>
 
-          <HashLink smooth to="/#landing" onClick={props.closeNavOnClick}>
+          {/* <HashLink smooth to="/#landing" onClick={props.closeNavOnClick}>
             <motion.li
               initial={animateFrom}
               animate={animateTo}
@@ -47,7 +47,20 @@ const MobileNavLinks = (props) => {
             >
               Tickets
             </motion.li>
-          </HashLink>
+          </HashLink> */}
+
+          <a
+          href="https://reverberation.loveyourartist.store/de/"
+          target="_blank"
+          rel="noopener noreferrer"
+          alt="Link to Ticket Shop"
+        >    <motion.li
+        initial={animateFrom}
+        animate={animateTo}
+        transition={{ delay: 0.17 }}
+      >
+        Tickets
+      </motion.li></a>
 
 
           <HashLink smooth to="/#about" onClick={props.closeNavOnClick}>
