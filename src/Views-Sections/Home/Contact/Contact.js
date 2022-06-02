@@ -58,7 +58,7 @@ const Contact = () => {
           </div>
 
           <div className={styles["contact-div"]}>
-            <span className={styles["contact-text"]}>Public Relations, Booking & Production</span>
+            <span className={styles["contact-text"]}>Public Relations & Production</span>
 
             <span className={styles["name-text"]}>Hannes Fröhlich </span>
             <a

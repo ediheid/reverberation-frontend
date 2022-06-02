@@ -55,7 +55,7 @@ const App = () => {
             expires={150}
           >
             <span className={styles["privacy-consent-text"]}>
-            To make this website work, we log user data. By using our site, you agree to our 
+           By using our site, you agree to our 
             </span>
 
             <Link
