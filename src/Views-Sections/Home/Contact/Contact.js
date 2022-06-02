@@ -43,7 +43,7 @@ const Contact = () => {
           </div>
 
           <div className={styles["contact-div"]}>
-            <span className={styles["contact-text"]}>Booking & Production</span>
+            <span className={styles["contact-text"]}>Head of Booking</span>
 
             <span className={styles["name-text"]}>Robin Heller</span>
             <a
@@ -58,7 +58,7 @@ const Contact = () => {
           </div>
 
           <div className={styles["contact-div"]}>
-            <span className={styles["contact-text"]}>Booking & Production</span>
+            <span className={styles["contact-text"]}>Public Relations, Booking & Production</span>
 
             <span className={styles["name-text"]}>Hannes Fröhlich </span>
             <a
