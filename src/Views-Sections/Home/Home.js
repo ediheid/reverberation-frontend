@@ -10,6 +10,7 @@ import About from "./About/About";
 import Contact from "./Contact/Contact";
 import Partners from "./Partners/Partners";
 
+
 const Home = () => {
   return (
     // All Components are HashLinked
@@ -18,11 +19,15 @@ const Home = () => {
 
       {/* <Tickets /> */}
 
+    
+
       <LineUp />
 
       <Schedule />
 
       <About />
+
+   
 
       <PastEvents />
 

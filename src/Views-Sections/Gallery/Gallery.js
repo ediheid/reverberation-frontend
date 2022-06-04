@@ -6,6 +6,8 @@ import Gallery2021Day1 from "./Gallery2021Day1";
 import Gallery2021Day2 from "./Gallery2021Day2";
 import Gallery2021Day3 from "./Gallery2021Day3";
 
+import PhotoVideo2020 from "../../Components/PhotoVideo2020/PhotoVideo2020";
+
 const Gallery = () => {
   const [page, setPage] = useState("");
 
@@ -89,7 +91,7 @@ const Gallery = () => {
 
       <div className={styles["content-container"]}>
         {/* Display Day on render until new day is selected to render */}
-        {page === "" ? <Gallery2021Day1 /> : <div>{page}</div>}
+        {page === "" ? <PhotoVideo2020 /> : <div>{page}</div>}
       </div>
     </div>
   );

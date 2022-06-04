@@ -21,7 +21,7 @@ import poster2020 from "../PastEvents/Static/2020-poster.png";
 import text2021 from "../PastEvents/Static/2021-text.png";
 import poster2021 from "../PastEvents/Static/2021-poster.png";
 
-import video from "../PastEvents/Static/event-video-2.mp4";
+
 
 const years = [
   // 2021
@@ -132,23 +132,8 @@ const PastEvents = () => {
           </div>
         ))}
 
-        {/* <Link to="/gallery" alt="Link to festival image gallery page">
-          <button className={styles["links-button"]}>Festival Gallery</button>
-        </Link> */}
+     
 
-        <div className={styles["video-container"]}>
-          <video
-            className={styles["reverberation-video-container"]}
-            autoplay="autoplay"
-            muted="true"
-            loop="true"
-            webkit-playsinline="true"
-            playsinline="true"
-            alt="2020 festival video"
-          >
-            <source src={video} type="video/mp4"></source>
-          </video>{" "}
-        </div>
       </div>
     </div>
   );
