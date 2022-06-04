@@ -8,6 +8,7 @@ import PastEvents from "./PastEvents/PastEvents";
 import Tickets from "./Tickets/Tickets";
 import About from "./About/About";
 import Contact from "./Contact/Contact";
+import Partners from "./Partners/Partners";
 
 const Home = () => {
   return (
@@ -23,16 +24,15 @@ const Home = () => {
 
       <About />
 
-    
-
       <PastEvents />
 
       {/* <div className={styles["about-contact-bg-container"]}> */}
-     
 
-        {/* <div style={{ height: "50px", backgroundColor: "black" }}></div> */}
+      {/* <div style={{ height: "50px", backgroundColor: "black" }}></div> */}
 
-        <Contact />
+      <Contact />
+
+      <Partners />
       {/* </div> */}
     </div>
   );

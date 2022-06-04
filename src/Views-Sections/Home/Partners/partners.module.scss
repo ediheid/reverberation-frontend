@@ -1,0 +1,58 @@
+@import "../../../Styling/variables.module";
+@import "../../../Styling/mixins.module";
+@import "../../../Styling/reset.module";
+
+.partners-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 5rem 0 5rem 0;
+
+  width: 100vw;
+}
+
+.section-heading {
+  @include section-headings;
+  margin: 3rem 0 3rem 0;
+
+  font-size: 3rem !important;
+}
+
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 80%;
+}
+
+.logo-container {
+  width: 15rem;
+  height: auto;
+
+  object-fit: contain;
+
+  margin: 3rem;
+
+  &:nth-of-type(1) {
+    width: 20rem;
+  }
+
+  &:nth-of-type(2) {
+    width: 25rem;
+  }
+  &:nth-of-type(4) {
+    width: 30rem;
+  }
+
+  &:nth-of-type(5) {
+    width: 20rem;
+  }
+
+  &:last-of-type {
+    width: 30rem;
+  }
+}
