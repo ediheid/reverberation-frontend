@@ -55,6 +55,10 @@
 
 .reverberation-video-container {
   width: 100vw;
+
+  // Hides screen recording crop
+  outline: 10px solid $black;
+  outline-offset: -5px;
 }
 
 // Set button to center of video - relative to .video-container

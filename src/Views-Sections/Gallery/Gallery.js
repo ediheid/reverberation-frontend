@@ -8,9 +8,9 @@ import Gallery2021Day2 from "./Gallery2021Day2";
 import Gallery2021Day3 from "./Gallery2021Day3";
 
 // Videos
-import videoDay1 from "../Gallery/Static/event-video-2020-day1-test.mp4";
-import videoDay2 from "../Gallery/Static/event-video-2020-day2-v2.mp4";
-import videoDay3 from "../Gallery/Static/event-video-2020-day3.mp4";
+import videoDay1 from "../Gallery/Static/video-2020-day1.mp4";
+import videoDay2 from "../Gallery/Static/video-2020-day2.mp4";
+import videoDay3 from "../Gallery/Static/video-2020-day3.mp4";
 
 const Gallery = () => {
   // page state for conditional render of gallery components
@@ -106,14 +106,14 @@ const Gallery = () => {
                 <source src={videoDay2} type="video/mp4"></source>
               </video>{" "}
               <div className={styles["button-container"]}>
-                <button
+                {/* <button
                   id={styles["day2-button"]}
                   className={styles["gallery-buttons"]}
                   onClick={pageClick}
                   value="2021Day2"
                 >
                   Day 2
-                </button>
+                </button> */}
               </div>
             </div>
 
