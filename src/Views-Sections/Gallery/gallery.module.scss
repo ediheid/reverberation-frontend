@@ -55,10 +55,6 @@
 
 .reverberation-video-container {
   width: 100vw;
-
-  // Hides screen recording crop
-  outline: 20px solid $black;
-  outline-offset: -15px;
 }
 
 // Set button to center of video - relative to .video-container
@@ -332,6 +328,18 @@
   .section-headings {
     font-size: 2.5rem;
   }
+
+  .video-container {
+    display: flex;
+    justify-content: center;
+
+    background-color: $black;
+    width: 100vw;
+  }
+
+  .reverberation-video-container {
+    width: 70vw;
+  }
 }
 
 @include large {
@@ -341,6 +349,18 @@
 
   .video-bg-container {
     padding-top: 5rem;
+  }
+
+  .video-container {
+    display: flex;
+    justify-content: center;
+
+    background-color: $black;
+    width: 100vw;
+  }
+
+  .reverberation-video-container {
+    width: 60vw;
   }
 
   .section-headings {
@@ -380,7 +400,7 @@
   }
 
   .reverberation-video-container {
-    width: 80vw;
+    width: 60vw;
   }
 
   .section-headings {
@@ -421,7 +441,7 @@
 
   .reverberation-video-container {
     width: 60vw;
-    max-width: 400rem;
+    max-width: 80rem;
   }
 
   .section-headings {

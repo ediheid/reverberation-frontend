@@ -7,10 +7,10 @@ import Gallery2021Day1 from "./Gallery2021Day1";
 import Gallery2021Day2 from "./Gallery2021Day2";
 import Gallery2021Day3 from "./Gallery2021Day3";
 
-// Videos
-import videoDay1 from "../Gallery/Static/video-2020-day1.mp4";
-import videoDay2 from "../Gallery/Static/video-2020-day2.mp4";
-import videoDay3 from "../Gallery/Static/video-2020-day3.mp4";
+// Gifs (styled as 'video')
+import gifDay1 from "../Gallery/Static/2020-day1-gif.gif";
+import gifDay2 from "../Gallery/Static/2020-day2-gif.gif";
+import gifDay3 from "../Gallery/Static/2020-day3-gif.gif";
 
 const Gallery = () => {
   // page state for conditional render of gallery components
@@ -67,18 +67,12 @@ const Gallery = () => {
           <div className={styles["video-bg-container"]}>
             <div className={styles["video-container"]}>
               {/* 2020 - Day 1 */}
-              <video
+              <img
                 className={styles["reverberation-video-container"]}
-                autoplay="true"
-                muted="true"
-                loop="true"
-                webkit-playsinline="true"
-                playsinline="true"
-                alt="2020 festival video"
-                width="100%"
-              >
-                <source src={videoDay1} type="video/mp4"></source>
-              </video>{" "}
+                src={gifDay1}
+                alt="gif festival day 1"
+              ></img>
+
               <div className={styles["button-container"]}>
                 <button
                   id={styles["day1-button"]}
@@ -93,18 +87,12 @@ const Gallery = () => {
 
             {/* 2020 - Day 2 */}
             <div className={styles["video-container"]}>
-              <video
+              <img
                 className={styles["reverberation-video-container"]}
-                autoplay="autoplay"
-                muted="true"
-                loop="true"
-                webkit-playsinline="true"
-                playsinline="true"
-                alt="2020 festival video"
-                width="100%"
-              >
-                <source src={videoDay2} type="video/mp4"></source>
-              </video>{" "}
+                src={gifDay2}
+                alt="gif festival day 1"
+              ></img>
+
               <div className={styles["button-container"]}>
                 <button
                   id={styles["day2-button"]}
@@ -119,18 +107,12 @@ const Gallery = () => {
 
             {/* 2020 - Day 3 */}
             <div className={styles["video-container"]}>
-              <video
+              <img
                 className={styles["reverberation-video-container"]}
-                autoplay="autoplay"
-                muted="true"
-                loop="true"
-                webkit-playsinline="true"
-                playsinline="true"
-                alt="2020 festival video"
-                width="100%"
-              >
-                <source src={videoDay3} type="video/mp4"></source>
-              </video>{" "}
+                src={gifDay3}
+                alt="gif festival day 1"
+              ></img>
+
               <div className={styles["button-container"]}>
                 <button
                   id={styles["day3-button"]}
