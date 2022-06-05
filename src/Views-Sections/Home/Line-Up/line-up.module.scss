@@ -6,13 +6,14 @@
   width: 100vw;
 
   // !!!
-  // Todo: Change to auto when there is content
-  height: 100vh;
+  // Todo: Change back to 100vh when bands are to be announced
+  // height: 100vh;
+  height: auto;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
 
   background-color: $black;
 
@@ -26,20 +27,46 @@
 @include gradient-text-green;
 }
 
-// .bands-container {
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: center;
+.bands-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-//   margin: 10rem 0 10rem 0;
+  margin: 10rem 0 10rem 0;
 
-//   width: 80%;
-//   height: auto;
-// }
+  width: 80%;
+  height: auto;
+}
 
-// .band-box {
-//   width: 20rem;
-//   height: 20rem;
-//   margin: 2rem;
-//   background-color: $salmon;
-// }
+.band-box {
+
+  display: flex;
+  flex-direction: column;
+
+  width: 25rem;
+  height: 25rem;
+
+  margin: 2rem;
+  background-color: $white-grey;
+}
+
+.band-img{
+
+width: 25rem;
+height: 18.5rem;
+}
+
+.bandname{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 25rem;
+  height: 6.5rem;
+  background-color: $sand;
+
+  font-family: $main-font-regular-font-family;
+  font-size: 1.7rem;
+  left: .1rem;
+  color: $black;
+}
