@@ -143,7 +143,13 @@ const Gallery = () => {
         ) : (
           // Conditional render
           <div>
-            <button onClick={toOverview}>Back</button>
+            <button
+              onClick={toOverview}
+              className={styles["back-to-overview-button"]}
+            >
+              {/* Content is in css */}
+              {/* Back */}
+            </button>
             {page}
           </div>
         )}
