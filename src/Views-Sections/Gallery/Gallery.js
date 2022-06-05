@@ -69,12 +69,13 @@ const Gallery = () => {
               {/* 2020 - Day 1 */}
               <video
                 className={styles["reverberation-video-container"]}
-                autoplay="autoplay"
+                autoplay="true"
                 muted="true"
                 loop="true"
                 webkit-playsinline="true"
                 playsinline="true"
                 alt="2020 festival video"
+                width="100%"
               >
                 <source src={videoDay1} type="video/mp4"></source>
               </video>{" "}
@@ -100,6 +101,7 @@ const Gallery = () => {
                 webkit-playsinline="true"
                 playsinline="true"
                 alt="2020 festival video"
+                width="100%"
               >
                 <source src={videoDay2} type="video/mp4"></source>
               </video>{" "}
@@ -125,6 +127,7 @@ const Gallery = () => {
                 webkit-playsinline="true"
                 playsinline="true"
                 alt="2020 festival video"
+                width="100%"
               >
                 <source src={videoDay3} type="video/mp4"></source>
               </video>{" "}
