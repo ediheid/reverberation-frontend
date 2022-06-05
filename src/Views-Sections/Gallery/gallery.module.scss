@@ -64,25 +64,7 @@
   width: 100vw;
 }
 
-.gallery-buttons {
-  // color: $mauve;
-  // background-color: transparent;
-  // border: none;
-  // outline: none;
-  // font-family: $nav-links;
-  // font-size: 1.6rem;
-
-  border: 0.25em solid $salmon;
-  padding: 1em 3em;
-  color: $mauve;
-  font-size: 1.5rem;
-  font-weight: bold;
-  background-color: $salmon;
-  border-radius: 1em;
-  outline: none;
-
-  cursor: pointer;
-
+.button-container {
   // ! Test
   position: absolute;
   left: 50%;
@@ -90,32 +72,84 @@
   transform: translate(-50%, -50%);
 
   z-index: 1000;
+}
 
-  // &:active {
-  //   transform: scale(1.1);
-  //   transition: ease-in-out;
-  //   color: $salmon;
-  // }
+.gallery-buttons {
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform 0.25s;
+  font-family: "Montserrat", sans-serif;
+
+  &::before,
+  &::after {
+    position: absolute;
+    // content: "BUTTON";
+    height: 55px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+  &::before {
+    color: #fff;
+    background: #000;
+    transform: rotateY(0deg) translateZ(25px);
+  }
+
+  &::after {
+    color: #000;
+    transform: rotateX(90deg) translateZ(25px);
+    background: white;
+  }
+
+  cursor: pointer;
+
+  &:active {
+    transform: translateZ(-25px) rotateX(-90deg);
+    background: white;
+  }
 
   @media (hover: hover) {
     &:hover {
-      color: $mauve;
-      border: 0.25em solid lighten($salmon, 5%);
-
-      background-color: lighten($salmon, 5%);
-      box-shadow: 0 0 1em 0.25em lighten($salmon, 5%), 0 0 4em 2em $salmon,
-        inset 0 0 0.75em 0.25em lighten($salmon, 5%);
+      transform: translateZ(-25px) rotateX(-90deg);
+      background: white;
     }
   }
 }
 
-// @media (hover: hover) {
-//   .gallery-buttons:hover {
-//     transform: scale(1.1);
-//     transition: ease-in-out;
-//     color: $salmon;
-//   }
-// }
+#day1-button {
+  &::before,
+  &::after {
+    content: "Day 1";
+  }
+}
+
+#day2-button {
+  &::before,
+  &::after {
+    content: "Day 2";
+  }
+}
+
+#day3-button {
+  &::before,
+  &::after {
+    content: "Day 3";
+  }
+}
 
 .component-container {
   display: flex;

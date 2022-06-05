@@ -80,13 +80,16 @@ const Gallery = () => {
               >
                 <source src={videoDay1} type="video/mp4"></source>
               </video>{" "}
-              <button
-                className={styles["gallery-buttons"]}
-                onClick={pageClick}
-                value="2021Day1"
-              >
-                Day 1
-              </button>
+              <div className={styles["button-container"]}>
+                <button
+                  id={styles["day1-button"]}
+                  className={styles["gallery-buttons"]}
+                  onClick={pageClick}
+                  value="2021Day1"
+                >
+                  Day 1
+                </button>
+              </div>
             </div>
 
             {/* 2020 - Day 2 */}
@@ -102,13 +105,16 @@ const Gallery = () => {
               >
                 <source src={videoDay2} type="video/mp4"></source>
               </video>{" "}
-              <button
-                className={styles["gallery-buttons"]}
-                onClick={pageClick}
-                value="2021Day2"
-              >
-                Day 2
-              </button>
+              <div className={styles["button-container"]}>
+                <button
+                  id={styles["day2-button"]}
+                  className={styles["gallery-buttons"]}
+                  onClick={pageClick}
+                  value="2021Day2"
+                >
+                  Day 2
+                </button>
+              </div>
             </div>
 
             {/* 2020 - Day 3 */}
@@ -124,13 +130,16 @@ const Gallery = () => {
               >
                 <source src={videoDay3} type="video/mp4"></source>
               </video>{" "}
-              <button
-                className={styles["gallery-buttons"]}
-                onClick={pageClick}
-                value="2021Day3"
-              >
-                Day 3
-              </button>
+              <div className={styles["button-container"]}>
+                <button
+                  id={styles["day3-button"]}
+                  className={styles["gallery-buttons"]}
+                  onClick={pageClick}
+                  value="2021Day3"
+                >
+                  Day 3
+                </button>
+              </div>
             </div>
           </div>
         ) : (
