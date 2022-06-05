@@ -106,14 +106,14 @@ const Gallery = () => {
                 <source src={videoDay2} type="video/mp4"></source>
               </video>{" "}
               <div className={styles["button-container"]}>
-                {/* <button
+                <button
                   id={styles["day2-button"]}
                   className={styles["gallery-buttons"]}
                   onClick={pageClick}
                   value="2021Day2"
                 >
                   Day 2
-                </button> */}
+                </button>
               </div>
             </div>
 
