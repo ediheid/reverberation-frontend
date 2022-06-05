@@ -20,11 +20,11 @@ const Partners = () => {
     { logo: artourette, alt: "Artourette logo", id: 1 },
     { logo: bkm, alt: "Bkm logo", id: 2 },
     { logo: bytefm, alt: "Bytefm logo", id: 3 },
-    {
-      logo: dresdenerKulturstiftung,
-      alt: "Dresdener Kulturstiftung logo",
-      id: 4,
-    },
+    // {
+    //   logo: dresdenerKulturstiftung,
+    //   alt: "Dresdener Kulturstiftung logo",
+    //   id: 4,
+    // },
     {
       logo: dresdenerMagazin,
       alt: "Dresdener Magazin logo",
@@ -55,11 +55,11 @@ const Partners = () => {
       alt: "Rauze logo",
       id: 10,
     },
-    {
-      logo: saechsischeKulturstiftung,
-      alt: "Saechsische Kulturstiftung logo",
-      id: 11,
-    },
+    // {
+    //   logo: saechsischeKulturstiftung,
+    //   alt: "Saechsische Kulturstiftung logo",
+    //   id: 11,
+    // },
     {
       logo: sharewood,
       alt: "Sharewood logo",

@@ -44,11 +44,15 @@
   &:nth-of-type(2) {
     width: 25rem;
   }
-  &:nth-of-type(4) {
-    width: 30rem;
-  }
 
-  &:nth-of-type(5) {
+ // ! Bring back for dresdenerKulturstiftung when I comment it back in
+  // &:nth-of-type(4) {
+  //   width: 30rem;
+  // }
+
+
+  // ! Change to nth of type 5 when dresdenerKulturstiftung is back
+  &:nth-of-type(4) {
     width: 20rem;
   }
 
