@@ -1,5 +1,7 @@
 import React from "react";
 
+import BandCards from "./BandCards";
+
 import styles from "../Line-Up/line-up.module.scss";
 
 const LineUp = () => {
@@ -72,6 +74,10 @@ bands.sort((a,b) => a.bandName.localeCompare(b.bandName))
       {/* <h2 className={styles["section-heading"]}>To be Announced</h2> */}
 
       <div className={styles["bands-container"]}>
+
+
+<BandCards/>
+
       
 {/* Map sorted bands.. */}
         {bands.map((band) => (
