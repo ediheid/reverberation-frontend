@@ -9,7 +9,7 @@ import Gallery2021Day3 from "./Gallery2021Day3";
 
 // Videos
 import videoDay1 from "../Gallery/Static/event-video-2020-day1.mp4";
-import videoDay2 from "../Gallery/Static/event-video-2020-day2.mp4";
+import videoDay2 from "../Gallery/Static/event-video-2020-day2-v2.mp4";
 import videoDay3 from "../Gallery/Static/event-video-2020-day3.mp4";
 
 const Gallery = () => {
@@ -64,10 +64,10 @@ const Gallery = () => {
         {/* Display overview on render until new day is selected to render */}
         {page === "" ? (
           // Page that will be rendered on landing
-          <div>
+          <div className={styles["video-bg-container"]}>
+            <h3 className={styles["year-subheading"]}>2020</h3>
+
             <div className={styles["video-container"]}>
-              {/* // ! Year heading inside first video heading */}
-              <h3 className={styles["year-subheading"]}>2020</h3>
               {/* 2020 - Day 1 */}
               <video
                 className={styles["reverberation-video-container"]}
