@@ -8,7 +8,7 @@ import Gallery2021Day2 from "./Gallery2021Day2";
 import Gallery2021Day3 from "./Gallery2021Day3";
 
 // Videos
-import videoDay1 from "../Gallery/Static/event-video-2020-day1.mov";
+import videoDay1 from "../Gallery/Static/event-video-2020-day1-test.mp4";
 import videoDay2 from "../Gallery/Static/event-video-2020-day2-v2.mp4";
 import videoDay3 from "../Gallery/Static/event-video-2020-day3.mp4";
 
