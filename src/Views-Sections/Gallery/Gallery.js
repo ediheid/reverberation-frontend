@@ -65,8 +65,6 @@ const Gallery = () => {
         {page === "" ? (
           // Page that will be rendered on landing
           <div className={styles["video-bg-container"]}>
-            <h3 className={styles["year-subheading"]}>2020</h3>
-
             <div className={styles["video-container"]}>
               {/* 2020 - Day 1 */}
               <video
