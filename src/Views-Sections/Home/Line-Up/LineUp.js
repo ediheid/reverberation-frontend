@@ -1,12 +1,25 @@
 import React from "react";
 
-import BandCards from "./BandCards";
+import BandCards from "../Line-Up/BandCards";
 
 import styles from "../Line-Up/line-up.module.scss";
+
+// Images
+import toolBandPhoto from "../Line-Up/Static/tool.jpeg";
 
 const LineUp = () => {
   // Todo: Decide how to order - alphabetically? use sort method
   const bands = [
+    // ! TEST with Tool
+    {
+      bandName: "Tool",
+      country: "US",
+      img: toolBandPhoto,
+      text: "Tool is an American rock band from Los Angeles. Formed in 1990, the group's line-up includes vocalist Maynard James Keenan, guitarist Adam Jones and drummer Danny Carey. Justin Chancellor has been the band's bassist since 1995.",
+      alt: "",
+    },
+    // ! ======
+
     {
       bandName: "LoveNJoy",
       country: "UKR",
@@ -30,7 +43,7 @@ const LineUp = () => {
     },
     {
       bandName: "Rolando Bruno",
-      country: "AR",
+      country: "ARG",
       img: "",
       text: "lkjndlvjcnslda",
       alt: "",
@@ -51,7 +64,7 @@ const LineUp = () => {
     },
     {
       bandName: "Glue Trip",
-      country: "BR",
+      country: "BRA",
       img: "",
       text: "lkjndlvjcnslda",
       alt: "",
@@ -70,18 +83,9 @@ const LineUp = () => {
       {/* <h2 className={styles["section-heading"]}>To be Announced</h2> */}
 
       <div className={styles["bands-container"]}>
-        <BandCards />
-
         {/* Map sorted bands.. */}
         {bands.map((band) => (
-          <div className={styles["band-box"]}>
-            <img
-              className={styles["band-img"]}
-              src={band.img}
-              alt={band.alt}
-            ></img>
-            <span className={styles["bandname"]}>{band.bandName}</span>
-          </div>
+          <BandCards band={band} />
         ))}
       </div>
     </div>
