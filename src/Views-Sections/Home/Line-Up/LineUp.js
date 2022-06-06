@@ -1,6 +1,7 @@
 import React from "react";
 
 import BandCards from "../Line-Up/BandCards";
+import ArtistCards from "../Line-Up/ArtistCards";
 
 import styles from "../Line-Up/line-up.module.scss";
 
@@ -8,7 +9,6 @@ import styles from "../Line-Up/line-up.module.scss";
 import toolBandPhoto from "../Line-Up/Static/tool.jpeg";
 
 const LineUp = () => {
-  // Todo: Decide how to order - alphabetically? use sort method
   const bands = [
     // ! TEST with Tool
     {
@@ -71,6 +71,32 @@ const LineUp = () => {
     },
   ];
 
+  const artists = [
+    {
+      artistName: "Magdalena Dzeko",
+      country: "DE",
+      img: "",
+      text: "lkjndlvjcnslda",
+      alt: "",
+    },
+
+    {
+      artistName: "Tereza Chudackova",
+      country: "CZ",
+      img: "",
+      text: "lkjndlvjcnslda",
+      alt: "",
+    },
+
+    {
+      artistName: "Aneta Navratilova",
+      country: "CZ",
+      img: "",
+      text: "lkjndlvjcnslda",
+      alt: "",
+    },
+  ];
+
   // ! Sort bands alphabetically
   const sortBandsAlphabetically = () => {
     return bands.sort((a, b) => a.bandName.localeCompare(b.bandName));
@@ -78,15 +104,20 @@ const LineUp = () => {
 
   sortBandsAlphabetically();
 
-  // console.log(bands)
+  // ! Sort bands alphabetically
+  const sortArtistsAlphabetically = () => {
+    return artists.sort((a, b) => a.artistName.localeCompare(b.artistName));
+  };
+
+  sortArtistsAlphabetically();
 
   return (
     <div className={styles["line-up-container"]} id="line-up">
-      {/* // ? Saved for when it goes back to 'to be announced' */}
+      {/* // ! Saved for when it goes back to 'to be announced' */}
       {/* <h2 className={styles["section-heading"]}>Line-up</h2> */}
       {/* <h2 className={styles["section-heading"]}>To be Announced</h2> */}
 
-      {/* // * Music */}
+      {/* // ? Music */}
       <h2 className={styles["announced-section-headings"]}>Music Acts</h2>
       <div className={styles["bands-container"]}>
         {/* Map sorted bands.. */}
@@ -95,11 +126,16 @@ const LineUp = () => {
         ))}
       </div>
 
-      {/* // * Artists and Performance */}
-
+      {/* // ? Artists and Performance */}
       <h2 className={styles["announced-section-headings"]}>
         Artists and Performance
       </h2>
+      <div className={styles["bands-container"]}>
+        {/* Map sorted Artists.. */}
+        {artists.map((artist, index) => (
+          <ArtistCards key={index} artist={artist} />
+        ))}
+      </div>
     </div>
   );
 };
