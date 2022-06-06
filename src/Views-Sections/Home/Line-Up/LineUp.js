@@ -72,7 +72,11 @@ const LineUp = () => {
   ];
 
   // ! Sort bands alphabetically
-  bands.sort((a, b) => a.bandName.localeCompare(b.bandName));
+  const sortBandsAlphabetically = () => {
+    return bands.sort((a, b) => a.bandName.localeCompare(b.bandName));
+  };
+
+  sortBandsAlphabetically();
 
   // console.log(bands)
 
@@ -82,12 +86,20 @@ const LineUp = () => {
       {/* <h2 className={styles["section-heading"]}>Line-up</h2> */}
       {/* <h2 className={styles["section-heading"]}>To be Announced</h2> */}
 
+      {/* // * Music */}
+      <h2 className={styles["announced-section-headings"]}>Music Acts</h2>
       <div className={styles["bands-container"]}>
         {/* Map sorted bands.. */}
-        {bands.map((band) => (
-          <BandCards band={band} />
+        {bands.map((band, index) => (
+          <BandCards key={index} band={band} />
         ))}
       </div>
+
+      {/* // * Artists and Performance */}
+
+      <h2 className={styles["announced-section-headings"]}>
+        Artists and Performance
+      </h2>
     </div>
   );
 };

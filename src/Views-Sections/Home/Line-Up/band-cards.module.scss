@@ -6,13 +6,13 @@
   display: flex;
   flex-direction: column;
 
-  width: 300px;
-  height: 320px;
+  width: 30rem;
+  height: 32rem;
 }
 
-.cards__item {
-  height: 400px;
-}
+// .cards-item {
+//   height: 40rem;
+// }
 
 .card {
   position: relative;
@@ -23,8 +23,8 @@
 
   margin: 2rem;
 
-  width: 300px;
-  height: 320px;
+  width: 30rem;
+  height: 32rem;
 
   &::before {
     content: "";
@@ -38,7 +38,7 @@
   }
 }
 
-.card__frame {
+.card-frame {
   position: absolute;
   top: 0;
   left: 0;
@@ -51,50 +51,43 @@
   text-align: center;
 }
 
-.card__picture {
+.card-picture {
   width: 100%;
-  // height: 180px;
-
-  margin-bottom: 2.5rem;
 
   img {
     object-fit: cover;
-    // display: block;
     max-width: 100%;
-    height: 180px;
-    // max-height: 100px;
+    height: 18rem;
   }
 }
 
-.card__title {
-  margin: 0;
-
-  letter-spacing: 0.08em;
+.card-title {
+  letter-spacing: 0.08rem;
   text-transform: uppercase;
 
   font-family: $main-font-regular-font-family;
   font-size: 1.9rem;
-  margin-bottom: 1.5rem;
+  margin: 3rem 0 1.5rem 0;
 }
 
 .band-country {
-  letter-spacing: 0.08em;
+  letter-spacing: 0.08rem;
   text-transform: uppercase;
 
   font-family: $main-font-light-font-family;
   font-size: 1.5rem;
 }
 
-.card__overlay {
+.card-overlay {
   position: absolute;
-  bottom: 15px;
-  right: 15px;
+  bottom: 1.5rem;
+  right: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
-  background-color: #ffffff;
+  width: 6rem;
+  height: 6rem;
+  // background-color: #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 4px rgba(#000000, 0.2);
   transition: 0.5s;
@@ -105,7 +98,7 @@
 
     text-transform: uppercase;
     font-weight: 500;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.02rem;
 
     font-family: $main-font-light-font-family;
     font-size: 1.4rem;
@@ -131,10 +124,10 @@
   }
 }
 
-.card__content {
+.card-content {
   z-index: 1;
-  padding: 20px;
-  line-height: 1.4;
+  padding: 0 2rem 2rem 2rem;
+  line-height: 2.1rem;
   opacity: 0;
   visibility: hidden;
   box-sizing: border-box;
@@ -144,28 +137,25 @@
   font-family: $main-font-regular-font-family;
   font-size: 1.5rem;
 
-  .card__overlay:hover ~ & {
+  .card-overlay:hover ~ & {
     opacity: 1;
     visibility: visible;
     transition: 0.2s 0.3s;
   }
 
   h2 {
-    margin-bottom: 16px;
+    margin-bottom: 1.6rem;
     color: $mid-grey;
   }
 }
 
-// ? Media queries
+// ? Media Queries
 
-// @include medium {
-//   .card {
-//     margin: 3rem;
-//   }
-// }
+@include extra-extra-small {
+  .cards,
+  .card {
+    height: 35rem;
 
-// @include large {
-//   .card {
-//     margin: 3rem;
-//   }
-// }
+    margin: 2rem 0 2rem 0;
+  }
+}
