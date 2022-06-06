@@ -80,7 +80,7 @@ const Gallery = () => {
                   onClick={pageClick}
                   value="2021Day1"
                 >
-                  Day 1
+                  2020 - Day 1
                 </button>
               </div>
             </div>
@@ -100,7 +100,7 @@ const Gallery = () => {
                   onClick={pageClick}
                   value="2021Day2"
                 >
-                  Day 2
+                  2020 - Day 2
                 </button>
               </div>
             </div>
@@ -120,7 +120,7 @@ const Gallery = () => {
                   onClick={pageClick}
                   value="2021Day3"
                 >
-                  Day 3
+                  2020 - Day 3
                 </button>
               </div>
             </div>

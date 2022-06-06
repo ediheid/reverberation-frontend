@@ -11,16 +11,6 @@
   align-items: center;
   flex-direction: column;
 
-  // background: linear-gradient(120deg, #ff0000 0%, #2400ff 100%),
-  //   linear-gradient(120deg, #fa00ff 0%, #208200 100%),
-  //   linear-gradient(130deg, #00f0ff 0%, #000000 100%),
-  //   radial-gradient(110% 140% at 15% 90%, #ffffff 0%, #1700a4 100%),
-  //   radial-gradient(100% 100% at 50% 0%, #ad00ff 0%, #00ffe0 100%),
-  //   radial-gradient(100% 100% at 50% 0%, #00ffe0 0%, #7300a9 80%),
-  //   linear-gradient(30deg, #7ca304 0%, #2200aa 100%);
-  // background-blend-mode: overlay, color, overlay, difference, color-dodge,
-  //   difference, normal;
-
   background-image: radial-gradient(
     circle,
     #d97b73,
@@ -68,84 +58,32 @@
 }
 
 .gallery-buttons {
-  position: relative;
-  display: inline-flex;
-  width: 18rem;
-  height: 5.4rem;
-  margin: 0 1.5rem;
-  perspective: 100rem;
+  @include links-button;
 
-  outline: none;
+  background-color: $nav-dropdown;
+  color: $mid-grey;
+  border: 0.25em solid $black;
   border: none;
-
-  font-size: 1.9rem;
-  letter-spacing: 0.1rem;
-  transform-style: preserve-3d;
-  transform: translateZ(-25px);
-  transition: transform 0.25s;
-  font-family: $main-font-light-font-family;
-
-  &::before,
-  &::after {
-    position: absolute;
-    // content set individually by ID
-    // content: "BUTTON";
-    height: 5.4rem;
-    width: 18rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 0.5rem solid $black;
-    box-sizing: border-box;
-    border-radius: 0.5rem;
-  }
-
-  &::before {
-    color: $white-grey;
-    background: $black;
-    transform: rotateY(0deg) translateZ(25px);
-  }
-
-  &::after {
-    color: $black;
-    transform: rotateX(90deg) translateZ(25px);
-    background: $white-grey;
-  }
+  margin: 0;
 
   cursor: pointer;
 
-  &:active {
-    transform: translateZ(-25px) rotateX(-90deg);
-    background: $white-grey;
-  }
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
   @media (hover: hover) {
     &:hover {
-      transform: translateZ(-25px) rotateX(-90deg);
-      background: $white-grey;
+      color: $salmon;
+      background-color: lighten($mauve, 5%);
+      box-shadow: 0 0 1em 0.25em lighten($mauve, 5%), 0 0 4em 2em $mauve,
+        inset 0 0 0.75em 0.25em lighten($mauve, 5%);
     }
   }
-}
 
-// Button content is set by individual ID
-#day1-button {
-  &::before,
-  &::after {
-    content: "2020 - Day 1";
-  }
-}
-
-#day2-button {
-  &::before,
-  &::after {
-    content: "2020 - Day 2";
-  }
-}
-
-#day3-button {
-  &::before,
-  &::after {
-    content: "2020 - Day 3";
+  &:active {
+    box-shadow: 0 0 0.6em 0.25em lighten($mauve, 5%), 0 0 2.5em 2em $mauve,
+      inset 0 0 0.5em 0.25em lighten($mauve, 5%);
   }
 }
 
@@ -203,10 +141,10 @@
 
   &:hover::after {
     width: 100%;
-    color: $mauve;
+    color: $mid-grey;
     border: none;
     outline: none;
-    border-radius: 0.5rem;
+    border-radius: 0.8rem;
   }
 }
 
