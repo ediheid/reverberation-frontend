@@ -8,6 +8,8 @@ import Gallery2021Day2 from "./Gallery2021Day2";
 import Gallery2021Day3 from "./Gallery2021Day3";
 
 // Gifs (styled as 'video')
+// Made with.. https://ezgif.com/maker
+// Settings - "Delay 50" and "don't stack"
 import gifDay1 from "../Gallery/Static/2020-day1-gif.gif";
 import gifDay2 from "../Gallery/Static/2020-day2-gif.gif";
 import gifDay3 from "../Gallery/Static/2020-day3-gif.gif";
