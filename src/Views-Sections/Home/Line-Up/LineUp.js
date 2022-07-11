@@ -6,20 +6,10 @@ import ArtistCards from "../Line-Up/ArtistCards";
 import styles from "../Line-Up/line-up.module.scss";
 
 // Images
-import toolBandPhoto from "../Line-Up/Static/tool.jpeg";
+import glueTrip from "./Static/glue-trip.png";
 
 const LineUp = () => {
   const bands = [
-    // ! TEST with Tool
-    // {
-    //   bandName: "Tool",
-    //   country: "US",
-    //   img: toolBandPhoto,
-    //   text: "Tool is an American rock band from Los Angeles. Formed in 1990, the group's line-up includes vocalist Maynard James Keenan, guitarist Adam Jones and drummer Danny Carey. Justin Chancellor has been the band's bassist since 1995.",
-    //   alt: "",
-    // },
-    // // ! ======
-
     // {
     //   bandName: "LoveNJoy",
     //   country: "UKR",
@@ -65,8 +55,8 @@ const LineUp = () => {
     {
       bandName: "Glue Trip",
       country: "BRA",
-      img: "",
-      text: "lkjndlvjcnslda",
+      img: glueTrip,
+      text: "Glue Trip is a brazilian psychedelic pop band from João Pessoa. They are currently fighting the evil forces of caretice.",
       alt: "",
     },
   ];
@@ -118,13 +108,18 @@ const LineUp = () => {
       {/* <h2 className={styles["section-heading"]}>To be Announced</h2> */}
 
       {/* // ? Music */}
-      <h2 className={styles["announced-section-headings"]}>Music Line-up</h2>
+      {/* <h2 className={styles["announced-section-headings"]}>Music Line-up</h2> */}
+
       <div className={styles["bands-container"]}>
         {/* Map sorted bands.. */}
         {bands.map((band, index) => (
           <BandCards key={index} band={band} />
         ))}
       </div>
+
+      <h2 className={styles["announced-section-headings"]}>
+        Stay tuned, next announcement coming right up!
+      </h2>
 
       {/* // ? Artists and Performance */}
       {/* <h2 className={styles["announced-section-headings"]}>
@@ -136,10 +131,6 @@ const LineUp = () => {
           <ArtistCards key={index} artist={artist} />
         ))}
       </div> */}
-
-      <h2 className={styles["announced-section-headings"]}>
-        Stay tuned, more to be announced soon!
-      </h2>
     </div>
   );
 };
