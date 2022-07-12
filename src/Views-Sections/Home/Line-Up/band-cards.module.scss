@@ -148,29 +148,41 @@
   }
 }
 
+.links-container {
+  position: absolute;
+  bottom: 2.7rem;
+  left: 2rem;
+
+  display: flex;
+  align-items: center;
+}
+
 .artist-website-link {
   // align-self: flex-start;
   // padding: 0 0 2.5rem 2rem;
 
-  position: absolute;
-  bottom: 2.7rem;
-  left: 2.4rem;
-
   font-size: 2.5rem;
   color: $light-links-hover-colour;
 
+  cursor: pointer;
+
   &:active {
     color: $links-hover-colour;
-    transform: scale(1.1);
-    transition: ease-in-out 0.2s;
+    // transform: scale(1.1);
+    // transition: ease-in-out 0.2s;
+  }
+
+  &:nth-of-type(2) {
+    padding-left: 0.5rem;
+    font-size: 1.9rem;
   }
 }
 
 @media (hover: hover) {
   .artist-website-link :hover {
     color: $links-hover-colour;
-    transform: scale(1.1);
-    transition: ease-in-out 0.2s;
+    // transform: scale(1.1);
+    // transition: ease-in-out 0.2s;
   }
 }
 
