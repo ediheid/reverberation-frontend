@@ -9,7 +9,7 @@ export const bands = [
     img: glueTrip,
     text: "Glue Trip is a brazilian psychedelic pop band from João Pessoa. They are currently fighting the evil forces of caretice.",
     link: "https://www.gluetrip.com/",
-    bandCampLink: "https://gluetrip.bandcamp.com/album/glue-trip",
+    bandCampLink: "https://gluetrip.bandcamp.com/",
     alt: "Glue Trip band - four men sitting in apartment with oversized rubix cube.",
   },
 

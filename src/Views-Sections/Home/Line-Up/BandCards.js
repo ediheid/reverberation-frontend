@@ -28,7 +28,7 @@ const BandCards = ({ band }) => {
           >
             <BiLink />
           </a>
-          {band.bandCampLink !== "" ? (
+          {band.bandCampLink ? (
             <a
               className={styles["artist-website-link"]}
               href={band.bandCampLink}
