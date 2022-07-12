@@ -1,5 +1,3 @@
-import React from "react";
-
 // Images
 import glueTrip from "./Static/glue-trip.png";
 
