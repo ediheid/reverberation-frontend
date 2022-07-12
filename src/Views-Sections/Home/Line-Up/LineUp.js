@@ -7,9 +7,6 @@ import ArtistCards from "../Line-Up/ArtistCards";
 
 import styles from "../Line-Up/line-up.module.scss";
 
-// Images
-import glueTrip from "./Static/glue-trip.png";
-
 const LineUp = () => {
   // const bands = [
   //   // {
