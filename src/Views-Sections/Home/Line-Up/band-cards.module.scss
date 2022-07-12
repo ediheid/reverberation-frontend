@@ -133,7 +133,6 @@
   box-sizing: border-box;
   pointer-events: none;
   transition: 0s;
-
   font-family: $main-font-regular-font-family;
   font-size: 1.5rem;
 
@@ -146,6 +145,32 @@
   h2 {
     margin-bottom: 1.6rem;
     color: $mid-grey;
+  }
+}
+
+.artist-website-link {
+  // align-self: flex-start;
+  // padding: 0 0 2.5rem 2rem;
+
+  position: absolute;
+  bottom: 2.7rem;
+  left: 2.4rem;
+
+  font-size: 2.5rem;
+  color: $light-links-hover-colour;
+
+  &:active {
+    color: $links-hover-colour;
+    transform: scale(1.1);
+    transition: ease-in-out 0.2s;
+  }
+}
+
+@media (hover: hover) {
+  .artist-website-link :hover {
+    color: $links-hover-colour;
+    transform: scale(1.1);
+    transition: ease-in-out 0.2s;
   }
 }
 
