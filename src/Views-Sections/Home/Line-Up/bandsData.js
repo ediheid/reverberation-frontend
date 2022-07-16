@@ -15,7 +15,7 @@ export const bands = [
 
   {
     bandName: "Warm Graves",
-    country: "GER",
+    country: "DE",
     img: warmGraves,
     text: "Arriving seven years on from their 2014 debut album ‘Ships Will Come’, Warm Graves (the moniker of Leipzig-based composer Jonas Wehner) will return with their second studio album, ‘Ease’, on February 25th 2022 via Fuzz Club Records. ",
     link: "https://warmgraves.com/",
@@ -24,24 +24,12 @@ export const bands = [
   },
 
   // {
-  //   bandName: "LoveNJoy",
+  //   bandName: "Love'N'Joy",
   //   country: "UKR",
   //   img: "",
   //   text: "lkjndlvjcnslda",
-  //   alt: "",
-  // },
-  // {
-  //   bandName: "The Big Idea",
-  //   country: "FR",
-  //   img: "",
-  //   text: "lkjndlvjcnslda",
-  //   alt: "",
-  // },
-  // {
-  //   bandName: "Mitsune",
-  //   country: "JP/AUS/DE",
-  //   img: "",
-  //   text: "lkjndlvjcnslda",
+  //   link: "https://lovenjoyband.com/",
+  //   bandCampLink: "https://lovenjoy.bandcamp.com/",
   //   alt: "",
   // },
   // {
@@ -49,8 +37,19 @@ export const bands = [
   //   country: "ARG",
   //   img: "",
   //   text: "lkjndlvjcnslda",
+  //   link: "https://www.instagram.com/rolandobrunomusica/",
+  //   bandCampLink: "https://rolandobrunomusica.bandcamp.com/",
   //   alt: "",
   // },
+
+  // {
+  //   bandName: "Mitsune",
+  //   country: "JP/AUS/DE",
+  //   img: "",
+  //   text: "lkjndlvjcnslda",
+  //   alt: "",
+  // },
+
   // {
   //   bandName: "13yearcicada",
   //   country: "DE",
