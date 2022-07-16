@@ -32,6 +32,7 @@ export const bands = [
   //   bandCampLink: "https://lovenjoy.bandcamp.com/",
   //   alt: "",
   // },
+
   // {
   //   bandName: "Rolando Bruno",
   //   country: "ARG",
@@ -47,14 +48,18 @@ export const bands = [
   //   country: "JP/AUS/DE",
   //   img: "",
   //   text: "lkjndlvjcnslda",
+  //   link: "https://www.mitsune.de/",
+  //   bandCampLink: "https://mitsune.bandcamp.com/",
   //   alt: "",
   // },
 
   // {
-  //   bandName: "13yearcicada",
+  //   bandName: "13 Year Cicada",
   //   country: "DE",
   //   img: "",
   //   text: "lkjndlvjcnslda",
+  //   link: "http://www.13yearcicada.org/",
+  //   bandCampLink: "https://13yearcicadas.bandcamp.com/",
   //   alt: "",
   // },
   // {
@@ -62,6 +67,25 @@ export const bands = [
   //   country: "CZ",
   //   img: "",
   //   text: "lkjndlvjcnslda",
+  //   link: "https://www.facebook.com/candyflipDJs",
+  //   alt: "",
+  // },
+  // {
+  //   bandName: "Die Wilde Jagd",
+  //   country: "DE",
+  //   img: "",
+  //   text: "lkjndlvjcnslda",
+  //   link: "https://diewildejagd.com/",
+  //   bandCampLink: "https://diewildejagd.bandcamp.com/",
+  //   alt: "",
+  // },
+  // {
+  //   bandName: "Sababa 5",
+  //   country: "ISR",
+  //   img: "",
+  //   text: "lkjndlvjcnslda",
+  //   link: "https://batovrecords.com/artists/sababa-5/",
+  //   bandCampLink: "https://sababa5.bandcamp.com/",
   //   alt: "",
   // },
 ];

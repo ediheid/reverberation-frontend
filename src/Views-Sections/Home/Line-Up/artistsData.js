@@ -20,4 +20,12 @@ export const artists = [
   //     text: "lkjndlvjcnslda",
   //     alt: "",
   //   },
+  // {
+  //   artistName: "Dürten Thielk",
+  //   country: "DE",
+  //   img: "",
+  //   text: "lkjndlvjcnslda",
+  //   link: "https://www.duerten-thielk.de/",
+  //   alt: "",
+  // },
 ];

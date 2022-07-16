@@ -32,7 +32,7 @@ const LineUp = () => {
       {/* <h2 className={styles["section-heading"]}>To be Announced</h2> */}
 
       {/* // ? Music */}
-      {/* <h2 className={styles["announced-section-headings"]}>Music Line-up</h2> */}
+      <h2 className={styles["announced-section-headings"]}>Music Line-up</h2>
 
       <div className={styles["bands-container"]}>
         {/* Map sorted bands.. */}
@@ -41,19 +41,19 @@ const LineUp = () => {
         ))}
       </div>
 
-      <h2 className={styles["announced-section-headings"]}>
-        Stay tuned, next announcement coming right up!
-      </h2>
-
       {/* // ? Artists and Performance */}
       {/* <h2 className={styles["announced-section-headings"]}>
         Artists and Performance
-      </h2> */}
+      </h2>
       <div className={styles["bands-container"]}>
         {artists.map((artist, index) => (
           <ArtistCards key={index} artist={artist} />
         ))}
-      </div>
+      </div> */}
+
+      <h2 className={styles["announced-section-headings"]}>
+        Stay tuned, next announcement coming right up!
+      </h2>
     </div>
   );
 };

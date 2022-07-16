@@ -1,4 +1,5 @@
 import React from "react";
+import { BiLink } from "react-icons/bi";
 
 // Same styling as BandCards
 import styles from "../Line-Up/band-cards.module.scss";
@@ -17,6 +18,17 @@ const ArtistCards = ({ artist }) => {
         </div>
         <h2 className={styles["card-title"]}>{artist.artistName}</h2>
         <h3 className={styles["band-country"]}>{artist.country}</h3>
+
+        <div className={styles["links-container"]}>
+          <a
+            className={styles["artist-website-link"]}
+            href={artist.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <BiLink />
+          </a>
+        </div>
       </div>
       <div className={styles["card-overlay"]}></div>
       <div className={styles["card-content"]}>
