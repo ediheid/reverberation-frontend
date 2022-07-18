@@ -1,6 +1,7 @@
 // Images
 import glueTrip from "./Static/glue-trip.png";
 import warmGraves from "./Static/warm-graves.png";
+import loveNjoy from "./Static/loveNJoy.png";
 
 export const bands = [
   {
@@ -23,15 +24,15 @@ export const bands = [
     alt: "Black and white portrait of Jonas Wehner, taken by Julia Perkhun",
   },
 
-  // {
-  //   bandName: "Love'N'Joy",
-  //   country: "UKR",
-  //   img: "",
-  //   text: "lkjndlvjcnslda",
-  //   link: "https://lovenjoyband.com/",
-  //   bandCampLink: "https://lovenjoy.bandcamp.com/",
-  //   alt: "",
-  // },
+  {
+    bandName: "Love'N'Joy",
+    country: "UKR",
+    img: loveNjoy,
+    text: "Love'N'Joy from Kyiv are developing their roots from Brit Pop and Psychedelia into a unique sound that expresses their Ukrainian roots on a universal scale.",
+    link: "https://lovenjoyband.com/",
+    bandCampLink: "https://lovenjoy.bandcamp.com/",
+    alt: "",
+  },
 
   // {
   //   bandName: "Rolando Bruno",
