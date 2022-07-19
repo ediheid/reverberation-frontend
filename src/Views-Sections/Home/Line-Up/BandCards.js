@@ -19,15 +19,18 @@ const BandCards = ({ band }) => {
         <h2 className={styles["card-title"]}>{band.bandName}</h2>
         <h3 className={styles["band-country"]}>{band.country}</h3>
 
+        {/* Links */}
         <div className={styles["links-container"]}>
-          <a
-            className={styles["artist-website-link"]}
-            href={band.link}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <BiLink />
-          </a>
+          {band.link ? (
+            <a
+              className={styles["artist-website-link"]}
+              href={band.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <BiLink />
+            </a>
+          ) : null}
           {band.bandCampLink ? (
             <a
               className={styles["artist-website-link"]}
