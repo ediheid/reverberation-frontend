@@ -4,6 +4,7 @@ import warmGraves from "./Static/warm-graves.png";
 import loveNjoy from "./Static/loveNJoy.png";
 import missMisophonia from "./Static/miss-misophonia.png";
 import rolandoBruno from "./Static/rolando-bruno.png";
+import mitsune from "./Static/mitsune3.png";
 
 export const bands = [
   {
@@ -41,7 +42,6 @@ export const bands = [
   //   country: "DE",
   //   img: missMisophonia,
   //   text: "Miss Misophonia is a booker from Hamburg where she is also known for her improvised danceable DJ sets at underground clubs and bars. Her wide expertise in music is shown in her DJ sets which include indie, punk, noise, wave, psych and everything in-between.",
-  //   // Links?
   //   alt: "Black and white portrait of Miss Misophonia with sunglasses on.",
   // },
 
@@ -55,15 +55,15 @@ export const bands = [
   //   alt: "Portrait of Rolando Bruno with a bright yellow, black and floral shirt in nature",
   // },
 
-  // {
-  //   bandName: "Mitsune",
-  //   country: "JP/AUS/DE",
-  //   img: "",
-  //   text: "lkjndlvjcnslda",
-  //   link: "https://www.mitsune.de/",
-  //   bandCampLink: "https://mitsune.bandcamp.com/",
-  //   alt: "",
-  // },
+  {
+    bandName: "Mitsune",
+    country: "JP/AUS/DE",
+    img: mitsune,
+    text: "Mitsune is a 5-piece Japanese folk fusion ensemble based in Berlin, with members hailing from Japan, Germany, Australia, and Greece. Fronted by a powerful trio of female shamisen players, accompanied with percussion and double bass, creating an evocative music fusion experience.",
+    link: "https://www.mitsune.de/",
+    bandCampLink: "https://mitsune.bandcamp.com/",
+    alt: "Full band in salmon coloured outfits with concrete background.",
+  },
 
   // {
   //   bandName: "13 Year Cicada",
