@@ -2,6 +2,8 @@
 import glueTrip from "./Static/glue-trip.png";
 import warmGraves from "./Static/warm-graves.png";
 import loveNjoy from "./Static/loveNJoy.png";
+import missMisophonia from "./Static/miss-misophonia.png";
+import rolandoBruno from "./Static/rolando-bruno.png";
 
 export const bands = [
   {
@@ -31,17 +33,26 @@ export const bands = [
     text: "Love'N'Joy from Kyiv are developing their roots from Brit Pop and Psychedelia into a unique sound that expresses their Ukrainian roots on a universal scale.",
     link: "https://lovenjoyband.com/",
     bandCampLink: "https://lovenjoy.bandcamp.com/",
-    alt: "",
+    alt: "Love n Joy band members in a dark room with the sun shining on them.",
   },
+
+  // {
+  //   bandName: "Miss Misophonia",
+  //   country: "DE",
+  //   img: missMisophonia,
+  //   text: "Miss Misophonia is a booker from Hamburg where she is also known for her improvised danceable DJ sets at underground clubs and bars. Her wide expertise in music is shown in her DJ sets which include indie, punk, noise, wave, psych and everything in-between.",
+  //   // Links?
+  //   alt: "Black and white portrait of Miss Misophonia with sunglasses on.",
+  // },
 
   // {
   //   bandName: "Rolando Bruno",
   //   country: "ARG",
-  //   img: "",
-  //   text: "lkjndlvjcnslda",
+  //   img: rolandoBruno,
+  //   text: "Rolando Bruno calls his music 'Cumbia Surf Trash' and offers one of the most electric live solo performances you will ever experience!",
   //   link: "https://www.instagram.com/rolandobrunomusica/",
   //   bandCampLink: "https://rolandobrunomusica.bandcamp.com/",
-  //   alt: "",
+  //   alt: "Portrait of Rolando Bruno with a bright yellow, black and floral shirt in nature",
   // },
 
   // {
