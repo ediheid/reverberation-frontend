@@ -5,6 +5,8 @@ import loveNjoy from "./Static/loveNJoy.png";
 import missMisophonia from "./Static/miss-misophonia.png";
 import rolandoBruno from "./Static/rolando-bruno.png";
 import mitsune from "./Static/mitsune3.png";
+import seducation from "./Static/seducation.png";
+import thirteenYearCicada from "./Static/13YC.png";
 
 export const bands = [
   {
@@ -55,25 +57,33 @@ export const bands = [
   //   alt: "Portrait of Rolando Bruno with a bright yellow, black and floral shirt in nature",
   // },
 
-  {
-    bandName: "Mitsune",
-    country: "JP/AUS/DE",
-    img: mitsune,
-    text: "Mitsune is a 5-piece Japanese folk fusion ensemble based in Berlin, with members hailing from Japan, Germany, Australia, and Greece. Fronted by a powerful trio of female shamisen players, accompanied with percussion and double bass, creating an evocative music fusion experience.",
-    link: "https://www.mitsune.de/",
-    bandCampLink: "https://mitsune.bandcamp.com/",
-    alt: "Full band in salmon coloured outfits with concrete background.",
-  },
+  // {
+  //   bandName: "Mitsune",
+  //   country: "JP/AUS/DE",
+  //   img: mitsune,
+  //   text: "Mitsune are a 5-piece Japanese folk fusion ensemble based in Berlin, with members hailing from Japan, Germany, Australia, and Greece. Fronted by a powerful trio of female shamisen players, accompanied with percussion and double bass, creating an evocative music fusion experience.",
+  //   link: "https://www.mitsune.de/",
+  //   bandCampLink: "https://mitsune.bandcamp.com/",
+  //   alt: "Full band in salmon coloured outfits with concrete background.",
+  // },
 
   // {
-  //   bandName: "13 Year Cicada",
+  //   bandName: "Seducation",
   //   country: "DE",
-  //   img: "",
-  //   text: "lkjndlvjcnslda",
-  //   link: "http://www.13yearcicada.org/",
-  //   bandCampLink: "https://13yearcicadas.bandcamp.com/",
-  //   alt: "",
+  //   img: seducation,
+  //   text: "Seducation is a vinyl DJ and collector based in Munich, spinning psychedelic-analog dance music and fuzzed out sounds, contemporary as well as classic, ranging from worldwide psychedelic funk, afrobeat, ethiojazz, middle eastern psych, tropicalia and cumbia to surf, garage and kraut.",
+  //   alt: "Seducation playing a DJ set with a red and grey psychedelic bubble projection background.",
   // },
+
+  {
+    bandName: "13 Year Cicada",
+    country: "DE",
+    img: thirteenYearCicada,
+    text: "13yearcicada are experimental, unique, garagy and on point. They are 3 friends who all play samplers plus instruments.",
+    link: "http://www.13yearcicada.org/",
+    bandCampLink: "https://13yearcicadas.bandcamp.com/",
+    alt: "Portrait of band (3 members) wearing each others faces printed on white t-shirts. Portrait taken by Aileen Klein",
+  },
   // {
   //   bandName: "Candy Flip DJ's",
   //   country: "CZ",
