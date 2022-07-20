@@ -48,15 +48,15 @@ export const bands = [
   //   alt: "Black and white portrait of Miss Misophonia with sunglasses on.",
   // },
 
-  // {
-  //   bandName: "Rolando Bruno",
-  //   country: "ARG",
-  //   img: rolandoBruno,
-  //   text: "Rolando Bruno calls his music 'Cumbia Surf Trash' and offers one of the most electric live solo performances you will ever experience!",
-  //   link: "https://www.instagram.com/rolandobrunomusica/",
-  //   bandCampLink: "https://rolandobrunomusica.bandcamp.com/",
-  //   alt: "Portrait of Rolando Bruno with a bright yellow, black and floral shirt in nature",
-  // },
+  {
+    bandName: "Rolando Bruno",
+    country: "ARG",
+    img: rolandoBruno,
+    text: "Rolando Bruno calls his music 'Cumbia Surf Trash' and offers one of the most electric live solo performances you will ever experience!",
+    link: "https://www.instagram.com/rolandobrunomusica/",
+    bandCampLink: "https://rolandobrunomusica.bandcamp.com/",
+    alt: "Portrait of Rolando Bruno with a bright yellow, black and floral shirt in nature",
+  },
 
   // {
   //   bandName: "Mitsune",
