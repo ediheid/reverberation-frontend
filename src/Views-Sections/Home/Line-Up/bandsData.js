@@ -7,6 +7,7 @@ import rolandoBruno from "./Static/rolando-bruno.png";
 import mitsune from "./Static/mitsune3.png";
 import seducation from "./Static/seducation.png";
 import thirteenYearCicada from "./Static/13YC.png";
+import dieWildeJagd from "./Static/die-wilde-jagd.png";
 
 export const bands = [
   {
@@ -75,15 +76,16 @@ export const bands = [
   //   alt: "Seducation playing a DJ set with a red and grey psychedelic bubble projection background.",
   // },
 
-  {
-    bandName: "13 Year Cicada",
-    country: "DE",
-    img: thirteenYearCicada,
-    text: "13yearcicada are experimental, unique, garagy and on point. They are 3 friends who all play samplers plus instruments.",
-    link: "http://www.13yearcicada.org/",
-    bandCampLink: "https://13yearcicadas.bandcamp.com/",
-    alt: "Portrait of band (3 members) wearing each others faces printed on white t-shirts. Portrait taken by Aileen Klein",
-  },
+  // {
+  //   bandName: "13 Year Cicada",
+  //   country: "DE",
+  //   img: thirteenYearCicada,
+  //   text: "13yearcicada are experimental, unique, garagy and on point. They are 3 friends who all play samplers plus instruments.",
+  //   link: "http://www.13yearcicada.org/",
+  //   bandCampLink: "https://13yearcicadas.bandcamp.com/",
+  //   alt: "Portrait of band (3 members) wearing each others faces printed on white t-shirts. Portrait taken by Aileen Klein",
+  // },
+
   // {
   //   bandName: "Candy Flip DJ's",
   //   country: "CZ",
@@ -92,15 +94,17 @@ export const bands = [
   //   link: "https://www.facebook.com/candyflipDJs",
   //   alt: "",
   // },
+
   // {
   //   bandName: "Die Wilde Jagd",
   //   country: "DE",
-  //   img: "",
-  //   text: "lkjndlvjcnslda",
+  //   img: dieWildeJagd,
+  //   text: "Die Wilde Jagd is the project of Sebastian Lee Philipp, aided by Ralf Beck and delivers a journey into the dark spheres of medieval myth, combined with Krautrock and Pop of our contemporary age.",
   //   link: "https://diewildejagd.com/",
   //   bandCampLink: "https://diewildejagd.bandcamp.com/",
-  //   alt: "",
+  //   alt: "Portrait of Sebastian Lee Philip with an astrological background and overlay.",
   // },
+
   // {
   //   bandName: "Sababa 5",
   //   country: "ISR",
