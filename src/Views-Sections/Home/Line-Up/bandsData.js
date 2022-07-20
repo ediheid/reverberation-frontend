@@ -73,6 +73,7 @@ export const bands = [
   //   country: "DE",
   //   img: seducation,
   //   text: "Seducation is a vinyl DJ and collector based in Munich, spinning psychedelic-analog dance music and fuzzed out sounds, contemporary as well as classic, ranging from worldwide psychedelic funk, afrobeat, ethiojazz, middle eastern psych, tropicalia and cumbia to surf, garage and kraut.",
+  //   link: "https://www.mixcloud.com/seducation/",
   //   alt: "Seducation playing a DJ set with a red and grey psychedelic bubble projection background.",
   // },
 
