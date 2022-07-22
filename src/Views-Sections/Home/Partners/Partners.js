@@ -55,11 +55,11 @@ const Partners = () => {
       alt: "Rauze logo",
       id: 10,
     },
-    // {
-    //   logo: saechsischeKulturstiftung,
-    //   alt: "Saechsische Kulturstiftung logo",
-    //   id: 11,
-    // },
+    {
+      logo: saechsischeKulturstiftung,
+      alt: "Saechsische Kulturstiftung logo",
+      id: 12,
+    },
     {
       logo: sharewood,
       alt: "Sharewood logo",
