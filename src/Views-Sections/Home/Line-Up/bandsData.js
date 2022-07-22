@@ -58,15 +58,15 @@ export const bands = [
     alt: "Portrait of Rolando Bruno with a bright yellow, black and floral shirt in nature",
   },
 
-  // {
-  //   bandName: "Mitsune",
-  //   country: "JP/AUS/DE",
-  //   img: mitsune,
-  //   text: "Mitsune are a 5-piece Japanese folk fusion ensemble based in Berlin, with members hailing from Japan, Germany, Australia, and Greece. Fronted by a powerful trio of female shamisen players, accompanied with percussion and double bass, creating an evocative music fusion experience.",
-  //   link: "https://www.mitsune.de/",
-  //   bandCampLink: "https://mitsune.bandcamp.com/",
-  //   alt: "Full band in salmon coloured outfits with concrete background.",
-  // },
+  {
+    bandName: "Mitsune",
+    country: "JP/AUS/DE",
+    img: mitsune,
+    text: "Mitsune are a 5-piece Japanese folk fusion ensemble based in Berlin, with members hailing from Japan, Germany, Australia, and Greece. Fronted by a powerful trio of female shamisen players, accompanied with percussion and double bass, creating an evocative music fusion experience.",
+    link: "https://www.mitsune.de/",
+    bandCampLink: "https://mitsune.bandcamp.com/",
+    alt: "Full band in salmon coloured outfits with concrete background.",
+  },
 
   // {
   //   bandName: "Seducation",
