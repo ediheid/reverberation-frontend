@@ -77,15 +77,15 @@ export const bands = [
   //   alt: "Seducation playing a DJ set with a red and grey psychedelic bubble projection background.",
   // },
 
-  // {
-  //   bandName: "13 Year Cicada",
-  //   country: "DE",
-  //   img: thirteenYearCicada,
-  //   text: "13yearcicada are experimental, unique, garagy and on point. They are 3 friends who all play samplers plus instruments.",
-  //   link: "http://www.13yearcicada.org/",
-  //   bandCampLink: "https://13yearcicadas.bandcamp.com/",
-  //   alt: "Portrait of band (3 members) wearing each others faces printed on white t-shirts. Portrait taken by Aileen Klein",
-  // },
+  {
+    bandName: "13 Year Cicada",
+    country: "DE",
+    img: thirteenYearCicada,
+    text: "13yearcicada are experimental, unique, garagy and on point. They are 3 friends who all play samplers plus instruments.",
+    link: "http://www.13yearcicada.org/",
+    bandCampLink: "https://13yearcicadas.bandcamp.com/",
+    alt: "Portrait of band (3 members) wearing each others faces printed on white t-shirts. Portrait taken by Aileen Klein",
+  },
 
   // {
   //   bandName: "Candy Flip DJ's",
