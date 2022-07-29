@@ -56,92 +56,142 @@ const Gallery = () => {
   }, []);
 
   // Back to overview onClick function
-  const toOverview = () => {
-    setPage("");
-  };
+  // const toOverview = () => {
+  //   setPage("");
+  // };
 
   return (
     <div className={styles["gallery-page-container"]}>
-      <div className={styles["content-container"]}>
-        {/* Display overview on render until new day is selected to render */}
-        {page === "" ? (
-          // Page that will be rendered on landing
-          <div className={styles["video-bg-container"]}>
-            <div className={styles["video-container"]}>
-              {/* 2020 - Day 1 */}
-              <img
-                className={styles["reverberation-video-container"]}
-                src={gifDay1}
-                alt="gif festival day 1"
-              ></img>
+      <div className={styles["header-container"]}>
+        {/* <h3 className={styles["section-headings"]}>Gallery</h3> */}
 
-              <div className={styles["button-container"]}>
+        <div className={styles["list-container"]}>
+          <div className={styles["container-2021"]}>
+            {/* Made year correction here but not in the Component names or styles */}
+            <h3>2020</h3>
+            <ul className={styles["ul"]}>
+              <li>
                 <button
-                  id={styles["day1-button"]}
                   className={styles["gallery-buttons"]}
                   onClick={pageClick}
                   value="2021Day1"
                 >
-                  2020 - Day 1
+                  Day 1
                 </button>
-              </div>
-            </div>
+              </li>
 
-            {/* 2020 - Day 2 */}
-            <div className={styles["video-container"]}>
-              <img
-                className={styles["reverberation-video-container"]}
-                src={gifDay2}
-                alt="gif festival day 1"
-              ></img>
-
-              <div className={styles["button-container"]}>
+              <li>
                 <button
-                  id={styles["day2-button"]}
                   className={styles["gallery-buttons"]}
                   onClick={pageClick}
                   value="2021Day2"
                 >
-                  2020 - Day 2
+                  Day 2
                 </button>
-              </div>
-            </div>
+              </li>
 
-            {/* 2020 - Day 3 */}
-            <div className={styles["video-container"]}>
-              <img
-                className={styles["reverberation-video-container"]}
-                src={gifDay3}
-                alt="gif festival day 1"
-              ></img>
-
-              <div className={styles["button-container"]}>
+              <li>
+                {" "}
                 <button
-                  id={styles["day3-button"]}
                   className={styles["gallery-buttons"]}
                   onClick={pageClick}
                   value="2021Day3"
                 >
-                  2020 - Day 3
+                  Day 3
                 </button>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
-        ) : (
-          // Conditional render
-          <div>
-            <button
-              onClick={toOverview}
-              className={styles["back-to-overview-button"]}
-            >
-              {/* Content is in css */}
-              {/* Back */}
-            </button>
-            {page}
-          </div>
-        )}
+        </div>
+      </div>
+
+      <div className={styles["content-container"]}>
+        {/* Display Day one render until new day is selected to render */}
+        {page === "" ? <Gallery2021Day1 /> : <div>{page}</div>}
       </div>
     </div>
+
+    // <div className={styles["gallery-page-container"]}>
+    //   <div className={styles["content-container"]}>
+    //     {/* Display overview on render until new day is selected to render */}
+    //     {page === "" ? (
+    //       // Page that will be rendered on landing
+    //       <div className={styles["video-bg-container"]}>
+    //         <div className={styles["video-container"]}>
+    //           {/* 2020 - Day 1 */}
+    //           <img
+    //             className={styles["reverberation-video-container"]}
+    //             src={gifDay1}
+    //             alt="gif festival day 1"
+    //           ></img>
+
+    //           <div className={styles["button-container"]}>
+    //             <button
+    //               id={styles["day1-button"]}
+    //               className={styles["gallery-buttons"]}
+    //               onClick={pageClick}
+    //               value="2021Day1"
+    //             >
+    //               2020 - Day 1
+    //             </button>
+    //           </div>
+    //         </div>
+
+    //         {/* 2020 - Day 2 */}
+    //         <div className={styles["video-container"]}>
+    //           <img
+    //             className={styles["reverberation-video-container"]}
+    //             src={gifDay2}
+    //             alt="gif festival day 1"
+    //           ></img>
+
+    //           <div className={styles["button-container"]}>
+    //             <button
+    //               id={styles["day2-button"]}
+    //               className={styles["gallery-buttons"]}
+    //               onClick={pageClick}
+    //               value="2021Day2"
+    //             >
+    //               2020 - Day 2
+    //             </button>
+    //           </div>
+    //         </div>
+
+    //         {/* 2020 - Day 3 */}
+    //         <div className={styles["video-container"]}>
+    //           <img
+    //             className={styles["reverberation-video-container"]}
+    //             src={gifDay3}
+    //             alt="gif festival day 1"
+    //           ></img>
+
+    //           <div className={styles["button-container"]}>
+    //             <button
+    //               id={styles["day3-button"]}
+    //               className={styles["gallery-buttons"]}
+    //               onClick={pageClick}
+    //               value="2021Day3"
+    //             >
+    //               2020 - Day 3
+    //             </button>
+    //           </div>
+    //         </div>
+    //       </div>
+    //     ) : (
+    //       // Conditional render
+    //       <div>
+    //         <button
+    //           onClick={toOverview}
+    //           className={styles["back-to-overview-button"]}
+    //         >
+    //           {/* Content is in css */}
+    //           {/* Back */}
+    //         </button>
+    //         {page}
+    //       </div>
+    //     )}
+    //   </div>
+    // </div>
   );
 };
 
