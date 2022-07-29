@@ -40,13 +40,13 @@ export const bands = [
     alt: "Love n Joy band members in a dark room with the sun shining on them.",
   },
 
-  // {
-  //   bandName: "Miss Misophonia",
-  //   country: "DE",
-  //   img: missMisophonia,
-  //   text: "Miss Misophonia is a booker from Hamburg where she is also known for her improvised danceable DJ sets at underground clubs and bars. Her wide expertise in music is shown in her DJ sets which include indie, punk, noise, wave, psych and everything in-between.",
-  //   alt: "Black and white portrait of Miss Misophonia with sunglasses on.",
-  // },
+  {
+    bandName: "Miss Misophonia",
+    country: "DE",
+    img: missMisophonia,
+    text: "Miss Misophonia is a booker from Hamburg where she is also known for her improvised danceable DJ sets at underground clubs and bars. Her wide expertise in music is shown in her DJ sets which include indie, punk, noise, wave, psych and everything in-between.",
+    alt: "Black and white portrait of Miss Misophonia with sunglasses on.",
+  },
 
   {
     bandName: "Rolando Bruno",
