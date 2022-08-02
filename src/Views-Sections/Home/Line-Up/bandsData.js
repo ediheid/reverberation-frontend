@@ -68,14 +68,14 @@ export const bands = [
     alt: "Full band in salmon coloured outfits with concrete background.",
   },
 
-  // {
-  //   bandName: "Seducation",
-  //   country: "DE",
-  //   img: seducation,
-  //   text: "Seducation is a vinyl DJ and collector based in Munich, spinning psychedelic-analog dance music and fuzzed out sounds, contemporary as well as classic, ranging from worldwide psychedelic funk, afrobeat, ethiojazz, middle eastern psych, tropicalia and cumbia to surf, garage and kraut.",
-  //   link: "https://www.mixcloud.com/seducation/",
-  //   alt: "Seducation playing a DJ set with a red and grey psychedelic bubble projection background.",
-  // },
+  {
+    bandName: "Seducation",
+    country: "DE",
+    img: seducation,
+    text: "Seducation is a vinyl DJ and collector based in Munich, spinning psychedelic-analog dance music and fuzzed out sounds, contemporary as well as classic, ranging from worldwide psychedelic funk, afrobeat, ethiojazz, middle eastern psych, tropicalia and cumbia to surf, garage and kraut.",
+    link: "https://www.mixcloud.com/seducation/",
+    alt: "Seducation playing a DJ set with a red and grey psychedelic bubble projection background.",
+  },
 
   {
     bandName: "13 Year Cicada",
@@ -96,15 +96,15 @@ export const bands = [
   //   alt: "",
   // },
 
-  // {
-  //   bandName: "Die Wilde Jagd",
-  //   country: "DE",
-  //   img: dieWildeJagd,
-  //   text: "Die Wilde Jagd is the project of Sebastian Lee Philipp, aided by Ralf Beck and delivers a journey into the dark spheres of medieval myth, combined with Krautrock and Pop of our contemporary age.",
-  //   link: "https://diewildejagd.com/",
-  //   bandCampLink: "https://diewildejagd.bandcamp.com/",
-  //   alt: "Portrait of Sebastian Lee Philip with an astrological background and overlay.",
-  // },
+  {
+    bandName: "Die Wilde Jagd",
+    country: "DE",
+    img: dieWildeJagd,
+    text: "Die Wilde Jagd is the project of Sebastian Lee Philipp, aided by Ralf Beck and delivers a journey into the dark spheres of medieval myth, combined with Krautrock and Pop of our contemporary age.",
+    link: "https://diewildejagd.com/",
+    bandCampLink: "https://diewildejagd.bandcamp.com/",
+    alt: "Portrait of Sebastian Lee Philip with an astrological background and overlay.",
+  },
 
   // {
   //   bandName: "Sababa 5",
