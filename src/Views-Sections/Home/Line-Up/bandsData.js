@@ -9,6 +9,7 @@ import seducation from "./Static/seducation.png";
 import thirteenYearCicada from "./Static/13YC.png";
 import dieWildeJagd from "./Static/die-wilde-jagd.png";
 import candyFlipDjs from "./Static/candy-flip-djs.png";
+import sababa5 from "./Static/sababa-5.png";
 
 export const bands = [
   {
@@ -92,7 +93,7 @@ export const bands = [
   //   bandName: "Candy Flip DJ's",
   //   country: "CZ",
   //   img: candyFlipDjs,
-  //   text: "",
+  //   text: "A vinyl DJ duo from Prague, serving a bittersweet music set, spiced up with rare tracks of 60s Psychedelia and Garage Rock, mixed up with a bit of French Soft Electro, Krautrock and Neo Psychedelia, mashed-up together in one glitter Goulash that'll make your shoes dance through the night. They are the adherents of cheap booze and musical chaos!",
   //   link: "https://www.facebook.com/candyflipDJs",
   //   alt: "Candy Flip Djs doing a dj set in a house with paintings in the background.",
   // },
@@ -107,13 +108,13 @@ export const bands = [
     alt: "Portrait of Sebastian Lee Philip with an astrological background and overlay.",
   },
 
-  // {
-  //   bandName: "Sababa 5",
-  //   country: "ISR",
-  //   img: "",
-  //   text: "lkjndlvjcnslda",
-  //   link: "https://batovrecords.com/artists/sababa-5/",
-  //   bandCampLink: "https://sababa5.bandcamp.com/",
-  //   alt: "",
-  // },
+  {
+    bandName: "Sababa 5",
+    country: "ISR",
+    img: sababa5,
+    text: "Sababa 5 from Tel Aviv take influence from wrecking crew recordings from the ’60s, to analog Middle Eastern music from the ’70s, constantly revolving around different genres and rhythms and will perform in Germany for the first time ever.",
+    link: "https://batovrecords.com/artists/sababa-5/",
+    bandCampLink: "https://sababa5.bandcamp.com/",
+    alt: "Band on a rooftop taken by Vera Bello",
+  },
 ];
