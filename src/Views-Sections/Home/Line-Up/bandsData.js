@@ -100,7 +100,7 @@ export const bands = [
     bandName: "Die Wilde Jagd",
     country: "DE",
     img: dieWildeJagd,
-    text: "Die Wilde Jagd is the project of Sebastian Lee Philipp, aided by Ralf Beck and delivers a journey into the dark spheres of medieval myth, combined with Krautrock and Pop of our contemporary age.",
+    text: "Die Wilde Jagd is the project of Sebastian Lee Philipp, accompanied on stage by drums and cello, delivering a journey into the dark spheres of medieval myth, combined with Krautrock and Pop of our contemporary age.",
     link: "https://diewildejagd.com/",
     bandCampLink: "https://diewildejagd.bandcamp.com/",
     alt: "Portrait of Sebastian Lee Philip with an astrological background and overlay.",
