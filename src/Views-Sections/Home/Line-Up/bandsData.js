@@ -8,6 +8,7 @@ import mitsune from "./Static/mitsune3.png";
 import seducation from "./Static/seducation.png";
 import thirteenYearCicada from "./Static/13YC.png";
 import dieWildeJagd from "./Static/die-wilde-jagd.png";
+import candyFlipDjs from "./Static/candy-flip-djs.png";
 
 export const bands = [
   {
@@ -90,10 +91,10 @@ export const bands = [
   // {
   //   bandName: "Candy Flip DJ's",
   //   country: "CZ",
-  //   img: "",
-  //   text: "lkjndlvjcnslda",
+  //   img: candyFlipDjs,
+  //   text: "",
   //   link: "https://www.facebook.com/candyflipDJs",
-  //   alt: "",
+  //   alt: "Candy Flip Djs doing a dj set in a house with paintings in the background.",
   // },
 
   {
