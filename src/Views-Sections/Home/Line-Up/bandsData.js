@@ -89,14 +89,14 @@ export const bands = [
     alt: "Portrait of band (3 members) wearing each others faces printed on white t-shirts. Portrait taken by Aileen Klein",
   },
 
-  // {
-  //   bandName: "Candy Flip DJ's",
-  //   country: "CZ",
-  //   img: candyFlipDjs,
-  //   text: "A vinyl DJ duo from Prague, serving a bittersweet music set, spiced up with rare tracks of 60s Psychedelia and Garage Rock, mixed up with a bit of French Soft Electro, Krautrock and Neo Psychedelia, mashed-up together in one glitter Goulash that'll make your shoes dance through the night. They are the adherents of cheap booze and musical chaos!",
-  //   link: "https://www.facebook.com/candyflipDJs",
-  //   alt: "Candy Flip Djs doing a dj set in a house with paintings in the background.",
-  // },
+  {
+    bandName: "Candy Flip DJ's",
+    country: "CZ",
+    img: candyFlipDjs,
+    text: "A vinyl DJ duo from Prague, serving a bittersweet music set, spiced up with rare tracks of 60s Psychedelia and Garage Rock, mixed up with a bit of French Soft Electro, Krautrock and Neo Psychedelia, mashed-up together in one glitter Goulash that'll make your shoes dance through the night. They are the adherents of cheap booze and musical chaos!",
+    link: "https://www.facebook.com/candyflipDJs",
+    alt: "Candy Flip Djs doing a dj set in a house with paintings in the background.",
+  },
 
   {
     bandName: "Die Wilde Jagd",
