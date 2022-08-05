@@ -10,6 +10,7 @@ import thirteenYearCicada from "./Static/13YC.png";
 import dieWildeJagd from "./Static/die-wilde-jagd.png";
 import candyFlipDjs from "./Static/candy-flip-djs.png";
 import sababa5 from "./Static/sababa-5.png";
+import riverSound from "./Static/riversound-flyer.png";
 
 export const bands = [
   {
@@ -116,5 +117,16 @@ export const bands = [
     link: "https://batovrecords.com/artists/sababa-5/",
     bandCampLink: "https://sababa5.bandcamp.com/",
     alt: "Band on a rooftop taken by Vera Bello",
+  },
+
+  {
+    bandName: "Riversound Newcomer Winner",
+    country: "CZ",
+    img: riverSound,
+    // For RiverSound Festival - object position top
+    pictureTop: "pictureTop",
+    text: "Riversound festival is an exchange program between the venue Papirna in Plzen/Czech Republic and Dresden Psych Family, enabling one band a year to perform at Reverberation Fest after being voted by a jury of members of Reverberation Festival.",
+    link: "https://www.facebook.com/riversound_festival_cz/",
+    alt: "",
   },
 ];

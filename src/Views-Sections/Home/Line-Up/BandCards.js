@@ -11,6 +11,8 @@ const BandCards = ({ band }) => {
         <div className={styles["card-picture"]}>
           <img
             className={styles["image"]}
+            // For RiverSound Festival - object position top
+            id={styles[band.pictureTop]}
             src={band.img}
             alt={band.alt}
             width="100%"
