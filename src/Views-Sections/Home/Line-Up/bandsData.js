@@ -11,6 +11,7 @@ import dieWildeJagd from "./Static/die-wilde-jagd.png";
 import candyFlipDjs from "./Static/candy-flip-djs.png";
 import sababa5 from "./Static/sababa-5.png";
 import riverSound from "./Static/riversound-flyer.png";
+import theBigIdea from "./Static/the-big-idea.png";
 
 export const bands = [
   {
@@ -127,6 +128,16 @@ export const bands = [
     pictureTop: "pictureTop",
     text: "Riversound festival is an exchange program between the venue Papirna in Plzen/Czech Republic and Dresden Psych Family, enabling one band a year to perform at Reverberation Fest after being voted by a jury of members of Reverberation Festival.",
     link: "https://www.facebook.com/riversound_festival_cz/",
-    alt: "",
+    alt: "Riversound Festival flyer",
   },
+
+  // {
+  //   bandName: "The Big Idea",
+  //   country: "FR",
+  //   img: theBigIdea,
+  //   text: "The Big Idea is one of the rare rock bands that have understood how to offer ever more intense performances with no less than six instrumentalists on stage, allowing them to establish an unconventional project, without a label, that blurs the lines.",
+  //   link: "https://thebigidea.fr/?fbclid=IwAR3n3YI8Fef5sRQdC-PDcjnMAm1d8urpv2vzM6lblGqaRKJe5AUuL-vy4ik",
+  //   bandCampLink: "https://thebigidea.bandcamp.com/",
+  //   alt: "Band with 6 members on a rooftop with bright blue sky. ",
+  // },
 ];
