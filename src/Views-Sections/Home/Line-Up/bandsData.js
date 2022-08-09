@@ -131,13 +131,13 @@ export const bands = [
     alt: "Riversound Festival flyer",
   },
 
-  // {
-  //   bandName: "The Big Idea",
-  //   country: "FR",
-  //   img: theBigIdea,
-  //   text: "The Big Idea is one of the rare rock bands that have understood how to offer ever more intense performances with no less than six instrumentalists on stage, allowing them to establish an unconventional project, without a label, that blurs the lines.",
-  //   link: "https://thebigidea.fr/?fbclid=IwAR3n3YI8Fef5sRQdC-PDcjnMAm1d8urpv2vzM6lblGqaRKJe5AUuL-vy4ik",
-  //   bandCampLink: "https://thebigidea.bandcamp.com/",
-  //   alt: "Band with 6 members on a rooftop with bright blue sky. ",
-  // },
+  {
+    bandName: "The Big Idea",
+    country: "FR",
+    img: theBigIdea,
+    text: "The Big Idea are one of the rare rock bands that have understood how to offer ever more intense performances with no less than six instrumentalists on stage, allowing them to establish an unconventional project, without a label, that blurs the lines.",
+    link: "https://thebigidea.fr/?fbclid=IwAR3n3YI8Fef5sRQdC-PDcjnMAm1d8urpv2vzM6lblGqaRKJe5AUuL-vy4ik",
+    bandCampLink: "https://thebigidea.bandcamp.com/",
+    alt: "Band with 6 members on a rooftop with bright blue sky. ",
+  },
 ];
