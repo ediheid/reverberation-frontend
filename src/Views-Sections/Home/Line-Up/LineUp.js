@@ -42,18 +42,18 @@ const LineUp = () => {
       </div>
 
       {/* // ? Artists and Performance */}
-      {/* <h2 className={styles["announced-section-headings"]}>
+      <h2 className={styles["announced-section-headings"]}>
         Artists and Performance
       </h2>
       <div className={styles["bands-container"]}>
         {artists.map((artist, index) => (
           <ArtistCards key={index} artist={artist} />
         ))}
-      </div> */}
+      </div>
 
-      <h2 className={styles["announced-section-headings"]}>
+      {/* <h2 className={styles["announced-section-headings"]}>
         Stay tuned, next announcement coming right up!
-      </h2>
+      </h2> */}
     </div>
   );
 };
