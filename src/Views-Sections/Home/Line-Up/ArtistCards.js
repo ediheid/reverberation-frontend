@@ -21,13 +21,24 @@ const ArtistCards = ({ artist }) => {
 
         <div className={styles["links-container"]}>
           <a
-            className={styles["artist-website-link"]}
+            className={styles["visual-artist-website-link"]}
             href={artist.link}
             target="_blank"
             rel="noopener noreferrer"
           >
             <BiLink />
           </a>
+
+          {artist.link2 ? (
+            <a
+              className={styles["visual-artist-website-link"]}
+              href={artist.link2}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <BiLink />
+            </a>
+          ) : null}
         </div>
       </div>
       <div className={styles["card-overlay"]}></div>

@@ -162,7 +162,8 @@
   align-items: center;
 }
 
-.artist-website-link {
+.artist-website-link,
+.visual-artist-website-link {
   // align-self: flex-start;
   // padding: 0 0 2.5rem 2rem;
 
@@ -176,7 +177,9 @@
     // transform: scale(1.1);
     // transition: ease-in-out 0.2s;
   }
+}
 
+.artist-website-link {
   &:nth-of-type(2) {
     padding-left: 0.5rem;
     font-size: 1.9rem;
