@@ -3,10 +3,12 @@ import React from "react";
 // Data arrays
 import { bands } from "./bandsData";
 import { artists } from "./artistsData";
+import { outdoor } from "./outdoorTreatsData";
 
 // Card Components
 import BandCards from "../Line-Up/BandCards";
 import ArtistCards from "../Line-Up/ArtistCards";
+import OutdoorTreatsCard from "./OutdoorTreatsCard";
 
 import styles from "../Line-Up/line-up.module.scss";
 
@@ -48,6 +50,15 @@ const LineUp = () => {
       <div className={styles["bands-container"]}>
         {artists.map((artist, index) => (
           <ArtistCards key={index} artist={artist} />
+        ))}
+      </div>
+
+      {/* // ? Outdoor treats */}
+
+      <h2 className={styles["announced-section-headings"]}>Outdoor Treats</h2>
+      <div className={styles["bands-container"]}>
+        {outdoor.map((outdoor, index) => (
+          <OutdoorTreatsCard key={index} outdoor={outdoor} />
         ))}
       </div>
 
