@@ -2,6 +2,7 @@ import steinbrechnerGuitars from "./Static/steinbrecherguitars.png";
 import loseDresden from "./Static/lose-dresden.png";
 import missionLifeline from "./Static/mission-lifeline.png";
 import kawaEspresso from "./Static/kawa-espresso.png";
+import bingoMadness from "./Static/bingo-madness.png";
 
 export const outdoor = [
   {
@@ -38,5 +39,15 @@ export const outdoor = [
     text: `Already the location of our daytime hangout in 2020, Kawa Espressobar‘s very own Schadi is back as well and will serve you the most delicious coffees along with his famous vegan and vegetarian „Schadi‘s Fladis“ on Saturday at Chemiefabrik!`,
     link: "https://www.instagram.com/kawa_espressobar/",
     alt: `Schadi making coffee in front of his espresso machine at Kawa Espressobar.`,
+  },
+
+  {
+    outdoorName: "Bingo Madness",
+    country: "DE",
+    img: bingoMadness,
+    text: `Saturday at Chemiefabrik! If you haven’t heard or experienced it yet, you might not want to miss out on this rollercoaster ride of emotions with Dresden's most abusive bingo caller, Hugo. Facts you never knew you wanted to know, music that makes your hairs stand up and exciting quizzes not many are able to answer correctly! It’s Bingo Madness!`,
+    // Bingo Madness - object position top
+    pictureTop: "pictureTop",
+    alt: `Bingo Madness sepia poster of a 1950s bingo event with Hugo's face shopped onto one of the members.`,
   },
 ];

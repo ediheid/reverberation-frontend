@@ -10,6 +10,10 @@ const OutdoorTreatsCard = ({ outdoor }) => {
         <div className={styles["card-picture"]}>
           <img
             className={styles["image"]}
+            object
+            position
+            top
+            id={styles[outdoor.pictureTop]}
             src={outdoor.img}
             alt={outdoor.alt}
             width="100%"
