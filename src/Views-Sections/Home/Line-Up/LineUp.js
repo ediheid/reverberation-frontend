@@ -27,6 +27,13 @@ const LineUp = () => {
 
   sortArtistsAlphabetically();
 
+  // ! Sort outdoor treats alphabetically
+  const sortOutdoorTreatsAlphabetically = () => {
+    return outdoor.sort((a, b) => a.outdoorName.localeCompare(b.outdoorName));
+  };
+
+  sortOutdoorTreatsAlphabetically();
+
   return (
     <div className={styles["line-up-container"]} id="line-up">
       {/* // ! Saved for when it goes back to 'to be announced' */}
