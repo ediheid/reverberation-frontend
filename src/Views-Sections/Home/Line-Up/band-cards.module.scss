@@ -6,8 +6,8 @@
   display: flex;
   flex-direction: column;
 
-  width: 30rem;
-  height: 32rem;
+  width: 31rem;
+  height: 33rem;
 }
 
 // .cards-item {
@@ -23,8 +23,8 @@
 
   margin: 2rem;
 
-  width: 30rem;
-  height: 32rem;
+  width: 31rem;
+  height: 33rem;
 
   &::before {
     content: "";
@@ -71,8 +71,8 @@
   text-transform: uppercase;
 
   font-family: $main-font-regular-font-family;
-  font-size: 1.9rem;
-  margin: 3rem 0 1.5rem 0;
+  font-size: 1.8rem;
+  margin: 3.2rem 0 1.5rem 0;
 }
 
 .band-country {
@@ -199,8 +199,16 @@
 @include extra-extra-small {
   .cards,
   .card {
-    height: 35rem;
+    height: 33rem !important;
 
-    margin: 2rem 0 2rem 0;
+    width: 100vw !important;
+  }
+
+  .card-title {
+    font-size: 1.5rem !important;
+  }
+
+  .band-country {
+    font-size: 1.3rem !important;
   }
 }

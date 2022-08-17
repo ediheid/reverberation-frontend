@@ -79,9 +79,15 @@
 
 // ? Media Queries
 
-@include extra-extra-large {
+@include extra-extra-small {
   .bands-container {
-    padding-top: 5rem;
+    width: 100%;
+  }
+}
+
+@include x-small {
+  .bands-container {
+    width: 100%;
   }
 }
 
@@ -108,6 +114,6 @@
     margin-top: 15rem;
   }
   .bands-container {
-    padding-top: 4rem;
+    padding-top: 5rem;
   }
 }
