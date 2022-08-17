@@ -49,7 +49,6 @@ const BandCards = ({ band }) => {
       {/* Overlay */}
       <div className={styles["card-overlay"]}></div>
       <div className={styles["card-content"]}>
-        <h2>{band.bandName}</h2>
         <p>{band.text}</p>
       </div>
     </div>

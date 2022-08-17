@@ -43,7 +43,6 @@ const ArtistCards = ({ artist }) => {
       </div>
       <div className={styles["card-overlay"]}></div>
       <div className={styles["card-content"]}>
-        <h2>{artist.artistName}</h2>
         <p>{artist.text}</p>
       </div>
     </div>

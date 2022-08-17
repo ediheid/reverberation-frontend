@@ -36,7 +36,6 @@ const OutdoorTreatsCard = ({ outdoor }) => {
       {/* Overlay */}
       <div className={styles["card-overlay"]}></div>
       <div className={styles["card-content"]}>
-        <h2>{outdoor.outdoorName}</h2>
         <p>{outdoor.text}</p>
       </div>
     </div>
