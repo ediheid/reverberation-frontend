@@ -1,6 +1,7 @@
 import steinbrechnerGuitars from "./Static/steinbrecherguitars.png";
 import loseDresden from "./Static/lose-dresden.png";
 import missionLifeline from "./Static/mission-lifeline.png";
+import kawaEspresso from "./Static/kawa-espresso.png";
 
 export const outdoor = [
   {
@@ -25,8 +26,17 @@ export const outdoor = [
     outdoorName: "Mission Lifeline",
     country: "DE",
     img: missionLifeline,
-    text: "Together with hundreds of volunteers, Mission Lifeline works exclusively on a donor-funded basis. Without this support, their work would not be possible. Whether at sea or on land, in the Mediterranean, the Atlantic, Afghanistan or Ukraine - Because every life counts. Mission Lifeline will be at Chemifabrik to inform you about their activities and how you can get involved and support.",
+    text: "Together with hundreds of volunteers, Mission Lifeline works exclusively on a donor-funded basis. Without this support, their work would not be possible. Whether at sea or on land, in the Mediterranean, the Atlantic, Afghanistan or Ukraine - Because every life counts. Mission Lifeline will be at Chemiefabrik to inform you about their activities and how you can get involved and support.",
     link: "https://mission-lifeline.de/es-ist-einfach-noch-nicht-vorbei/",
     alt: `Mission Lifeline logo and text "Mission Lifeline - Search and Rescue" in red on a white background.`,
+  },
+
+  {
+    outdoorName: "Kawa Espressobar",
+    country: "DE",
+    img: kawaEspresso,
+    text: `Already the location of our daytime hangout in 2020, Kawa Espressobar‘s very own Schadi is back as well and will serve you the most delicious coffees along with his famous vegan and vegetarian „Schadi‘s Fladis“ on Saturday at Chemiefabrik!`,
+    link: "https://www.instagram.com/kawa_espressobar/",
+    alt: `Schadi making coffee in front of his espresso machine at Kawa Espressobar.`,
   },
 ];
