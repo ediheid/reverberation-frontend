@@ -3,6 +3,7 @@ import loseDresden from "./Static/lose-dresden.png";
 import missionLifeline from "./Static/mission-lifeline.png";
 import kawaEspresso from "./Static/kawa-espresso.png";
 import bingoMadness from "./Static/bingo-madness.png";
+import carloVivary from "./Static/carlo-vivary.png";
 
 export const outdoor = [
   {
@@ -49,5 +50,14 @@ export const outdoor = [
     // Bingo Madness - object position top
     pictureTop: "pictureTop",
     alt: `Bingo Madness sepia poster of a 1950s bingo event with Hugo's face shopped onto one of the members.`,
+  },
+
+  {
+    outdoorName: "Carlo Vivary",
+    country: "DE",
+    img: carloVivary,
+    text: `We also welcome back Carlo Vivary, illustrator, tattoo artist and screen printer based in Leipzig, who is known for his retro futuristic artworks for bands like King Gizzard And The Lizard Wizard, Ty Segall, Osees and many more. At Reverberation Fest you have the chance to get a spontaneous tattoo or buy one of his limited prints.`,
+    link: "https://www.carlovivary.com/",
+    alt: `Carlo Vivary in his studio, working on a large screen print.`,
   },
 ];
