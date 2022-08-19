@@ -9,6 +9,7 @@ import { outdoor } from "./outdoorTreatsData";
 import BandCards from "../Line-Up/BandCards";
 import ArtistCards from "../Line-Up/ArtistCards";
 import OutdoorTreatsCard from "./OutdoorTreatsCard";
+import TeaserVideo from "../../../Components/TeaserVideo/TeaserVideo";
 
 import styles from "../Line-Up/line-up.module.scss";
 
@@ -40,6 +41,9 @@ const LineUp = () => {
       {/* <h2 className={styles["section-heading"]}>Line-up</h2> */}
       {/* <h2 className={styles["section-heading"]}>To be Announced</h2> */}
 
+      <div className={styles["video-container"]}>
+        <TeaserVideo embedId="Oo0jJ1qomM4" />
+      </div>
       {/* // ? Music */}
       <h2 className={styles["announced-section-headings"]}>Music Line-up</h2>
 
