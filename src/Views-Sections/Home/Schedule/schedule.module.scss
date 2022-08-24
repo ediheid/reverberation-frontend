@@ -4,9 +4,10 @@
 
 .schedule-section-container {
   width: 100vw;
-  // !!!
-  // Todo: Change to auto when there is content
-  height: 100vh;
+
+  // Todo: Change to 100vh when there is just a heading
+  height: auto;
+  // height: 100vh;
 
   display: flex;
   flex-direction: column;
@@ -15,12 +16,26 @@
 
   background-color: $black;
 
-
+  padding: 15rem 0 15rem 0;
 }
 
 .schedule-heading {
   @include section-headings;
-  @include gradient-text-from-palette;
-  
- 
+  @include gradient-text-green;
+}
+
+.large-schedule {
+  width: 80%;
+  max-width: 100rem;
+  margin: 5rem 0 0 0;
+}
+
+.saturday-container {
+  width: 80vw;
+  max-width: 100rem;
+  margin: 5rem 0 0 0;
+}
+
+.saturday-schedule {
+  width: 50%;
 }
