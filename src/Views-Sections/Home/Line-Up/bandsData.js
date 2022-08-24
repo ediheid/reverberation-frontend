@@ -10,8 +10,8 @@ import thirteenYearCicada from "./Static/13YC.png";
 import dieWildeJagd from "./Static/die-wilde-jagd.png";
 import candyFlipDjs from "./Static/candy-flip-djs.png";
 import sababa5 from "./Static/sababa-5.png";
-import riverSound from "./Static/riversound-flyer.png";
 import theBigIdea from "./Static/the-big-idea.png";
+import peelers from "./Static/peelers.png";
 
 export const bands = [
   {
@@ -121,14 +121,13 @@ export const bands = [
   },
 
   {
-    bandName: "Riversound Newcomer Winner",
+    bandName: "Peelers",
     country: "CZ",
-    img: riverSound,
-    // For RiverSound Festival - object position top
-    pictureTop: "pictureTop",
-    text: "Riversound festival is an exchange program between the venue Papirna in Plzen/Czech Republic and Dresden Psych Family, enabling one band a year to perform at Reverberation Fest after being voted by a jury of members of Reverberation Festival.",
-    link: "https://www.facebook.com/riversound_festival_cz/",
-    alt: "Riversound Festival flyer",
+    img: peelers,
+
+    text: "Peelers are a band with origins in the Western Bohemian town Tachov. They are a cosmic dynamo, evolving into a wild, elastic and sexual stream of multivitamin juice, producing Rock-Alt-Psych-Motorik-Beat which is responsible for the crater Clavius and the seismic waves of the Western American coast line.",
+    link: "https://www.instagram.com/peelers_/",
+    alt: "Four band members standing in front of some trees.",
   },
 
   {
