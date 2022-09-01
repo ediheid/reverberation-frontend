@@ -12,6 +12,7 @@ import candyFlipDjs from "./Static/candy-flip-djs.png";
 import sababa5 from "./Static/sababa-5.png";
 import theBigIdea from "./Static/the-big-idea.png";
 import peelers from "./Static/peelers.png";
+import voodooBeats from "./Static/voodoo-beats.png";
 
 export const bands = [
   {
@@ -138,5 +139,14 @@ export const bands = [
     link: "https://thebigidea.fr/?fbclid=IwAR3n3YI8Fef5sRQdC-PDcjnMAm1d8urpv2vzM6lblGqaRKJe5AUuL-vy4ik",
     bandCampLink: "https://thebigidea.bandcamp.com/",
     alt: "Band with 6 members on a rooftop with bright blue sky. ",
+  },
+
+  {
+    bandName: "Voodoo Beats DJs",
+    country: "CZ/SK",
+    img: voodooBeats,
+    text: "Voodoo Beats DJs is a Rock'n'Roll crew from Prague and Bratislava, specialized in weird, odd, dead and alternative, sending an ambassador to our festival to DJ for the first time on German soil.",
+    link: "https://www.instagram.com/voodoobeatsdjs/?hl=en",
+    alt: "DJ drinking beer behind turntables.",
   },
 ];
