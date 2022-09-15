@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 
 import styles from "../LandingArea/landing-area.module.scss";
 
@@ -27,9 +28,13 @@ const LandingArea = () => {
           Dresden · 16.09 - 18.09 · 2022
         </h2>
 
-        <h2 className={styles["sub-headings"]}>
+        {/* <h2 className={styles["sub-headings"]}>
           Day tickets and weekend passes available now!
-        </h2>
+        </h2> */}
+
+        <HashLink smooth to="/#tickets">
+          <button className={styles["ticket-info-button"]}>Ticket info</button>
+        </HashLink>
 
         <a
           href="https://reverberation.loveyourartist.store/de/"
