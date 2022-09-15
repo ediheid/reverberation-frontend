@@ -22,6 +22,8 @@ const Home = () => {
 
       <Schedule />
 
+      <Tickets />
+
       <About />
 
       <PastEvents />

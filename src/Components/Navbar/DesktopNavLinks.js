@@ -18,16 +18,16 @@ const DesktopNavLinks = () => {
             <li>Schedule</li>
           </HashLink>
 
-          {/* <HashLink smooth to="/#landing">
+          <HashLink smooth to="/#tickets">
             <li>Tickets</li>
-          </HashLink> */}
+          </HashLink>
 
-          <a
+          {/* <a
           href="https://reverberation.loveyourartist.store/de/"
           target="_blank"
           rel="noopener noreferrer"
           alt="Link to Ticket Shop"
-        >  <li>Tickets</li></a>
+        >  <li>Tickets</li></a> */}
 
           <HashLink smooth to="/#about">
             <li>About</li>
@@ -44,7 +44,7 @@ const DesktopNavLinks = () => {
           <Link smooth to="/gallery">
             <li>Gallery</li>
           </Link>
-        
+
           <HashLink smooth to="/#landing">
             <li>Home</li>
           </HashLink>
