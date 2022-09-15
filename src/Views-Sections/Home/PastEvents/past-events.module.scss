@@ -48,17 +48,6 @@
   }
 }
 
-.links-button {
-  @include links-button;
-
-  margin-top: 10rem;
-
-  // ! Test on mobile with original size
-  // font-size: 1rem;
-}
-
-
-
 // ? Media Queries
 
 @include small {
@@ -79,10 +68,6 @@
   .poster-img {
     margin-bottom: 5rem;
   }
-
-  .links-button {
-    margin-top: 4rem;
-  }
 }
 
 @include large {
@@ -96,10 +81,6 @@
 
   .text-img {
     margin-bottom: 6rem;
-  }
-
-  .links-button {
-    margin-top: 5rem;
   }
 }
 
@@ -115,10 +96,6 @@
   .text-img {
     margin-bottom: 6rem;
   }
-
-  .links-button {
-    margin-top: 5rem;
-  }
 }
 
 @include extra-extra-large {
@@ -132,9 +109,5 @@
 
   .text-img {
     margin-bottom: 7rem;
-  }
-
-  .links-button {
-    margin-top: 5rem;
   }
 }

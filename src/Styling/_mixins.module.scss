@@ -148,32 +148,65 @@
 
 @mixin links-button {
   margin-top: 5rem;
-  border: 0.25em solid lighten($salmon, 5%);
+  font-size: 1.5rem;
+
   padding: 1em 3em;
-  color: lighten($salmon, 5%);
-  font-size: 15px;
-  font-weight: bold;
-  background-color: transparent;
-  border-radius: 1em;
+  border: none;
   outline: none;
-
   position: relative;
-  transition: all 0.3s;
-
+  border-radius: 1em;
+  background: linear-gradient(to right, #00ffa3, #dc1fff);
+  font-family: $main-font-semi-bold-font-family;
+  letter-spacing: 0.05rem;
   cursor: pointer;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0.2rem;
+    right: 0.2rem;
+    bottom: 0.2rem;
+    left: 0.2rem;
+    background-color: $black;
+    border-radius: 1em;
+    z-index: -1;
+  }
+
+  &::after {
+    content: attr(data);
+    font-size: 1.5rem;
+    background: linear-gradient(to right, #00ffa3, #dc1fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
   @media (hover: hover) {
-    &:hover {
-      color: $mauve;
-      background-color: lighten($salmon, 5%);
-      box-shadow: 0 0 1em 0.25em lighten($salmon, 5%), 0 0 4em 2em $salmon,
-        inset 0 0 0.75em 0.25em lighten($salmon, 5%);
+    &:hover::before {
+      opacity: 10%;
+      top: 0rem;
+      right: 0rem;
+      bottom: 0rem;
+      left: 0rem;
+    }
+
+    &:hover::after {
+      -webkit-text-fill-color: darken($white-grey, 5%);
     }
   }
 
-  &:active {
-    box-shadow: 0 0 0.6em 0.25em lighten($salmon, 5%), 0 0 2.5em 2em $salmon,
-      inset 0 0 0.5em 0.25em lighten($salmon, 5%);
+  &:active::before {
+    opacity: 10%;
+    top: 0rem;
+    right: 0rem;
+    bottom: 0rem;
+    left: 0rem;
+  }
+
+  &:active::after {
+    -webkit-text-fill-color: darken($white-grey, 5%);
   }
 }
 

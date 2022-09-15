@@ -8,14 +8,7 @@ const Tickets = () => {
       <div className={styles["bg-img-container"]}>
         <div className={styles["content-container"]}>
           <h2 className={styles["tickets-heading"]}>Ticket Pricing Info</h2>
-          {/* <a
-            href="https://reverberation.loveyourartist.store/de/"
-            target="_blank"
-            rel="noopener noreferrer"
-            alt="Link to Ticket Shop"
-          >
-            <button className={styles["links-button"]}>Buy online</button>
-          </a> */}
+          {/* All days container */}
           <section className={styles["all-days-container"]}>
             <div className={styles["day-container"]}>
               {/* Friday */}
@@ -77,7 +70,21 @@ const Tickets = () => {
               </ul>
             </div>
           </section>
+
+          <a
+            href="https://reverberation.loveyourartist.store/de/"
+            target="_blank"
+            rel="noopener noreferrer"
+            alt="Link to Ticket Shop"
+            className={styles["ticket-shop-link"]}
+          >
+            <button
+              className={styles["links-button"]}
+              data="Buy online"
+            ></button>
+          </a>
         </div>
+        {/* <button className={styles["ticket-shop-button"]}>Buy online</button> */}
       </div>
     </div>
   );
