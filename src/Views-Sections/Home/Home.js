@@ -16,8 +16,6 @@ const Home = () => {
     <div className={styles["home-container"]}>
       <LandingArea />
 
-      {/* <Tickets /> */}
-
       <LineUp />
 
       <Schedule />

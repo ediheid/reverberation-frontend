@@ -4,7 +4,7 @@
 
 .tickets-section-container {
   width: 100vw;
-  height: 100vh;
+  height: auto;
 
   position: relative;
 }
@@ -18,20 +18,12 @@
   align-items: center;
   justify-content: center;
 
-  // !!! Need a higher resolution image!
-
-background-color: $black;
-
-  // background-image: url("../Static/poster-bg.png");
-  // background-position: center;
-  // // background-attachment: fixed;
-  // background-size: cover;
-  // background-repeat: no-repeat;
+  background-color: $black;
 }
 
 .content-container {
   width: 100vw;
-  height: 30rem;
+  height: auto;
 
   display: flex;
   flex-direction: column;
@@ -39,37 +31,104 @@ background-color: $black;
   justify-content: center;
 
   // background-color: $overlay-container-colour;
-background-color: $black;
+  background-color: $black;
 
   padding: 8rem 5rem 5rem 5rem;
+  @include gradient-text-green;
 }
 
 .tickets-heading {
   @include section-headings;
+  @include gradient-text-green;
 }
 
-.links-button {
-  @include links-button;
+.sub-headings {
+  display: block;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  font-family: $main-font-regular-font-family;
 }
+
+.all-days-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+  margin: 2rem 0 2rem 0;
+
+  border: 2px solid red;
+}
+
+.day-container {
+  width: 25rem;
+  height: 25rem;
+  margin: 2rem;
+}
+
+// .links-button {
+//   @include links-button;
+// }
 
 // ? Media Queries
 
-@include extra-large {
-  .bg-img-container {
-    background-attachment: fixed;
+@include extra-extra-small {
+  .all-days-container {
+    width: 100%;
+  }
+}
+@include x-small {
+  .all-days-container {
+    width: 100%;
+  }
+}
+
+@include medium {
+  .sub-headings {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
+
+@include large {
+  .sub-headings {
+    font-size: 2rem;
+    line-height: 2.8rem;
   }
 
+  .all-days-container {
+    padding-top: 4rem;
+  }
+}
+
+@include extra-large {
   .content-container {
     margin: 20rem 0 20rem 0;
+  }
+
+  .sub-headings {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  .all-days-container {
+    padding-top: 3rem;
   }
 }
 
 @include extra-extra-large {
-  .bg-img-container {
-    background-attachment: fixed;
-  }
-
   .content-container {
     margin: 20rem 0 20rem 0;
+  }
+
+  .sub-headings {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+
+  .all-days-container {
+    padding-top: 5rem;
   }
 }

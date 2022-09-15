@@ -13,12 +13,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // justify-content: center;
-
   background-color: $black;
-
-  // padding: 10rem 0 10rem 0;
-
   color: $mid-grey;
 }
 
@@ -38,7 +33,6 @@
 .announced-section-headings {
   @include section-headings;
   @include gradient-text-green;
-
   margin-top: 10rem;
 }
 
