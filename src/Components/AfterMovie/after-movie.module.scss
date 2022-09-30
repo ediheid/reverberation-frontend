@@ -1,0 +1,46 @@
+@import "/src/Styling/mixins.module";
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+}
+
+.video-container {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  width: 100%;
+
+  margin-top: 10rem;
+}
+
+.iframe-element {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+// ? Breakpoints
+
+@include large {
+  .section {
+    max-width: 80rem;
+  }
+}
+
+@include extra-large {
+  .section {
+    max-width: 80rem;
+  }
+}
+
+@include extra-extra-large {
+  .section {
+    max-width: 80rem;
+  }
+}

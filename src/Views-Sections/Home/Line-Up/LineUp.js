@@ -10,6 +10,7 @@ import BandCards from "../Line-Up/BandCards";
 import ArtistCards from "../Line-Up/ArtistCards";
 import OutdoorTreatsCard from "./OutdoorTreatsCard";
 import TeaserVideo from "../../../Components/TeaserVideo/TeaserVideo";
+import AfterMovie from "../../../Components/AfterMovie/AfterMovie";
 
 import styles from "../Line-Up/line-up.module.scss";
 
@@ -42,7 +43,8 @@ const LineUp = () => {
       {/* <h2 className={styles["section-heading"]}>To be Announced</h2> */}
 
       <div className={styles["video-container"]}>
-        <TeaserVideo embedId="Oo0jJ1qomM4" />
+        {/* <TeaserVideo embedId="Oo0jJ1qomM4" /> */}
+        <AfterMovie embedId="8oxAOJMozXQ"/>
       </div>
       {/* // ? Music */}
       <h2 className={styles["announced-section-headings"]}>Music Line-up</h2>
