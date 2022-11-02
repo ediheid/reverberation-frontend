@@ -2,6 +2,8 @@
 
 # Dependencies and Development
 
+### nvm v.16
+
 ### `npm install`
 
 ### `npm start`
