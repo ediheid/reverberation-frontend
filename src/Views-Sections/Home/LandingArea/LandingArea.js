@@ -24,16 +24,24 @@ const LandingArea = () => {
 
         {/* <h2 className={styles["sub-headings"]}>Festival for Music & Arts</h2> */}
 
-        <h2 className={styles["sub-headings"]}>
-          Dresden · 16.09 - 18.09 · 2022
-        </h2>
-
         {/* <h2 className={styles["sub-headings"]}>
-          Day tickets and weekend passes available now!
+          Dresden · 16.09 - 18.09 · 2022
         </h2> */}
 
-        <HashLink smooth to="/#tickets">
+        <h2 className={styles["sub-headings"]}>Presents:</h2>
+
+        <h2 className={styles["sub-headings"]}>
+          Margaritas Podridas (MEX) & Blue Chesterfield (CZ)
+        </h2>
+
+        {/* <HashLink smooth to="/#tickets">
           <button className={styles["ticket-info-button"]}>Ticket info</button>
+        </HashLink> */}
+
+        <HashLink smooth to="/#upcoming">
+          <button className={styles["ticket-info-button"]}>
+            More info
+          </button>
         </HashLink>
 
         <a
@@ -42,7 +50,7 @@ const LandingArea = () => {
           rel="noopener noreferrer"
           alt="Link to Ticket Shop"
         >
-          <button className={styles["main-button"]}>Ticket Shop</button>
+          <button className={styles["main-button"]}>Tickets</button>
         </a>
       </div>
     </div>

@@ -9,6 +9,7 @@ import Tickets from "./Tickets/Tickets";
 import About from "./About/About";
 import Contact from "./Contact/Contact";
 import Partners from "./Partners/Partners";
+import Upcoming from "./Upcoming/Upcoming";
 
 const Home = () => {
   return (
@@ -16,11 +17,13 @@ const Home = () => {
     <div className={styles["home-container"]}>
       <LandingArea />
 
-      <LineUp />
+      <Upcoming/>
 
-      <Schedule />
+      {/* <LineUp /> */}
 
-      <Tickets />
+      {/* <Schedule /> */}
+
+      {/* <Tickets /> */}
 
       <About />
 

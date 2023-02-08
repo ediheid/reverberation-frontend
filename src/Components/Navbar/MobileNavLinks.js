@@ -19,7 +19,8 @@ const MobileNavLinks = (props) => {
           animate={animateTo}
           transition={{ delay: 0.05 }}
         >
-          <HashLink smooth to="/#line-up" onClick={props.closeNavOnClick}>
+          {/* // * 0.8s */}
+          {/* <HashLink smooth to="/#line-up" onClick={props.closeNavOnClick}>
             <motion.li
               initial={animateFrom}
               animate={animateTo}
@@ -27,9 +28,10 @@ const MobileNavLinks = (props) => {
             >
               Line-up
             </motion.li>
-          </HashLink>
+          </HashLink> */}
 
-          <HashLink smooth to="/#schedule" onClick={props.closeNavOnClick}>
+          {/* // * 0.14s */}
+          {/* <HashLink smooth to="/#schedule" onClick={props.closeNavOnClick}>
             <motion.li
               initial={animateFrom}
               animate={animateTo}
@@ -37,9 +39,10 @@ const MobileNavLinks = (props) => {
             >
               Schedule
             </motion.li>
-          </HashLink>
+          </HashLink> */}
 
-          <HashLink smooth to="/#tickets" onClick={props.closeNavOnClick}>
+          {/* // * 0.17s */}
+          {/* <HashLink smooth to="/#tickets" onClick={props.closeNavOnClick}>
             <motion.li
               initial={animateFrom}
               animate={animateTo}
@@ -47,20 +50,20 @@ const MobileNavLinks = (props) => {
             >
               Tickets
             </motion.li>
-          </HashLink>
+          </HashLink> */}
           {/* 
-          <a
-          href="https://reverberation.loveyourartist.store/de/"
-          target="_blank"
-          rel="noopener noreferrer"
-          alt="Link to Ticket Shop"
-        >    <motion.li
-        initial={animateFrom}
-        animate={animateTo}
-        transition={{ delay: 0.17 }}
-      >
-        Tickets
-      </motion.li></a> */}
+        
+      */}
+
+          <HashLink smooth to="/#upcoming" onClick={props.closeNavOnClick}>
+            <motion.li
+              initial={animateFrom}
+              animate={animateTo}
+              transition={{ delay: 0.17 }}
+            >
+              Upcoming Events
+            </motion.li>
+          </HashLink>
 
           <HashLink smooth to="/#about" onClick={props.closeNavOnClick}>
             <motion.li

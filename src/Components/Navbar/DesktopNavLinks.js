@@ -10,24 +10,21 @@ const DesktopNavLinks = () => {
     <>
       <div className={styles["desktop-nav-container"]}>
         <ul className={styles["desktop-nav-list-items"]}>
-          <HashLink smooth to="/#line-up">
+          {/* <HashLink smooth to="/#line-up">
             <li>Line-up</li>
-          </HashLink>
+          </HashLink> */}
 
-          <HashLink smooth to="/#schedule">
+          {/* <HashLink smooth to="/#schedule">
             <li>Schedule</li>
-          </HashLink>
+          </HashLink> */}
 
-          <HashLink smooth to="/#tickets">
+          {/* <HashLink smooth to="/#tickets">
             <li>Tickets</li>
-          </HashLink>
+          </HashLink> */}
 
-          {/* <a
-          href="https://reverberation.loveyourartist.store/de/"
-          target="_blank"
-          rel="noopener noreferrer"
-          alt="Link to Ticket Shop"
-        >  <li>Tickets</li></a> */}
+          <HashLink smooth to="/#upcoming">
+            <li>Upcoming Events</li>
+          </HashLink>
 
           <HashLink smooth to="/#about">
             <li>About</li>
