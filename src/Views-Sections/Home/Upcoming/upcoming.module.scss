@@ -1,0 +1,15 @@
+@import "../../../Styling/variables.module";
+@import "../../../Styling/mixins.module";
+@import "../../../Styling/reset.module";
+
+.upcoming-container {
+    width: 100vw;
+    height: auto;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $black;
+    color: $mid-grey;
+  }
+  
