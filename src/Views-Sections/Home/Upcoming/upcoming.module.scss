@@ -36,11 +36,18 @@
 .bands-container{
   display: flex;
   flex-direction: column;
-  width: 60vw;
+  width: 80vw;
+
+  &:nth-of-type(1){
+    margin-top: 8rem;
+  }
 }
 
 .band{
+  // display: flex;
+  // flex-wrap: wrap;
   width: 100%;
+  overflow: auto;
 }
 
 .band-heading{
@@ -49,4 +56,21 @@
   font-size: 2rem !important;
   width: 100% !important;
   text-align: start !important;
+}
+
+.band-text{
+  @include section-text;
+  // width: 60% !important;
+  width: auto !important;
+  max-width: 1000rem !important;
+  text-align: justify !important;
+  
+}
+
+.band-img{
+  // width: 30%;
+  width: 50rem;
+  height: fit-content;
+  // margin:  2rem 0 0 2rem;
+  float: right;
 }
