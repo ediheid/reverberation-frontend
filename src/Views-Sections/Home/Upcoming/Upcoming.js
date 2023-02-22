@@ -6,8 +6,8 @@ const Upcoming = () => {
     <div className={styles["upcoming-container"]} id="upcoming">
       {" "}
       <h2 className={styles["section-heading"]}>Upcoming Events</h2>
-      <h2>10.07.2023</h2>
-      <ul>
+      <h2 className={styles["date-heading"]}>10.07.2023</h2>
+      <ul className={styles["times-list"]}>
         <li>Doors: 19.00</li>
         <li>Shows: 20.00</li>
         <li>Curfew: 22.00</li>

@@ -3,17 +3,32 @@
 @import "../../../Styling/reset.module";
 
 .upcoming-container {
-    width: 100vw;
-    height: auto;
-  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: $black;
-    color: $mid-grey;
-  }
-  
-  .section-heading {
-    @include section-headings;
-    @include gradient-text-green;
-  }
+  width: 100vw;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $black;
+  color: $mid-grey;
+}
+
+.section-heading {
+  @include section-headings;
+  @include gradient-text-green;
+}
+
+.date-heading {
+  @include section-headings;
+  @include gradient-text-from-palette;
+  padding: 8rem 0 2rem 0;
+}
+
+.times-list{
+  @include section-headings;
+  @include gradient-text-from-palette;
+  font-size: 1.6rem !important;
+  list-style: none;
+  line-height:  3rem !important;
+ 
+}
