@@ -13,3 +13,7 @@
     color: $mid-grey;
   }
   
+  .section-heading {
+    @include section-headings;
+    @include gradient-text-green;
+  }
