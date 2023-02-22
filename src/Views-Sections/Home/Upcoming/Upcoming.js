@@ -12,7 +12,10 @@ const Upcoming = () => {
         <li>Shows: 20.00</li>
         <li>Curfew: 22.00</li>
       </ul>
-      <h3>MARGARITAS PODRIDAS (MEX)</h3>
+
+      <div className={styles["bands-container"]}>
+        <div className={styles["band"]}>
+      <h3 className={styles["band-heading"]}>MARGARITAS PODRIDAS (MEX)</h3>
       <p>
         ...(Rotten Daisies) is a rock band formed in Hermosillo, Sonora, which
         consists of Carolina Enríquez (bass/vocals), Esli Meuly (guitar) and
@@ -41,6 +44,8 @@ const Upcoming = () => {
         and sharing their music and contagious energy with the rest of the
         world.
       </p>
+      </div>
+     <div className={styles["band"]}>
       <h3>BLUE CHESTERFIELD (CZ)</h3>
       <p>
         Blue Chesterfield is a project started by singer, poet and
@@ -52,6 +57,8 @@ const Upcoming = () => {
         Jazz, together with its wild live performances creating a sonic
         experience that will be remembered.
       </p>
+      </div> 
+      </div>
       <h3>Presale-Tickets via Love Your Artist & Ticket Toaster:</h3>
       {/* links to add https://loveyourartist.com/de/events/margaritas-podridas-berlin-VOUV5J/overview
 https://schokoladen.tickettoaster.de/produkte */}

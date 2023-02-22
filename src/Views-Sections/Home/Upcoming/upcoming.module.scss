@@ -26,9 +26,27 @@
 
 .times-list{
   @include section-headings;
-  @include gradient-text-from-palette;
+  @include gradient-text-from-palette-opposite-direction;
   font-size: 1.6rem !important;
   list-style: none;
   line-height:  3rem !important;
  
+}
+
+.bands-container{
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+}
+
+.band{
+  width: 100%;
+}
+
+.band-heading{
+  @include section-headings;
+  @include gradient-text-from-palette;
+  font-size: 2rem !important;
+  width: 100% !important;
+  text-align: start !important;
 }
