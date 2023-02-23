@@ -8,7 +8,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding-bottom: 12rem;
   background-color: $black;
   color: $mid-grey;
@@ -42,8 +41,6 @@
 .band {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   width: 80vw;
   margin-bottom: 10rem;
 }
@@ -56,6 +53,18 @@
   &:nth-of-type(2n) {
     text-align: end !important;
     @include gradient-text-from-palette-opposite-direction;
+  }
+
+  @include extra-extra-small {
+    font-size: 1rem !important;
+  }
+
+  @include x-small {
+    font-size: 1rem !important;
+  }
+
+  @include small {
+    font-size: 1.5rem !important;
   }
 
   @include medium {
