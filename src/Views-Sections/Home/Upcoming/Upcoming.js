@@ -14,9 +14,14 @@ const Upcoming = () => {
         <li>Curfew: 22.00</li>
       </ul>
       <div className={styles["bands-container"]}>
-        <div className={styles["band"]}>
-          {/* <h3 className={styles["band-heading"]}>MARGARITAS PODRIDAS (MEX)</h3> */}
+        <div className={styles.band}>
+          <h3 className={styles["band-heading"]}>MARGARITAS PODRIDAS (MEX)</h3>
           <p className={styles["band-text"]}>
+            <img
+              className={styles["band-img"]}
+              src={margaritas}
+              alt="Margaritas Podridas - black and white band portrait"
+            ></img>
             ...(Rotten Daisies) is a rock band formed in Hermosillo, Sonora,
             which consists of Carolina Enríquez (bass/vocals), Esli Meuly
             (guitar) and Rafael Armenta (guitar/drums). Their debut album
@@ -45,12 +50,6 @@ const Upcoming = () => {
             of expanding their crowd and sharing their music and contagious
             energy with the rest of the world.
           </p>
-
-          <img
-            className={styles["band-img"]}
-            src={margaritas}
-            alt="Margaritas Podridas - black and white band portrait"
-          ></img>
         </div>
         <div className={styles["band"]}>
           <h3>BLUE CHESTERFIELD (CZ)</h3>
