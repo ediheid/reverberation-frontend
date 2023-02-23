@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../Upcoming/upcoming.module.scss";
 import margaritas from "./static/margaritas.jpeg";
+import blueChesterfield from "./static/blue-chesterfield.jpg"
 import { FaFacebookF } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { FaBandcamp } from "react-icons/fa";
@@ -100,6 +101,11 @@ const Upcoming = () => {
         <h3 className={styles["band-heading"]}>BLUE CHESTERFIELD (CZ)</h3>
         <div className={styles["band"]}>
           <p className={styles["band-text"]}>
+          <img
+              className={styles["band-img-left"]}
+              src={blueChesterfield}
+              alt="Blue Chesterfield band portrait - members on steps"
+            ></img>
             Blue Chesterfield is a project started by singer, poet and
             multi-instrumentalist David Jirka from Czech Republic who has been
             later accompanied by several musicians who together created the same
