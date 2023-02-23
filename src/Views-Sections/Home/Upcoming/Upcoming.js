@@ -55,44 +55,44 @@ const Upcoming = () => {
             energy with the rest of the world.
           </p>
           <div className={styles["social-media-links-container"]}>
-          <div className={styles["social-icons-wrapper"]}>
-            <a
-              href="https://margaritaspodridas.bandcamp.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              alt="Link to Bandcamp page"
-            >
-              <FaBandcamp className={styles["social-media-links"]} />
-            </a>
+            <div className={styles["social-icons-wrapper"]}>
+              <a
+                href="https://margaritaspodridas.bandcamp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to Bandcamp page"
+              >
+                <FaBandcamp className={styles["social-media-links"]} />
+              </a>
 
-            <a
-              href="https://www.instagram.com/margaritaspodridas/"
-              target="_blank"
-              rel="noopener noreferrer"
-              alt="Link to Instagram page"
-            >
-              <FiInstagram className={styles["social-media-links"]} />
-            </a>
+              <a
+                href="https://www.instagram.com/margaritaspodridas/"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to Instagram page"
+              >
+                <FiInstagram className={styles["social-media-links"]} />
+              </a>
 
-            <a
-              href="https://youtu.be/tAbAofaCcfc"
-              target="_blank"
-              rel="noopener noreferrer"
-              alt="Link to youTube video"
-            >
-              {" "}
-              <FaYoutube className={styles["social-media-links"]} />{" "}
-            </a>
+              <a
+                href="https://youtu.be/tAbAofaCcfc"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to youTube video"
+              >
+                {" "}
+                <FaYoutube className={styles["social-media-links"]} />{" "}
+              </a>
 
-            <a
-              href="https://www.facebook.com/MargaritasPodridas"
-              target="_blank"
-              rel="noopener noreferrer"
-              alt="Link to facebook page"
-            >
-              {" "}
-              <FaFacebookF className={styles["social-media-links"]} />{" "}
-            </a>
+              <a
+                href="https://www.facebook.com/MargaritasPodridas"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to facebook page"
+              >
+                {" "}
+                <FaFacebookF className={styles["social-media-links"]} />{" "}
+              </a>
             </div>
           </div>
         </div>
@@ -155,9 +155,29 @@ const Upcoming = () => {
           </div>
         </div>
       </div>
-      <h3>Presale-Tickets via Love Your Artist & Ticket Toaster:</h3>
-      {/* links to add https://loveyourartist.com/de/events/margaritas-podridas-berlin-VOUV5J/overview
-https://schokoladen.tickettoaster.de/produkte */}
+      <h3 className={styles["tickets"]}>
+        Presale-Tickets via Love Your Artist & Ticket Toaster:
+      </h3>
+      <a
+        className={styles["anchor-tags"]}
+        href="https://loveyourartist.com/de/events/margaritas-podridas-berlin-VOUV5J/overview"
+        target="_blank"
+        rel="noreferrer noopener"
+        alt="Link to Love Your Artist tickets"
+      >
+        Love Your Artist{" "}
+      </a>
+
+      <a
+        className={styles["anchor-tags"]}
+        href="https://schokoladen.tickettoaster.de/produkte"
+        target="_blank"
+        rel="noreferrer noopener"
+        alt="Link to Tcket Toaster tickets"
+      >
+        Ticket Toaster{" "}
+      </a>
+
     </div>
   );
 };
