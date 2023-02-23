@@ -78,6 +78,7 @@
   width: 40%;
   max-width: 60rem;
   height: fit-content;
+  object-fit: contain;
   margin: 0 0 0 2rem;
 
   @include extra-extra-small {
@@ -114,6 +115,7 @@
   width: 30%;
   max-width: 60rem;
   height: fit-content;
+  object-fit: contain;
   margin: 0 2rem 0 0;
 
   @include extra-extra-small {
