@@ -241,7 +241,7 @@ const Upcoming = () => {
           <div className={styles["social-media-links-container"]}>
             <div className={styles["social-icons-wrapper"]}>
               <a
-                href="https://margaritaspodridas.bandcamp.com/"
+                href="https://parloneumatic.bandcamp.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 alt="Link to Bandcamp page"
@@ -250,7 +250,7 @@ const Upcoming = () => {
               </a>
 
               <a
-                href="https://www.instagram.com/margaritaspodridas/"
+                href="https://www.instagram.com/neumatic_parlo"
                 target="_blank"
                 rel="noopener noreferrer"
                 alt="Link to Instagram page"
@@ -259,7 +259,7 @@ const Upcoming = () => {
               </a>
 
               <a
-                href="https://youtu.be/tAbAofaCcfc"
+                href="https://www.youtube.com/@neumatic_parlo941"
                 target="_blank"
                 rel="noopener noreferrer"
                 alt="Link to youTube video"
@@ -269,7 +269,7 @@ const Upcoming = () => {
               </a>
 
               <a
-                href="https://www.facebook.com/MargaritasPodridas"
+                href="https://www.facebook.com/neumaticparlo"
                 target="_blank"
                 rel="noopener noreferrer"
                 alt="Link to facebook page"
@@ -289,35 +289,29 @@ const Upcoming = () => {
               src={lawnChair}
               alt="Lawn Chair band portrait, credit Frederike Wetzels"
             ></img>
-            LAWN CHAIR sind hier, um zu bleiben! Seit ihrem Bühnendebüt Ende
-            2021 hat die deutsch- amerikanische Indie-Punk-Band unermüdlich
-            geprobt, aufgenommen und Shows gespielt, unter anderem beim
-            Reeperbahn Festival, Waves Vienna, c/o-pop und Watt En Schlick. Die
-            fünfköpfige Band um die aus Seattle stammende Sängerin Claudia
-            Schlutius, die zusammen mit Gitarrist Eric Haupt die Songs schreibt,
-            hat sich mit ihrem gitarrenlastigen, energiegeladenen Sound,
-            Schlutius' kraftvoller Bühnenpräsenz und ihrem akribischen
-            Songwriting schnell einen Namen in der deutschen Indie-Szene
-            gemacht. Nach der Veröffentlichung einer selbstproduzierten ersten
-            EP im Frühjahr 2022 folgten im Herbst die Aufnahmen für den
-            Nachfolger "Eat The Beans And Wear The Jeans!". Hierbei konnten sie
-            die Hilfe von Produzent Olaf Opal und des in L.A. ansässigen
-            Mischers Chris Coady in Anspruch nehmen. 2023 gehen LAWN CHAIR auf
-            ihre erste eigene Headline-Tour durch Deutschland. “Eat The Beans
-            And Wear The Jeans!” ist die zweite EP von LAWN CHAIR und führt den
-            mit der 2022 veröffentlichten Debüt-EP eingeschlagenen Weg
-            konsequent fort. Einen Schritt nach vorne nehmend vom DIY-Ansatz der
-            letzten Veröffentlichung arbeitete die Band diesmal mit dem
-            renommierten Produzenten Olaf Opal (The Notwist u.v.m.) sowie mit
-            dem in L.A. ansässigen Mischer Chris Coady (Beach House, TV On The
-            Radio) zusammen. Herausgekommen sind Songs, die ein noch
-            ausgefeilteres Soundspektrum bieten und gleichzeitig immer noch 100
-            Prozent LAWN CHAIR sind. Schrammelige Punkgitarren mit
-            selbstironischen Countrylicks, schwelgerische Reverbarien und
-            monotone, treibende Drumbeats tragen den mal lethargischen, mal
-            explosiven Gesang von Frontfrau Claudia Schlutius durch Songs über
-            Selbstmitleid, den Traum vom Leben im Showbusiness und die
-            Ausweglosigkeit des ländlichen Idyllenhorrors.
+            LAWN CHAIR are here to stay! Since their stage debut in late 2021,
+            the German- indie-punk band has been rehearsing, recording and
+            playing shows relentlessly, including Reeperbahn Festival, Waves
+            Vienna, c/o-pop and Watt En Schlick. The five-piece band around
+            Seattle-born singer Claudia Schlutius, who writes the songs together
+            with who writes the songs together with guitarist Eric Haupt,
+            Schlutius' powerful stage presence and her meticulous songwriting,
+            the band has songwriting quickly made a name for themselves in the
+            German indie scene. After the release of a self-produced first EP in
+            the spring of 2022 was followed in autumn by the recordings for the
+            follow-up "Eat The Beans And Wear The Jeans!". Here they were able
+            to work with producer Olaf Opal and the L.A.-based mixer Chris
+            Coady. In 2023 LAWN CHAIR will embark on their first headline tour
+            in Germany. Germany. "Eat The Beans And Wear The Jeans!" is LAWN
+            CHAIR's second EP, and continues the tradition started with their
+            with the debut EP released in 2022. The result is songs that offer
+            an even more sophisticated sound spectrum and at the same time are
+            still and at the same time are still 100 percent LAWN CHAIR. Scrappy
+            punk guitars with self-deprecating country licks, lilting reverb and
+            monotonous, driving drum beats carry the sometimes lethargic,
+            sometimes explosive vocals of frontwoman Claudia Schlutius through
+            songs about self-membership, the dream of a life in show business
+            and the hopelessness of the rural idyllyc horror.
           </p>
           <div
             className={styles["social-media-links-container"]}
@@ -325,7 +319,7 @@ const Upcoming = () => {
           >
             <div className={styles["social-icons-wrapper"]}>
               <a
-                href="https://bluechesterfield.bandcamp.com/"
+                href="https://lawnchairmusic.bandcamp.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 alt="Link to Bandcamp page"
@@ -334,7 +328,7 @@ const Upcoming = () => {
               </a>
 
               <a
-                href="https://www.instagram.com/_bluechesterfield_/"
+                href="https://www.instagram.com/lawnchairmusic"
                 target="_blank"
                 rel="noopener noreferrer"
                 alt="Link to Instagram page"
@@ -343,7 +337,7 @@ const Upcoming = () => {
               </a>
 
               <a
-                href="https://youtu.be/dDx0NBIJZjY"
+                href="https://www.youtube.com/channel/UCyVyJXhyrHEb66GZFmYXljw"
                 target="_blank"
                 rel="noopener noreferrer"
                 alt="Link to youTube video"
@@ -353,7 +347,7 @@ const Upcoming = () => {
               </a>
 
               <a
-                href="https://www.facebook.com/bluechesterfield"
+                href="https://www.facebook.com/lawnchairmusic/"
                 target="_blank"
                 rel="noopener noreferrer"
                 alt="Link to facebook page"
