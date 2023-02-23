@@ -4,7 +4,7 @@ import margaritas from "./static/margaritas.jpeg";
 import { FaFacebookF } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { FaBandcamp } from "react-icons/fa";
-import {FaYoutube} from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 
 const Upcoming = () => {
   return (
@@ -55,6 +55,7 @@ const Upcoming = () => {
             energy with the rest of the world.
           </p>
           <div className={styles["social-media-links-container"]}>
+          <div className={styles["social-icons-wrapper"]}>
             <a
               href="https://margaritaspodridas.bandcamp.com/"
               target="_blank"
@@ -92,10 +93,10 @@ const Upcoming = () => {
               {" "}
               <FaFacebookF className={styles["social-media-links"]} />{" "}
             </a>
-
-     
+            </div>
           </div>
         </div>
+
         <h3 className={styles["band-heading"]}>BLUE CHESTERFIELD (CZ)</h3>
         <div className={styles["band"]}>
           <p className={styles["band-text"]}>
@@ -108,6 +109,50 @@ const Upcoming = () => {
             Shoegaze, Noise or even Jazz, together with its wild live
             performances creating a sonic experience that will be remembered.
           </p>
+          <div
+            className={styles["social-media-links-container"]}
+            id={styles["social-right"]}
+          >
+            <div className={styles["social-icons-wrapper"]}>
+              <a
+                href="https://bluechesterfield.bandcamp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to Bandcamp page"
+              >
+                <FaBandcamp className={styles["social-media-links"]} />
+              </a>
+
+              <a
+                href="https://www.instagram.com/_bluechesterfield_/"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to Instagram page"
+              >
+                <FiInstagram className={styles["social-media-links"]} />
+              </a>
+
+              <a
+                href="https://youtu.be/dDx0NBIJZjY"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to youTube video"
+              >
+                {" "}
+                <FaYoutube className={styles["social-media-links"]} />{" "}
+              </a>
+
+              <a
+                href="https://www.facebook.com/bluechesterfield"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to facebook page"
+              >
+                {" "}
+                <FaFacebookF className={styles["social-media-links"]} />{" "}
+              </a>
+            </div>
+          </div>
         </div>
       </div>
       <h3>Presale-Tickets via Love Your Artist & Ticket Toaster:</h3>

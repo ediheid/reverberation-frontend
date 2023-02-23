@@ -47,7 +47,7 @@
   flex-wrap: wrap;
   width: 80vw;
   overflow: auto;
-  margin-bottom: 10rem
+  margin-bottom: 10rem;
 }
 
 .band-heading {
@@ -55,14 +55,12 @@
   @include gradient-text-from-palette;
   width: 100% !important;
   text-align: start !important;
-  
 
-  &:nth-of-type(2n){
+  &:nth-of-type(2n) {
     text-align: end !important;
-    @include gradient-text-from-palette-opposite-direction
+    @include gradient-text-from-palette-opposite-direction;
   }
 }
-
 
 .band-img {
   float: right;
@@ -82,19 +80,25 @@
 .social-media-links-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
-  justify-self: flex-end;
-
+  justify-content: flex-start;
   height: 5rem;
-  width: 12rem;
+  width: 100%;
 }
 
+#social-right {
+  justify-content: flex-end;
+}
+
+.social-icons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 12rem;
+}
 
 .social-media-links {
   color: $footer-social-media-links;
   font-size: 2.2rem;
-  margin-top: 1rem;
+  // margin: 1rem 1rem 0 0;
 
   &:active {
     transform: scale(1.1);
