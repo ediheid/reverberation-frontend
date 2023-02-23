@@ -1,6 +1,10 @@
 import React from "react";
 import styles from "../Upcoming/upcoming.module.scss";
 import margaritas from "./static/margaritas.jpeg";
+import { FaFacebookF } from "react-icons/fa";
+import { FiInstagram } from "react-icons/fi";
+import { FaBandcamp } from "react-icons/fa";
+import {FaYoutube} from "react-icons/fa";
 
 const Upcoming = () => {
   return (
@@ -14,8 +18,8 @@ const Upcoming = () => {
         <li>Curfew: 22.00</li>
       </ul>
       <div className={styles["bands-container"]}>
+        <h3 className={styles["band-heading"]}>MARGARITAS PODRIDAS (MEX)</h3>
         <div className={styles.band}>
-          <h3 className={styles["band-heading"]}>MARGARITAS PODRIDAS (MEX)</h3>
           <p className={styles["band-text"]}>
             <img
               className={styles["band-img"]}
@@ -50,10 +54,51 @@ const Upcoming = () => {
             of expanding their crowd and sharing their music and contagious
             energy with the rest of the world.
           </p>
+          <div className={styles["social-media-links-container"]}>
+            <a
+              href="https://margaritaspodridas.bandcamp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              alt="Link to Bandcamp page"
+            >
+              <FaBandcamp className={styles["social-media-links"]} />
+            </a>
+
+            <a
+              href="https://www.instagram.com/margaritaspodridas/"
+              target="_blank"
+              rel="noopener noreferrer"
+              alt="Link to Instagram page"
+            >
+              <FiInstagram className={styles["social-media-links"]} />
+            </a>
+
+            <a
+              href="https://youtu.be/tAbAofaCcfc"
+              target="_blank"
+              rel="noopener noreferrer"
+              alt="Link to youTube video"
+            >
+              {" "}
+              <FaYoutube className={styles["social-media-links"]} />{" "}
+            </a>
+
+            <a
+              href="https://www.facebook.com/MargaritasPodridas"
+              target="_blank"
+              rel="noopener noreferrer"
+              alt="Link to facebook page"
+            >
+              {" "}
+              <FaFacebookF className={styles["social-media-links"]} />{" "}
+            </a>
+
+     
+          </div>
         </div>
+        <h3 className={styles["band-heading"]}>BLUE CHESTERFIELD (CZ)</h3>
         <div className={styles["band"]}>
-          <h3>BLUE CHESTERFIELD (CZ)</h3>
-          <p>
+          <p className={styles["band-text"]}>
             Blue Chesterfield is a project started by singer, poet and
             multi-instrumentalist David Jirka from Czech Republic who has been
             later accompanied by several musicians who together created the same

@@ -47,6 +47,7 @@
   flex-wrap: wrap;
   width: 80vw;
   overflow: auto;
+  margin-bottom: 10rem
 }
 
 .band-heading {
@@ -54,7 +55,14 @@
   @include gradient-text-from-palette;
   width: 100% !important;
   text-align: start !important;
+  
+
+  &:nth-of-type(2n){
+    text-align: end !important;
+    @include gradient-text-from-palette-opposite-direction
+  }
 }
+
 
 .band-img {
   float: right;
@@ -69,4 +77,37 @@
   width: auto !important;
   max-width: 1000rem !important;
   text-align: justify !important;
+}
+
+.social-media-links-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  justify-self: flex-end;
+
+  height: 5rem;
+  width: 12rem;
+}
+
+
+.social-media-links {
+  color: $footer-social-media-links;
+  font-size: 2.2rem;
+  margin-top: 1rem;
+
+  &:active {
+    transform: scale(1.1);
+    transition: ease-in-out;
+    color: $links-hover-colour;
+  }
+}
+
+// Social media links hover
+@media (hover: hover) {
+  .social-media-links:hover {
+    transform: scale(1.1);
+    transition: ease-in-out;
+    color: $links-hover-colour;
+  }
 }
