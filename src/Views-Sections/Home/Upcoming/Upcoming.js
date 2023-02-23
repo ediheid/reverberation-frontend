@@ -8,13 +8,17 @@ import { FaFacebookF } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { FaBandcamp } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
+import { FaSoundcloud } from "react-icons/fa";
 
 const Upcoming = () => {
   return (
     <div className={styles["upcoming-container"]} id="upcoming">
       {" "}
       <h2 className={styles["section-heading"]}>Upcoming Events</h2>
-      <h2 className={styles["date-heading"]}>10.07.2023</h2>
+      <h2 className={styles["date-heading"]}>
+        10.07.2023 <br />
+        Schokoladen
+      </h2>
       <ul className={styles["times-list"]}>
         <li>Doors: 19.00</li>
         <li>Shows: 20.00</li>
@@ -166,30 +170,36 @@ const Upcoming = () => {
       <h3 className={styles["tickets"]}>
         Presale-Tickets via Love Your Artist & Ticket Toaster:
       </h3>
-      <a
-        className={styles["anchor-tags"]}
-        href="https://loveyourartist.com/de/events/margaritas-podridas-berlin-VOUV5J/overview"
-        target="_blank"
-        rel="noreferrer noopener"
-        alt="Link to Love Your Artist tickets"
-      >
-        Love Your Artist{" "}
-      </a>
-      <a
-        className={styles["anchor-tags"]}
-        href="https://schokoladen.tickettoaster.de/produkte"
-        target="_blank"
-        rel="noreferrer noopener"
-        alt="Link to Tcket Toaster tickets"
-      >
-        Ticket Toaster{" "}
-      </a>
+      <div className={styles["tickets-container"]}>
+        <a
+          className={styles["anchor-tags"]}
+          href="https://loveyourartist.com/de/events/margaritas-podridas-berlin-VOUV5J/overview"
+          target="_blank"
+          rel="noreferrer noopener"
+          alt="Link to Love Your Artist tickets"
+        >
+          Love Your Artist{" "}
+        </a>
+        <a
+          className={styles["anchor-tags"]}
+          href="https://schokoladen.tickettoaster.de/produkte"
+          target="_blank"
+          rel="noreferrer noopener"
+          alt="Link to Tcket Toaster tickets"
+        >
+          Ticket Toaster{" "}
+        </a>
+      </div>
       {/* // !!! Next dates */}
-      <h2 className={styles["date-heading"]}>10.07.2023</h2>
+      <h2 className={styles["date-heading"]}>
+        26.05.2023 <br />
+        Schokoladen
+      </h2>
       <ul className={styles["times-list"]}>
         <li>Doors: 19.00</li>
         <li>Shows: 20.00</li>
         <li>Curfew: 22.00</li>
+        <li>Aftershow: 22.30</li>
       </ul>
       <div className={styles["bands-container"]}>
         <h3 className={styles["band-heading"]}>NEUMATIC PARLO</h3>
@@ -358,6 +368,82 @@ const Upcoming = () => {
             </div>
           </div>
         </div>
+      </div>
+      <h2 className={styles["date-heading"]}>
+        Aftershow with Heller Than Hell & Toney The Lonely
+      </h2>
+      <div className={styles["aftershow-container"]}>
+        <div className={styles["aftershow-acts"]}>
+          <h3 className={`${styles["band-heading"]} ${styles["acts-heading"]}`}>
+            Heller Than Hell
+          </h3>
+          <p className={styles["acts-text"]}>
+            Funk, Afro-Hi-Life, Psychedelic Cumbia, Latin Jazz, Oriental Breaks,
+            RnB, Disco.
+          </p>
+          <div className={styles["acts-social-container"]}>
+            <a
+              href="https://www.instagram.com/hellerthanhell"
+              target="_blank"
+              rel="noopener noreferrer"
+              alt="Link to Instagram page"
+            >
+              <FiInstagram className={styles["social-media-links"]} />
+            </a>
+            <a
+              href="https://soundcloud.com/hellerthanhell"
+              target="_blank"
+              rel="noopener noreferrer"
+              alt="Link to Soundcloud page"
+            >
+              <FaSoundcloud className={styles["social-media-links"]} />
+            </a>
+          </div>
+        </div>
+        <div className={styles["aftershow-acts"]}>
+          {" "}
+          <h3 className={`${styles["band-heading"]} ${styles["acts-heading"]}`}>
+            Toney The Lonely
+          </h3>
+          <p className={styles["acts-text"]}>
+            Toney The Lonely is a genre bending, twitter trending, dancefloor
+            commanding, vinyl enthusiast from Leipzig.
+          </p>
+          <div className={styles["acts-social-container"]}>
+            <a
+              href="https://www.instagram.com/toney_the_lonely"
+              target="_blank"
+              rel="noopener noreferrer"
+              alt="Link to Instagram page"
+            >
+              <FiInstagram className={styles["social-media-links"]} />
+            </a>
+          </div>
+        </div>
+        
+      </div>
+      <h3 className={styles["tickets"]}>
+        Presale-Tickets via Love Your Artist & Ticket Toaster:
+      </h3>
+      <div className={styles["tickets-container"]}>
+        <a
+          className={styles["anchor-tags"]}
+          href="https://loveyourartist.com/de/events/margaritas-podridas-berlin-VOUV5J/overview"
+          target="_blank"
+          rel="noreferrer noopener"
+          alt="Link to Love Your Artist tickets"
+        >
+          Love Your Artist{" "}
+        </a>
+        <a
+          className={styles["anchor-tags"]}
+          href="https://schokoladen.tickettoaster.de/produkte"
+          target="_blank"
+          rel="noreferrer noopener"
+          alt="Link to Tcket Toaster tickets"
+        >
+          Ticket Toaster{" "}
+        </a>
       </div>
     </div>
   );

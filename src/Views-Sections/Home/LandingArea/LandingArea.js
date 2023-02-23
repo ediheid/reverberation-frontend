@@ -30,7 +30,7 @@ const LandingArea = () => {
 
         <h2 className={styles["sub-headings"]}>Presents:</h2>
 
-        <h2 className={styles["sub-headings"]}>A selection of Berlin shows!</h2>
+        <h2 className={styles["sub-headings"]}>A selection of Berlin shows</h2>
 
         {/* <HashLink smooth to="/#tickets">
           <button className={styles["ticket-info-button"]}>Ticket info</button>
