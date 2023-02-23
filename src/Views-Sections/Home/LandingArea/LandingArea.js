@@ -30,18 +30,14 @@ const LandingArea = () => {
 
         <h2 className={styles["sub-headings"]}>Presents:</h2>
 
-        <h2 className={styles["sub-headings"]}>
-          Margaritas Podridas (MEX) & Blue Chesterfield (CZ)
-        </h2>
+        <h2 className={styles["sub-headings"]}>A selection of Berlin shows!</h2>
 
         {/* <HashLink smooth to="/#tickets">
           <button className={styles["ticket-info-button"]}>Ticket info</button>
         </HashLink> */}
 
         <HashLink smooth to="/#upcoming">
-          <button className={styles["ticket-info-button"]}>
-            More info
-          </button>
+          <button className={styles["ticket-info-button"]}>More info</button>
         </HashLink>
 
         <a
