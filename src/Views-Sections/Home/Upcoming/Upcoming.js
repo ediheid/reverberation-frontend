@@ -428,7 +428,7 @@ const Upcoming = () => {
       <div className={styles["tickets-container"]}>
         <a
           className={styles["anchor-tags"]}
-          href="https://loveyourartist.com/de/events/margaritas-podridas-berlin-VOUV5J/overview"
+          href="https://loveyourartist.com/de/events/neumatic-parlo-lawn-berlin-1UXMA1/overview"
           target="_blank"
           rel="noreferrer noopener"
           alt="Link to Love Your Artist tickets"
