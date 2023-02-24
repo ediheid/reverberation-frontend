@@ -420,7 +420,6 @@ const Upcoming = () => {
             </a>
           </div>
         </div>
-        
       </div>
       <h3 className={styles["tickets"]}>
         Presale-Tickets via Love Your Artist & Ticket Toaster:
@@ -437,7 +436,7 @@ const Upcoming = () => {
         </a>
         <a
           className={styles["anchor-tags"]}
-          href="https://schokoladen.tickettoaster.de/produkte"
+          href="https://schokoladen.tickettoaster.de/produkte/55391-tickets-neumatic-parlo-lawn-chair-schokoladen-berlin-am-26-05-2023"
           target="_blank"
           rel="noreferrer noopener"
           alt="Link to Tcket Toaster tickets"
