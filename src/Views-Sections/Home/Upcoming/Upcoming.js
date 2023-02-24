@@ -11,11 +11,28 @@ import { FaYoutube } from "react-icons/fa";
 import { FaSoundcloud } from "react-icons/fa";
 
 const Upcoming = () => {
+  const event = [
+    {
+      eventDate: "26.05.2023",
+      evenLocation: "Schokoladen",
+      doors: "19.00",
+      shows: "20.00",
+      curfew: "22.00",
+      afterShow: "22.30",
+
+      band: {
+        bandName: "Neumatic Parlo",
+        img: neumaticParlo,
+        alt: "Neumatic Parlo band portrait, credit Max Mueller",
+        bandText: "",
+      },
+    },
+  ];
+
   return (
     <div className={styles["upcoming-container"]} id="upcoming">
       {" "}
       <h2 className={styles["section-heading"]}>Upcoming Events</h2>
-
       <h2 className={styles["date-heading"]}>
         26.05.2023 <br />
         Schokoladen
@@ -269,8 +286,6 @@ const Upcoming = () => {
           Ticket Toaster{" "}
         </a>
       </div>
-
-
       {/* // **** */}
       <h2 className={styles["date-heading"]}>
         10.07.2023 <br />
@@ -448,7 +463,6 @@ const Upcoming = () => {
         </a>
       </div>
       {/* // !!! Next dates */}
-
     </div>
   );
 };
