@@ -20,10 +20,19 @@ import text2020 from "../PastEvents/Static/2020-text.png";
 import poster2020 from "../PastEvents/Static/2020-poster.png";
 import text2021 from "../PastEvents/Static/2021-text.png";
 import poster2021 from "../PastEvents/Static/2021-poster.png";
-
-
+import text2022 from "../PastEvents/Static/2022-text.jpeg";
+import poster2022 from "../PastEvents/Static/2022-poster.jpeg";
 
 const years = [
+  // 2022
+  {
+    id: 2022,
+    textSrc: text2022,
+    textAlt: "2021 information text banner",
+
+    posterSrc: poster2022,
+    posterAlt: "2022 festival poster - ",
+  },
   // 2021
   {
     id: 2021,
@@ -131,9 +140,6 @@ const PastEvents = () => {
             ></img>
           </div>
         ))}
-
-     
-
       </div>
     </div>
   );
