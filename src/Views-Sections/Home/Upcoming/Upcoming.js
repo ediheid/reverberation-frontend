@@ -4,6 +4,7 @@ import margaritas from "./static/margaritas.jpeg";
 import blueChesterfield from "./static/blue-chesterfield.jpg";
 import neumaticParlo from "./static/neumatic-parlo.jpg";
 import lawnChair from "./static/lawn-chair.jpg";
+import acidTongue from "./static/acid-tongue.jpg";
 import { FaFacebookF } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { FaBandcamp } from "react-icons/fa";
@@ -286,7 +287,249 @@ const Upcoming = () => {
           Ticket Toaster{" "}
         </a>
       </div>
-      {/* // **** */}
+      {/* // ** end section */}
+      {/* // ?? start section */}
+      <h2 className={styles["date-heading"]}>
+        24.06.2023 <br />
+        Schokoladen
+      </h2>
+      <ul className={styles["times-list"]}>
+        <li>Doors: 19.00</li>
+        <li>Shows: 20.00</li>
+        <li>Aftershow: 22.00</li>
+      </ul>
+      <div className={styles["bands-container"]}>
+        <h3 className={styles["band-heading"]}>ACID TONGUE</h3>
+        <div className={styles.band}>
+          <p className={styles["band-text"]}>
+            <img
+              className={styles["band-img"]}
+              src={acidTongue}
+              alt="Acid Tongue band portrait"
+            ></img>
+            Guy Keltner, the primary songwriter for Acid Tongue, took a rough
+            couple of years and turned them into libretto. “I became incredibly
+            depressed and started spending a lot of time at the Arboretum in
+            Seattle. I had just moved home and was spending all day absorbing
+            this diversity of plants and sounds at the park. I poured myself
+            into writing some deeply personal songs, heavily influenced by the
+            artists in my immediate orbit.” During the recording of Arboretum,
+            Keltner was diagnosed with bipolar disorder, and decided to get
+            sober from alcohol. “Kicking booze helped me focus in the studio,
+            but I needed help finishing this album. I was incredibly fortunate
+            to work with musicians that I actually listened to and enjoyed. They
+            individually elevated each song to be something beautiful and
+            unique.” The members of Seattle rock & roll outfit Acid Tongue are
+            quite literally bouncing off the walls. In fact, it’s hard to even
+            call them a “Seattle band”. There’s the core duo of songwriter
+            Keltner and drummer/vocalist Ian Cunningham—currently based in the
+            Pacific Northwest—but with numerous touring and studio musicians
+            scattered between Paris, New York, London, Mexico City, Los Angeles,
+            & Austin, the rotating roster seems to grow larger by the day.. The
+            band’s latest release, Arboretum, takes things in the next logical
+            direction. Part glam-rock opus, part mixtape, this LP from Acid
+            Tongue marks a significant step forward for a band well-versed in
+            straddling the line between psychedelia and power-pop.
+          </p>
+          <div className={styles["social-media-links-container"]}>
+            <div className={styles["social-icons-wrapper"]}>
+              <a
+                href="https://acidtongue.bandcamp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to Bandcamp page"
+              >
+                <FaBandcamp className={styles["social-media-links"]} />
+              </a>
+
+              <a
+                href="https://www.instagram.com/acidtongue/"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to Instagram page"
+              >
+                <FiInstagram className={styles["social-media-links"]} />
+              </a>
+
+              <a
+                href="https://youtu.be/_7TLodRM2AA"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to youTube video"
+              >
+                {" "}
+                <FaYoutube className={styles["social-media-links"]} />{" "}
+              </a>
+
+              <a
+                href="https://www.facebook.com/AcidTongue/"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to facebook page"
+              >
+                {" "}
+                <FaFacebookF className={styles["social-media-links"]} />{" "}
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <h3 className={styles["band-heading"]}>TOMMY AND THE TELEBOYS</h3>
+        <div className={styles["band"]}>
+          <p className={styles["band-text"]}>
+            <img
+              className={styles["band-img-left"]}
+              src={lawnChair}
+              alt="Lawn Chair band portrait, credit Frederike Wetzels"
+            ></img>
+            LAWN CHAIR are here to stay! Since their stage debut in late 2021,
+            the German- indie-punk band has been rehearsing, recording and
+            playing shows relentlessly, including Reeperbahn Festival, Waves
+            Vienna, c/o-pop and Watt En Schlick. The five-piece band around
+            Seattle-born singer Claudia Schlutius, who writes the songs together
+            with who writes the songs together with guitarist Eric Haupt,
+            Schlutius' powerful stage presence and her meticulous songwriting,
+            the band has songwriting quickly made a name for themselves in the
+            German indie scene. After the release of a self-produced first EP in
+            the spring of 2022 was followed in autumn by the recordings for the
+            follow-up "Eat The Beans And Wear The Jeans!". Here they were able
+            to work with producer Olaf Opal and the L.A.-based mixer Chris
+            Coady. In 2023 LAWN CHAIR will embark on their first headline tour
+            in Germany. Germany. "Eat The Beans And Wear The Jeans!" is LAWN
+            CHAIR's second EP, and continues the tradition started with their
+            with the debut EP released in 2022. The result is songs that offer
+            an even more sophisticated sound spectrum and at the same time are
+            still and at the same time are still 100 percent LAWN CHAIR. Scrappy
+            punk guitars with self-deprecating country licks, lilting reverb and
+            monotonous, driving drum beats carry the sometimes lethargic,
+            sometimes explosive vocals of frontwoman Claudia Schlutius through
+            songs about self-membership, the dream of a life in show business
+            and the hopelessness of the rural idyllyc horror.
+          </p>
+          <div
+            className={styles["social-media-links-container"]}
+            id={styles["social-right"]}
+          >
+            <div className={styles["social-icons-wrapper"]}>
+              <a
+                href="https://lawnchairmusic.bandcamp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to Bandcamp page"
+              >
+                <FaBandcamp className={styles["social-media-links"]} />
+              </a>
+
+              <a
+                href="https://www.instagram.com/lawnchairmusic"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to Instagram page"
+              >
+                <FiInstagram className={styles["social-media-links"]} />
+              </a>
+
+              <a
+                href="https://www.youtube.com/channel/UCyVyJXhyrHEb66GZFmYXljw"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to youTube video"
+              >
+                {" "}
+                <FaYoutube className={styles["social-media-links"]} />{" "}
+              </a>
+
+              <a
+                href="https://www.facebook.com/lawnchairmusic/"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to facebook page"
+              >
+                {" "}
+                <FaFacebookF className={styles["social-media-links"]} />{" "}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 className={styles["date-heading"]}>
+        Aftershow with Heller Than Hell & Toney The Lonely
+      </h2>
+      <div className={styles["aftershow-container"]}>
+        <div className={styles["aftershow-acts"]}>
+          <h3 className={`${styles["band-heading"]} ${styles["acts-heading"]}`}>
+            Heller Than Hell
+          </h3>
+          <p className={styles["acts-text"]}>
+            Funk, Afro-Hi-Life, Psychedelic Cumbia, Latin Jazz, Oriental Breaks,
+            RnB, Disco.
+          </p>
+          <div className={styles["acts-social-container"]}>
+            <a
+              href="https://www.instagram.com/hellerthanhell"
+              target="_blank"
+              rel="noopener noreferrer"
+              alt="Link to Instagram page"
+            >
+              <FiInstagram className={styles["social-media-links"]} />
+            </a>
+            <a
+              href="https://soundcloud.com/hellerthanhell"
+              target="_blank"
+              rel="noopener noreferrer"
+              alt="Link to Soundcloud page"
+            >
+              <FaSoundcloud className={styles["social-media-links"]} />
+            </a>
+          </div>
+        </div>
+        <div className={styles["aftershow-acts"]}>
+          {" "}
+          <h3 className={`${styles["band-heading"]} ${styles["acts-heading"]}`}>
+            Toney The Lonely
+          </h3>
+          <p className={styles["acts-text"]}>
+            Toney The Lonely is a genre bending, twitter trending, dancefloor
+            commanding, vinyl enthusiast from Leipzig.
+          </p>
+          <div className={styles["acts-social-container"]}>
+            <a
+              href="https://www.instagram.com/toney_the_lonely"
+              target="_blank"
+              rel="noopener noreferrer"
+              alt="Link to Instagram page"
+            >
+              <FiInstagram className={styles["social-media-links"]} />
+            </a>
+          </div>
+        </div>
+      </div>
+      <h3 className={styles["tickets"]}>
+        Presale-Tickets via Love Your Artist & Ticket Toaster:
+      </h3>
+      <div className={styles["tickets-container"]}>
+        <a
+          className={styles["anchor-tags"]}
+          href="https://loveyourartist.com/de/events/neumatic-parlo-lawn-berlin-1UXMA1/overview"
+          target="_blank"
+          rel="noreferrer noopener"
+          alt="Link to Love Your Artist tickets"
+        >
+          Love Your Artist{" "}
+        </a>
+        <a
+          className={styles["anchor-tags"]}
+          href="https://schokoladen.tickettoaster.de/produkte/55391-tickets-neumatic-parlo-lawn-chair-schokoladen-berlin-am-26-05-2023"
+          target="_blank"
+          rel="noreferrer noopener"
+          alt="Link to Tcket Toaster tickets"
+        >
+          Ticket Toaster{" "}
+        </a>
+      </div>
+
+      {/* // ?? end section */}
+      {/* // !! start section */}
       <h2 className={styles["date-heading"]}>
         10.07.2023 <br />
         Schokoladen
@@ -462,7 +705,9 @@ const Upcoming = () => {
           Ticket Toaster{" "}
         </a>
       </div>
+      {/* // !! end */}
       {/* // !!! Next dates */}
+
     </div>
   );
 };
