@@ -6,6 +6,7 @@ import neumaticParlo from "./static/neumatic-parlo.jpg";
 import lawnChair from "./static/lawn-chair.jpg";
 import acidTongue from "./static/acid-tongue.jpg";
 import jackLadder from "./static/jack-ladder.jpeg";
+import teleboys from "./static/teleboys.png";
 import { FaFacebookF } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { FaBandcamp } from "react-icons/fa";
@@ -376,37 +377,28 @@ const Upcoming = () => {
           </div>
         </div>
 
-        {/* <h3 className={styles["band-heading"]}>TOMMY AND THE TELEBOYS (DE)</h3>
+        <h3 className={styles["band-heading"]}>TOMMY AND THE TELEBOYS (DE)</h3>
         <div className={styles["band"]}>
           <p className={styles["band-text"]}>
             <img
               className={styles["band-img-left"]}
-              src={lawnChair}
-              alt="Lawn Chair band portrait, credit Frederike Wetzels"
+              src={teleboys}
+              alt="Teleboys band portrait, four members, black and white photograph"
             ></img>
-            LAWN CHAIR are here to stay! Since their stage debut in late 2021,
-            the German- indie-punk band has been rehearsing, recording and
-            playing shows relentlessly, including Reeperbahn Festival, Waves
-            Vienna, c/o-pop and Watt En Schlick. The five-piece band around
-            Seattle-born singer Claudia Schlutius, who writes the songs together
-            with who writes the songs together with guitarist Eric Haupt,
-            Schlutius' powerful stage presence and her meticulous songwriting,
-            the band has songwriting quickly made a name for themselves in the
-            German indie scene. After the release of a self-produced first EP in
-            the spring of 2022 was followed in autumn by the recordings for the
-            follow-up "Eat The Beans And Wear The Jeans!". Here they were able
-            to work with producer Olaf Opal and the L.A.-based mixer Chris
-            Coady. In 2023 LAWN CHAIR will embark on their first headline tour
-            in Germany. Germany. "Eat The Beans And Wear The Jeans!" is LAWN
-            CHAIR's second EP, and continues the tradition started with their
-            with the debut EP released in 2022. The result is songs that offer
-            an even more sophisticated sound spectrum and at the same time are
-            still and at the same time are still 100 percent LAWN CHAIR. Scrappy
-            punk guitars with self-deprecating country licks, lilting reverb and
-            monotonous, driving drum beats carry the sometimes lethargic,
-            sometimes explosive vocals of frontwoman Claudia Schlutius through
-            songs about self-membership, the dream of a life in show business
-            and the hopelessness of the rural idyllyc horror.
+            Tommy and the Teleboys play psychedelic death boogie in the
+            wasteland between Halle and Berlin. Inspired by the raw energy of
+            garage and noise, their music is loaded with a ten-ton shovel of
+            guitar riffs and driving synth lines. Psychedelic soundscapes
+            alternate with hard-hitting fuzz storms and sugar sweet westcoast
+            melodies.This is a sound that yearns for the golden era of
+            psychedelic rock yet plays joyfully with innovation and weirdness.
+            Tommy and the Teleboys consist of Tommy (Drums,Synth, Vocals) and
+            the Teleboys (Vocals, Guitars, Bass, Synth). This formation came
+            together during the uncertainty of the pandemic. They managed to
+            grow into a well-rehearsed unit after scoring local gigs despite the
+            difficult times. After months of hard work and two studio EPs Tommy
+            and the Teleboys have hit their current style. So no time to rest -
+            new releases are in the making.It*s gonna be wild!
           </p>
           <div
             className={styles["social-media-links-container"]}
@@ -414,7 +406,7 @@ const Upcoming = () => {
           >
             <div className={styles["social-icons-wrapper"]}>
               <a
-                href="https://lawnchairmusic.bandcamp.com/"
+                href="https://tommyandtheteleboys.bandcamp.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 alt="Link to Bandcamp page"
@@ -423,7 +415,7 @@ const Upcoming = () => {
               </a>
 
               <a
-                href="https://www.instagram.com/lawnchairmusic"
+                href="https://instagram.com/tommyandtheteleboys?igshid=YmMyMTA2M2Y="
                 target="_blank"
                 rel="noopener noreferrer"
                 alt="Link to Instagram page"
@@ -432,7 +424,7 @@ const Upcoming = () => {
               </a>
 
               <a
-                href="https://www.youtube.com/channel/UCyVyJXhyrHEb66GZFmYXljw"
+                href="https://www.youtube.com/watch?v=W9vD9orgbsw&t=948s"
                 target="_blank"
                 rel="noopener noreferrer"
                 alt="Link to youTube video"
@@ -442,7 +434,7 @@ const Upcoming = () => {
               </a>
 
               <a
-                href="https://www.facebook.com/lawnchairmusic/"
+                href="https://www.facebook.com/TommyandtheTeleboys"
                 target="_blank"
                 rel="noopener noreferrer"
                 alt="Link to facebook page"
@@ -452,7 +444,7 @@ const Upcoming = () => {
               </a>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
       <h2 className={styles["date-heading"]}>
         Aftershow with Heller Than Hell & Flux Wildly
@@ -723,7 +715,7 @@ const Upcoming = () => {
             <img
               className={styles["band-img"]}
               src={jackLadder}
-              alt="Margaritas Podridas - black and white band portrait"
+              alt="Portrait of Jack Ladder"
             ></img>
             A singular character in Australian music, sardonic and sentimental,
             Jack Ladder brings his towering and tender baritone to bear on tales
