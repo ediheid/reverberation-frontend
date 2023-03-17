@@ -5,11 +5,13 @@ import blueChesterfield from "./static/blue-chesterfield.jpg";
 import neumaticParlo from "./static/neumatic-parlo.jpg";
 import lawnChair from "./static/lawn-chair.jpg";
 import acidTongue from "./static/acid-tongue.jpg";
+import jackLadder from "./static/jack-ladder.jpeg";
 import { FaFacebookF } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { FaBandcamp } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaSoundcloud } from "react-icons/fa";
+import { FaMixcloud } from "react-icons/fa";
 
 const Upcoming = () => {
   const event = [
@@ -45,7 +47,7 @@ const Upcoming = () => {
         <li>Aftershow: 22.30</li>
       </ul>
       <div className={styles["bands-container"]}>
-        <h3 className={styles["band-heading"]}>NEUMATIC PARLO</h3>
+        <h3 className={styles["band-heading"]}>NEUMATIC PARLO (DE)</h3>
         <div className={styles.band}>
           <p className={styles["band-text"]}>
             <img
@@ -134,7 +136,7 @@ const Upcoming = () => {
           </div>
         </div>
 
-        <h3 className={styles["band-heading"]}>LAWN CHAIR</h3>
+        <h3 className={styles["band-heading"]}>LAWN CHAIR (DE)</h3>
         <div className={styles["band"]}>
           <p className={styles["band-text"]}>
             <img
@@ -299,7 +301,7 @@ const Upcoming = () => {
         <li>Aftershow: 22.00</li>
       </ul>
       <div className={styles["bands-container"]}>
-        <h3 className={styles["band-heading"]}>ACID TONGUE</h3>
+        <h3 className={styles["band-heading"]}>ACID TONGUE (US)</h3>
         <div className={styles.band}>
           <p className={styles["band-text"]}>
             <img
@@ -374,7 +376,7 @@ const Upcoming = () => {
           </div>
         </div>
 
-        <h3 className={styles["band-heading"]}>TOMMY AND THE TELEBOYS</h3>
+        {/* <h3 className={styles["band-heading"]}>TOMMY AND THE TELEBOYS (DE)</h3>
         <div className={styles["band"]}>
           <p className={styles["band-text"]}>
             <img
@@ -450,10 +452,10 @@ const Upcoming = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <h2 className={styles["date-heading"]}>
-        Aftershow with Heller Than Hell & Toney The Lonely
+        Aftershow with Heller Than Hell & Flux Wildly
       </h2>
       <div className={styles["aftershow-container"]}>
         <div className={styles["aftershow-acts"]}>
@@ -486,20 +488,20 @@ const Upcoming = () => {
         <div className={styles["aftershow-acts"]}>
           {" "}
           <h3 className={`${styles["band-heading"]} ${styles["acts-heading"]}`}>
-            Toney The Lonely
+            Flux Wildly
           </h3>
           <p className={styles["acts-text"]}>
-            Toney The Lonely is a genre bending, twitter trending, dancefloor
-            commanding, vinyl enthusiast from Leipzig.
+            Weird, Obscure, Rock, Crazy, Tropical, Surprising - Reverberation
+            Fest's long-time host jets up the road to deliver musical code.
           </p>
           <div className={styles["acts-social-container"]}>
             <a
-              href="https://www.instagram.com/toney_the_lonely"
+              href="https://www.mixcloud.com/.../radio-brain-wave-20-march-2022/"
               target="_blank"
               rel="noopener noreferrer"
-              alt="Link to Instagram page"
+              alt="Link to Mixcloud"
             >
-              <FiInstagram className={styles["social-media-links"]} />
+              <FaMixcloud className={styles["social-media-links"]} />
             </a>
           </div>
         </div>
@@ -510,7 +512,7 @@ const Upcoming = () => {
       <div className={styles["tickets-container"]}>
         <a
           className={styles["anchor-tags"]}
-          href="https://loveyourartist.com/de/events/neumatic-parlo-lawn-berlin-1UXMA1/overview"
+          href="https://loveyourartist.com/en/events/acid-tongue-tommy-berlin-QTDS4X/overview"
           target="_blank"
           rel="noreferrer noopener"
           alt="Link to Love Your Artist tickets"
@@ -527,7 +529,6 @@ const Upcoming = () => {
           Ticket Toaster{" "}
         </a>
       </div>
-
       {/* // ?? end section */}
       {/* // !! start section */}
       <h2 className={styles["date-heading"]}>
@@ -706,8 +707,91 @@ const Upcoming = () => {
         </a>
       </div>
       {/* // !! end */}
-      {/* // !!! Next dates */}
+      {/* // * Next dates */}
+      <h2 className={styles["date-heading"]}>
+        18.07.2023 <br />
+        8mm Bar
+      </h2>
+      <ul className={styles["times-list"]}>
+        <li>ONLY GERMAN SHOW 2023</li>
+        <li>On stage: 20.00</li>
+      </ul>
+      <div className={styles["bands-container"]}>
+        <h3 className={styles["band-heading"]}>JACK LADDER (AUS)</h3>
+        <div className={styles.band}>
+          <p className={styles["band-text"]}>
+            <img
+              className={styles["band-img"]}
+              src={jackLadder}
+              alt="Margaritas Podridas - black and white band portrait"
+            ></img>
+            A singular character in Australian music, sardonic and sentimental,
+            Jack Ladder brings his towering and tender baritone to bear on tales
+            of beauty, love, hope and redemption. A master of musical narrative,
+            he conjures lyrics that celebrate the absurdity of the human
+            condition in songs that groove in subtle ways. Ladder has toured
+            with and worked alongside some of the brightest names in the
+            business - Bill Callahan, Angel Olsen, John Cale, Sharon Van Etten,
+            Father John Misty, Weyes Blood, Alex Cameron and The Killers.
+          </p>
+          <div className={styles["social-media-links-container"]}>
+            <div className={styles["social-icons-wrapper"]}>
+              <a
+                href="https://jackladder.bandcamp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to Bandcamp page"
+              >
+                <FaBandcamp className={styles["social-media-links"]} />
+              </a>
 
+              <a
+                href="https://www.instagram.com/jackladder/"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to Instagram page"
+              >
+                <FiInstagram className={styles["social-media-links"]} />
+              </a>
+
+              <a
+                href="https://www.youtube.com/user/JackLadderTV"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to youTube video"
+              >
+                {" "}
+                <FaYoutube className={styles["social-media-links"]} />{" "}
+              </a>
+
+              <a
+                href="https://www.facebook.com/JackLadderAndTheDreamlanders"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to facebook page"
+              >
+                {" "}
+                <FaFacebookF className={styles["social-media-links"]} />{" "}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3 className={styles["tickets"]}>
+        Presale-Tickets via Love Your Artist & Ticket Toaster:
+      </h3>
+      <div className={styles["tickets-container"]}>
+        <a
+          className={styles["anchor-tags"]}
+          href="https://loveyourartist.com/en/events/jack-ladder-berlin-NE81BP/overview"
+          target="_blank"
+          rel="noreferrer noopener"
+          alt="Link to Love Your Artist tickets"
+        >
+          Love Your Artist{" "}
+        </a>
+      </div>
+      {/* // * end */}
     </div>
   );
 };
