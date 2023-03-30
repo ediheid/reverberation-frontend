@@ -13,6 +13,7 @@ import loessnitzpils from "../Partners/Static/loessnitzpils.png";
 import neustart from "../Partners/Static/neustart-kultur.png";
 import rauze from "../Partners/Static/rauze.png";
 import saechsischeKulturstiftung from "../Partners/Static/saechsische-Kulturstiftung.png";
+import sachsen from "../Partners/Static/sachsen.png";
 import sharewood from "../Partners/Static/sharewood.png";
 
 const Partners = () => {
@@ -60,6 +61,12 @@ const Partners = () => {
       alt: "Saechsische Kulturstiftung logo",
       id: 12,
     },
+    {
+      logo: sachsen,
+      alt: "Saechsische Kulturstiftung logo",
+      id: 13,
+    },
+
     {
       logo: sharewood,
       alt: "Sharewood logo",
