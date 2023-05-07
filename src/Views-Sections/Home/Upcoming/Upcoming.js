@@ -7,6 +7,8 @@ import lawnChair from "./static/lawn-chair.jpg";
 import acidTongue from "./static/acid-tongue.jpg";
 import jackLadder from "./static/jack-ladder.jpeg";
 import teleboys from "./static/teleboys.png";
+import glueTrip from "./static/glue-trip.jpeg";
+import vitorNoah from "./static/vitor-noah.jpeg";
 import { FaFacebookF } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { FaBandcamp } from "react-icons/fa";
@@ -784,6 +786,169 @@ const Upcoming = () => {
         </a>
       </div>
       {/* // * end */}
+      {/* // ? Next dates */}
+      <h2 className={styles["date-heading"]}>
+        16.11.2023 <br />
+        Schokoladen
+      </h2>
+      <ul className={styles["times-list"]}>
+        <li>Doors: 19.00</li>
+        <li>Shows: 20.00</li>
+        <li>Curfew: 22.00</li>
+      </ul>
+      <div className={styles["bands-container"]}>
+        <h3 className={styles["band-heading"]}>GLUE TRIP (BR)</h3>
+        <div className={styles.band}>
+          <p className={styles["band-text"]}>
+            <img
+              className={styles["band-img"]}
+              src={glueTrip}
+              alt="Band portrait, Glue Trip"
+            ></img>
+            ...is a musical project led by Brazilian musician Lucas Santa Cruz.
+            Formed in 2013 as an experimental recording project, it was quickly
+            invited to perform live for the first time at the Prata da Casa
+            project (SESC Pompeia). With three albums released and viral hits
+            like Elbow Pain(17 million views on Youtube) and La Edad del Futuro,
+            Glue Trip has become a reference for contemporary Brazilian
+            psychedelic music in Brazil and around the world. Showing maturity
+            with their album Nada Tropical, released in July 2022, the band has
+            been solidifying their career for a decade, increasingly
+            incorporating their Brazilian roots into their compositions.
+            Produced by Zé Nigro, this album features collaborations with great
+            names in Brazilian music, including maestro Arthur Verocai, São
+            Paulo singer YMA, and musicians Otto and Felipe S from Pernambuco.
+            With several international tours under their belt, including
+            sold-out shows in London and Paris on their last tour, Glue Trip is
+            building a solid background and a steady rise. They stand out as one
+            of the most interesting and innovative musical projects of today.
+          </p>
+          <div className={styles["social-media-links-container"]}>
+            <div className={styles["social-icons-wrapper"]}>
+              <a
+                href="https://gluetrip.bandcamp.com/album/nada-tropical"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to Bandcamp page"
+              >
+                <FaBandcamp className={styles["social-media-links"]} />
+              </a>
+
+              <a
+                href="https://www.instagram.com/gluetrip"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to Instagram page"
+              >
+                <FiInstagram className={styles["social-media-links"]} />
+              </a>
+
+              <a
+                href="https://youtu.be/tQ-WI46nmu0"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to youTube video"
+              >
+                {" "}
+                <FaYoutube className={styles["social-media-links"]} />{" "}
+              </a>
+
+              <a
+                href="https://www.facebook.com/GlueTrip"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to facebook page"
+              >
+                {" "}
+                <FaFacebookF className={styles["social-media-links"]} />{" "}
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <h3 className={styles["band-heading"]}>VITOR NOAH (BR)</h3>
+        <div className={styles["band"]}>
+          <p className={styles["band-text"]}>
+            <img
+              className={styles["band-img-left"]}
+              src={vitorNoah}
+              alt="Portrait of Vitor Noah"
+            ></img>
+            ...Vitor Noah is a Brazilian-born classical guitarist currently
+            based in Berlin. His first musical experiences were with the
+            electric bass, as founder member of the stoner rock band
+            "Hellbenders", with whom he recorded the band's first album. Vitor
+            has participated in various music festivals and seminars, working
+            with leading guitarists such as David Russell, Manuel Barrueco, Pepe
+            Romero, Judicael Perroy, Zoran Dukic, Tillman Hoppstock, Pablo
+            Márquez, Eduardo Isaac, Fábio Zanon, Paul Galbraith, Roberto Aussel,
+            Eduardo Fernández and Paul O’Dette. He will open this night of
+            Brazilian music with a solo guitar performance that will probably
+            leave the audiences mouths wide open.
+          </p>
+          <div
+            className={styles["social-media-links-container"]}
+            id={styles["social-right"]}
+          >
+            <div className={styles["social-icons-wrapper"]}>
+         
+
+              <a
+                href="https://www.instagram.com/vitornoah"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to Instagram page"
+              >
+                <FiInstagram className={styles["social-media-links"]} />
+              </a>
+
+              <a
+                href="https://youtu.be/KY_WMcwRV7U"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to youTube video"
+              >
+                {" "}
+                <FaYoutube className={styles["social-media-links"]} />{" "}
+              </a>
+
+              <a
+                href="https://www.facebook.com/vitornoah/"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to facebook page"
+              >
+                {" "}
+                <FaFacebookF className={styles["social-media-links"]} />{" "}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3 className={styles["tickets"]}>
+        Presale-Tickets via Love Your Artist & Ticket Toaster:
+      </h3>
+      <div className={styles["tickets-container"]}>
+        <a
+          className={styles["anchor-tags"]}
+          href="https://loveyourartist.com/de/events/glue-trip-vitor-noah-berlin-7FNXVS/overview"
+          target="_blank"
+          rel="noreferrer noopener"
+          alt="Link to Love Your Artist tickets"
+        >
+          Love Your Artist{" "}
+        </a>
+        <a
+          className={styles["anchor-tags"]}
+          href="https://schokoladen.tickettoaster.de/produkte"
+          target="_blank"
+          rel="noreferrer noopener"
+          alt="Link to Tcket Toaster tickets"
+        >
+          Ticket Toaster{" "}
+        </a>
+      </div>
+      {/* // ? end */}
     </div>
   );
 };
