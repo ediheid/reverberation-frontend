@@ -202,10 +202,11 @@
   }
 }
 
-.tickets-container{
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 8rem;
+.inline-link{
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  @include gradient-text-from-palette;
+  border-bottom: 1px solid $mauve,
 }
 
 .tickets {
@@ -233,7 +234,7 @@
   }
 }
 
-.aftershow-container{
+.aftershow-container {
   width: 80vw;
   max-width: 100rem;
   display: flex;
@@ -242,7 +243,7 @@
   margin: 3rem 0 8rem 0;
 }
 
-.aftershow-acts{
+.aftershow-acts {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -252,19 +253,17 @@
   min-width: 30rem;
 }
 
-.acts-heading{
+.acts-heading {
   text-align: center !important;
 }
 
-.acts-text{
+.acts-text {
   @include section-text;
 }
 
-.acts-social-container{
-
+.acts-social-container {
   display: flex;
   justify-content: space-around;
   width: 8rem;
   margin-top: 1rem;
-  
 }

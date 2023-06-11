@@ -2,13 +2,13 @@ import React from "react";
 import styles from "../Upcoming/upcoming.module.scss";
 import margaritas from "./static/margaritas.jpeg";
 import blueChesterfield from "./static/blue-chesterfield.jpg";
-import neumaticParlo from "./static/neumatic-parlo.jpg";
-import lawnChair from "./static/lawn-chair.jpg";
 import acidTongue from "./static/acid-tongue.jpg";
 import jackLadder from "./static/jack-ladder.jpeg";
 import teleboys from "./static/teleboys.png";
 import glueTrip from "./static/glue-trip.jpeg";
 import vitorNoah from "./static/vitor-noah.jpeg";
+import loveNJoy from "./static/love-n-joy.jpg";
+import chillera from "./static/chillera.jpg";
 import { FaFacebookF } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { FaBandcamp } from "react-icons/fa";
@@ -17,282 +17,29 @@ import { FaSoundcloud } from "react-icons/fa";
 import { FaMixcloud } from "react-icons/fa";
 
 const Upcoming = () => {
-  const event = [
-    {
-      eventDate: "26.05.2023",
-      evenLocation: "Schokoladen",
-      doors: "19.00",
-      shows: "20.00",
-      curfew: "22.00",
-      afterShow: "22.30",
+  // todo: refactor events and create a reusable component
+  // const event = [
+  //   {
+  //     eventDate: "26.05.2023",
+  //     evenLocation: "Schokoladen",
+  //     doors: "19.00",
+  //     shows: "20.00",
+  //     curfew: "22.00",
+  //     afterShow: "22.30",
 
-      band: {
-        bandName: "Neumatic Parlo",
-        img: neumaticParlo,
-        alt: "Neumatic Parlo band portrait, credit Max Mueller",
-        bandText: "",
-      },
-    },
-  ];
+  //     band: {
+  //       bandName: "Neumatic Parlo",
+  //       img: neumaticParlo,
+  //       alt: "Neumatic Parlo band portrait, credit Max Mueller",
+  //       bandText: "",
+  //     },
+  //   },
+  // ];
 
   return (
     <div className={styles["upcoming-container"]} id="upcoming">
       {" "}
       <h2 className={styles["section-heading"]}>Upcoming Events</h2>
-      <h2 className={styles["date-heading"]}>
-        26.05.2023 <br />
-        Schokoladen
-      </h2>
-      <ul className={styles["times-list"]}>
-        <li>Doors: 19.00</li>
-        <li>Shows: 20.00</li>
-        <li>Curfew: 22.00</li>
-        <li>Aftershow: 22.30</li>
-      </ul>
-      <div className={styles["bands-container"]}>
-        <h3 className={styles["band-heading"]}>NEUMATIC PARLO (DE)</h3>
-        <div className={styles.band}>
-          <p className={styles["band-text"]}>
-            <img
-              className={styles["band-img"]}
-              src={neumaticParlo}
-              alt="Neumatic Parlo band portrait, credit Max Mueller"
-            ></img>
-            Melancholia! Where your face should be reflected on the glittering
-            surface of the Rhine, there is nothing but emptiness. The river
-            carries our thoughts away in an endless stream of doubt and teenage
-            angst. An intense longing located somewhere between Düsseldorf's
-            notorious old town and the Oberkassel district on the other side of
-            the Rhine. Where could rebellion against boredom thrive better than
-            here in Düsseldorf's uptown? In an area of tension between deceptive
-            wealth, abonded sub culture spaces and the fabled salon des
-            amateurs, there’s something cooking and suddenly Oberkassel and L.A.
-            are not that far away anymore. On their second EP ‘Random Toaster’
-            Neumatic Parlo play melancholic psychedelic pop. Gloomy lyrics meet
-            delicate melodies and dreamy soundscapes. Vincent Göttler, Justin
-            Jansen, Luis Wedekind, Frederick Oltersdorf and Simon Hartmann
-            create a sound that is simultaneously international but with
-            Motorik, synthesizers and rattling guitars always rooted in the
-            tradition of their hometown. As if he were an antihero of the early
-            80s, Göttler sings about fear, doubt and a long search. The answer
-            whether he will find what he is looking for is still pending, but
-            the existential need already sounds just like honey. After their
-            debut EP All Purpose Slicer still sounded like post punk and no
-            wave, Neumatic Parlo are much more psychedelic and playful on Random
-            Toaster. Sometimes that sounds a little like Yo La Tengo or as
-            grueling and noisy as a Ty Segall. Songs like “Real Insight” and
-            “Airplane” rave about dark romantic trips into other spheres, while
-            “Nicolas Winding Refn” is a scenario full of paranoia that could
-            have sprung from a film by the same Danish cult director. The
-            anxiety becomes almost palpable when Göttler's nervous vocal line
-            lies over a rumbling drum kit and is then literally overrun by a
-            wall of guitars and noise. In “Lake Perris State Recreation Area”
-            Neumatic Parlo reveal the band's own myth and tell of the joint road
-            trip to the Desert Daze Festival in the Californian desert. In
-            addition to countless Fuzz War escapades, it was an appearance by
-            Slowdive that clearly left its mark here. For the recordings of
-            Random Toaster, the band and producer Patrick Stäudle retired to a
-            farm in the Black Forest. Seclusion and inner contemplation clearly
-            reverberate here. Random Toaster will be released on May 14th on
-            UNIQUE Records.
-          </p>
-          <div className={styles["social-media-links-container"]}>
-            <div className={styles["social-icons-wrapper"]}>
-              <a
-                href="https://parloneumatic.bandcamp.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                alt="Link to Bandcamp page"
-              >
-                <FaBandcamp className={styles["social-media-links"]} />
-              </a>
-
-              <a
-                href="https://www.instagram.com/neumatic_parlo"
-                target="_blank"
-                rel="noopener noreferrer"
-                alt="Link to Instagram page"
-              >
-                <FiInstagram className={styles["social-media-links"]} />
-              </a>
-
-              <a
-                href="https://www.youtube.com/@neumatic_parlo941"
-                target="_blank"
-                rel="noopener noreferrer"
-                alt="Link to youTube video"
-              >
-                {" "}
-                <FaYoutube className={styles["social-media-links"]} />{" "}
-              </a>
-
-              <a
-                href="https://www.facebook.com/neumaticparlo"
-                target="_blank"
-                rel="noopener noreferrer"
-                alt="Link to facebook page"
-              >
-                {" "}
-                <FaFacebookF className={styles["social-media-links"]} />{" "}
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <h3 className={styles["band-heading"]}>LAWN CHAIR (DE)</h3>
-        <div className={styles["band"]}>
-          <p className={styles["band-text"]}>
-            <img
-              className={styles["band-img-left"]}
-              src={lawnChair}
-              alt="Lawn Chair band portrait, credit Frederike Wetzels"
-            ></img>
-            LAWN CHAIR are here to stay! Since their stage debut in late 2021,
-            the German- indie-punk band has been rehearsing, recording and
-            playing shows relentlessly, including Reeperbahn Festival, Waves
-            Vienna, c/o-pop and Watt En Schlick. The five-piece band around
-            Seattle-born singer Claudia Schlutius, who writes the songs together
-            with who writes the songs together with guitarist Eric Haupt,
-            Schlutius' powerful stage presence and her meticulous songwriting,
-            the band has songwriting quickly made a name for themselves in the
-            German indie scene. After the release of a self-produced first EP in
-            the spring of 2022 was followed in autumn by the recordings for the
-            follow-up "Eat The Beans And Wear The Jeans!". Here they were able
-            to work with producer Olaf Opal and the L.A.-based mixer Chris
-            Coady. In 2023 LAWN CHAIR will embark on their first headline tour
-            in Germany. Germany. "Eat The Beans And Wear The Jeans!" is LAWN
-            CHAIR's second EP, and continues the tradition started with their
-            with the debut EP released in 2022. The result is songs that offer
-            an even more sophisticated sound spectrum and at the same time are
-            still and at the same time are still 100 percent LAWN CHAIR. Scrappy
-            punk guitars with self-deprecating country licks, lilting reverb and
-            monotonous, driving drum beats carry the sometimes lethargic,
-            sometimes explosive vocals of frontwoman Claudia Schlutius through
-            songs about self-membership, the dream of a life in show business
-            and the hopelessness of the rural idyllyc horror.
-          </p>
-          <div
-            className={styles["social-media-links-container"]}
-            id={styles["social-right"]}
-          >
-            <div className={styles["social-icons-wrapper"]}>
-              <a
-                href="https://lawnchairmusic.bandcamp.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                alt="Link to Bandcamp page"
-              >
-                <FaBandcamp className={styles["social-media-links"]} />
-              </a>
-
-              <a
-                href="https://www.instagram.com/lawnchairmusic"
-                target="_blank"
-                rel="noopener noreferrer"
-                alt="Link to Instagram page"
-              >
-                <FiInstagram className={styles["social-media-links"]} />
-              </a>
-
-              <a
-                href="https://www.youtube.com/channel/UCyVyJXhyrHEb66GZFmYXljw"
-                target="_blank"
-                rel="noopener noreferrer"
-                alt="Link to youTube video"
-              >
-                {" "}
-                <FaYoutube className={styles["social-media-links"]} />{" "}
-              </a>
-
-              <a
-                href="https://www.facebook.com/lawnchairmusic/"
-                target="_blank"
-                rel="noopener noreferrer"
-                alt="Link to facebook page"
-              >
-                {" "}
-                <FaFacebookF className={styles["social-media-links"]} />{" "}
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h2 className={styles["date-heading"]}>
-        Aftershow with Heller Than Hell & Toney The Lonely
-      </h2>
-      <div className={styles["aftershow-container"]}>
-        <div className={styles["aftershow-acts"]}>
-          <h3 className={`${styles["band-heading"]} ${styles["acts-heading"]}`}>
-            Heller Than Hell
-          </h3>
-          <p className={styles["acts-text"]}>
-            Funk, Afro-Hi-Life, Psychedelic Cumbia, Latin Jazz, Oriental Breaks,
-            RnB, Disco.
-          </p>
-          <div className={styles["acts-social-container"]}>
-            <a
-              href="https://www.instagram.com/hellerthanhell"
-              target="_blank"
-              rel="noopener noreferrer"
-              alt="Link to Instagram page"
-            >
-              <FiInstagram className={styles["social-media-links"]} />
-            </a>
-            <a
-              href="https://soundcloud.com/hellerthanhell"
-              target="_blank"
-              rel="noopener noreferrer"
-              alt="Link to Soundcloud page"
-            >
-              <FaSoundcloud className={styles["social-media-links"]} />
-            </a>
-          </div>
-        </div>
-        <div className={styles["aftershow-acts"]}>
-          {" "}
-          <h3 className={`${styles["band-heading"]} ${styles["acts-heading"]}`}>
-            Toney The Lonely
-          </h3>
-          <p className={styles["acts-text"]}>
-            Toney The Lonely is a genre bending, twitter trending, dancefloor
-            commanding, vinyl enthusiast from Leipzig.
-          </p>
-          <div className={styles["acts-social-container"]}>
-            <a
-              href="https://www.instagram.com/toney_the_lonely"
-              target="_blank"
-              rel="noopener noreferrer"
-              alt="Link to Instagram page"
-            >
-              <FiInstagram className={styles["social-media-links"]} />
-            </a>
-          </div>
-        </div>
-      </div>
-      <h3 className={styles["tickets"]}>
-        Presale-Tickets via Love Your Artist & Ticket Toaster:
-      </h3>
-      <div className={styles["tickets-container"]}>
-        <a
-          className={styles["anchor-tags"]}
-          href="https://loveyourartist.com/de/events/neumatic-parlo-lawn-berlin-1UXMA1/overview"
-          target="_blank"
-          rel="noreferrer noopener"
-          alt="Link to Love Your Artist tickets"
-        >
-          Love Your Artist{" "}
-        </a>
-        <a
-          className={styles["anchor-tags"]}
-          href="https://schokoladen.tickettoaster.de/produkte/55391-tickets-neumatic-parlo-lawn-chair-schokoladen-berlin-am-26-05-2023"
-          target="_blank"
-          rel="noreferrer noopener"
-          alt="Link to Tcket Toaster tickets"
-        >
-          Ticket Toaster{" "}
-        </a>
-      </div>
-      {/* // ** end section */}
       {/* // ?? start section */}
       <h2 className={styles["date-heading"]}>
         24.06.2023 <br />
@@ -786,6 +533,190 @@ const Upcoming = () => {
         </a>
       </div>
       {/* // * end */}
+      {/* // ! start next date */}
+      <h2 className={styles["date-heading"]}>
+        {" "}
+        27.07.2023 <br />
+        Live at Kantine am Berghain
+        <br />
+        Reverberation Fest, FluxFM, Sharewood Booking & Dynamite Konzerte
+        present:
+        <br />
+        Benefit show for Musicians Defend Ukraine.
+      </h2>
+      <h2 className={styles["date-heading"]}>
+        All proceeds go straight to the charity fund{" "}
+        <span className={styles["inline-link"]}>
+          <a
+            href="https://musiciansdefendukraine.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            alt="Link to Musicians Defend Ukraine website"
+          >
+            Musicians Defend Ukraine
+          </a>
+        </span>
+      </h2>
+      <ul className={styles["times-list"]}>
+        <li>Doors: 19.00</li>
+        <li>Shows: 20.00</li>
+      </ul>
+      <div className={styles["bands-container"]}>
+        <h3 className={styles["band-heading"]}>LOVE'N'JOY (UKR)</h3>
+        <div className={styles.band}>
+          <p className={styles["band-text"]}>
+            <img
+              className={styles["band-img"]}
+              src={loveNJoy}
+              alt="Band portrait, Love'n'Joy"
+            ></img>
+            War in their own country and still on tour: even if the
+            circumstances could hardly be more absurd at the moment, Love'N'Joy
+            from Kyiv are on an endless tour through Europe and beyond. Not only
+            to escape the war and spread Ukrainian culture internationally, but
+            also to collect donations for their self-organised campaign
+            "Musicians Defend Ukraine", which supports musicians currently
+            active in Ukraine for defence, with humanitarian aid. Therefore,
+            every concert is also held as a benefit in support of all musicians
+            who currently cannot enjoy the privilege of leaving the country and
+            provide aid in their home country. Love’n’Joy is one of the most
+            successful Ukrainian Indie-Rock bands with an international profile.
+            Having played numerous shows all over Europe, including festivals
+            such as Reeperbahn and Eurosonic Noorderslag, they have also shared
+            the stage with bands like Kikagaku Moyo, Boogarins, The Shivas and
+            Petrol Girls. Love'n'Joy's sound draws influences from Brit-Pop, 60s
+            and 70s Psychedelia and elements of Indie Rock. Plenty of heavy
+            guitars are giving their sound a rougher edge, and the strong,
+            contemporary lyrics reflect the spirit of a new, resurgent Ukrainian
+            culture. The band has performed over 90 concerts across Europe and
+            the UK, and has been interviewed by BBC UK, Rolling Stone US, KEXP,
+            WDR Rockpalast, TAZ, and many others as their endless tour goes on
+            and on.
+          </p>
+          <div className={styles["social-media-links-container"]}>
+            <div className={styles["social-icons-wrapper"]}>
+              <a
+                href="https://lovenjoy.bandcamp.com/album/half-home-2"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to Bandcamp page"
+              >
+                <FaBandcamp className={styles["social-media-links"]} />
+              </a>
+
+              <a
+                href="https://www.instagram.com/lovenjoyband/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to Instagram page"
+              >
+                <FiInstagram className={styles["social-media-links"]} />
+              </a>
+
+              <a
+                href="https://www.youtube.com/watch?v=wYE_zyl7ArM&ab_channel=Love%27n%27JoyBand"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to youTube video"
+              >
+                {" "}
+                <FaYoutube className={styles["social-media-links"]} />{" "}
+              </a>
+
+              <a
+                href="https://www.facebook.com/lovenjoyband/"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to facebook page"
+              >
+                {" "}
+                <FaFacebookF className={styles["social-media-links"]} />{" "}
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <h3 className={styles["band-heading"]}>CHILLERA (UKR)</h3>
+        <div className={styles["band"]}>
+          <p className={styles["band-text"]}>
+            <img
+              className={styles["band-img-left"]}
+              src={chillera}
+              alt="Portrait of Chillera"
+            ></img>
+            Chillerа is a project founded by Anastasiia Marykutsa, Hanna
+            Bryzhata and Polina Matskevych as an instrumental trio. Project
+            idea: to find ways of communication between the participants by
+            synthesizing various musical structures and directions using
+            acoustic instruments. It arose as an attempt to combine two
+            dimensions in one composition: the rhythm of the dub bass and the
+            surf guitar. Inspired by the result and realizing the experience
+            gained in the form of 2 EPs on the Muscut label, the band members
+            come to the idea of releasing a classic dub material, where one side
+            represents the classic version of the composition, and the other is
+            a mix collage, the result of the work of a dub engineer.
+          </p>
+          <div
+            className={styles["social-media-links-container"]}
+            id={styles["social-right"]}
+          >
+            <div className={styles["social-icons-wrapper"]}>
+              <a
+                href="https://www.instagram.com/vitornoah"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to Instagram page"
+              >
+                <FiInstagram className={styles["social-media-links"]} />
+              </a>
+
+              <a
+                href="https://youtu.be/KY_WMcwRV7U"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to youTube video"
+              >
+                {" "}
+                <FaYoutube className={styles["social-media-links"]} />{" "}
+              </a>
+
+              <a
+                href="https://www.facebook.com/vitornoah/"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to facebook page"
+              >
+                {" "}
+                <FaFacebookF className={styles["social-media-links"]} />{" "}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3 className={styles["tickets"]}>
+        Presale-Tickets via Love Your Artist & Ticket Toaster:
+      </h3>
+      <div className={styles["tickets-container"]}>
+        <a
+          className={styles["anchor-tags"]}
+          href="https://loveyourartist.com/de/events/glue-trip-vitor-noah-berlin-7FNXVS/overview"
+          target="_blank"
+          rel="noreferrer noopener"
+          alt="Link to Love Your Artist tickets"
+        >
+          Love Your Artist{" "}
+        </a>
+        <a
+          className={styles["anchor-tags"]}
+          href="https://schokoladen.tickettoaster.de/produkte"
+          target="_blank"
+          rel="noreferrer noopener"
+          alt="Link to Tcket Toaster tickets"
+        >
+          Ticket Toaster{" "}
+        </a>
+      </div>
+      {/* // ! end  */}
       {/* // ? Next dates */}
       <h2 className={styles["date-heading"]}>
         16.11.2023 <br />
@@ -891,8 +822,6 @@ const Upcoming = () => {
             id={styles["social-right"]}
           >
             <div className={styles["social-icons-wrapper"]}>
-         
-
               <a
                 href="https://www.instagram.com/vitornoah"
                 target="_blank"
