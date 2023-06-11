@@ -557,8 +557,11 @@ const Upcoming = () => {
             Musicians Defend Ukraine
           </a>
         </span>
-        <br />
-        <span className={styles["inline-link"]}>
+       
+      </h2>
+      <h2 className={styles["date-heading"]}>
+
+      <span className={styles["inline-link"]}>
           <a
             href="https://www.facebook.com/events/778071130615277"
             target="_blank"
@@ -568,7 +571,7 @@ const Upcoming = () => {
             Event Link
           </a>
         </span>
-      </h2>
+        </h2>
       <ul className={styles["times-list"]}>
         <li>Doors: 19.00</li>
         <li>Shows: 20.00</li>
