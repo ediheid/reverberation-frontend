@@ -9,6 +9,7 @@ import glueTrip from "./static/glue-trip.jpeg";
 import vitorNoah from "./static/vitor-noah.jpeg";
 import loveNJoy from "./static/love-n-joy.jpg";
 import chillera from "./static/chillera.jpg";
+import dharmaChain from "./static/dharma-chain.jpeg";
 import { FaFacebookF } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { FaBandcamp } from "react-icons/fa";
@@ -701,11 +702,115 @@ const Upcoming = () => {
             </div>
           </div>
         </div>
+        <h3 className={styles["band-heading"]}>THE DHARMA CHAIN (DE)</h3>
+        <div className={styles.band}>
+          <p className={styles["band-text"]}>
+            <img
+              className={styles["band-img"]}
+              src={dharmaChain}
+              alt="Band portrait, The Dhrama Chain"
+            ></img>
+            The Dharma Chain are a 6-piece psychedelic rock & roll band from
+            Byron Bay, Australia who have recently relocated to Berlin, Germany.
+            Since moving the band have signed with the Berlin-based label Anomic
+            Records, and are in the process of releasing a brand new album in
+            2023.​
+          </p>
+          <div className={styles["social-media-links-container"]}>
+            <div className={styles["social-icons-wrapper"]}>
+              <a
+                href="https://thedharmachain.bandcamp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to Bandcamp page"
+              >
+                <FaBandcamp className={styles["social-media-links"]} />
+              </a>
+
+              <a
+                href="https://www.instagram.com/the.dharma.chain"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to Instagram page"
+              >
+                <FiInstagram className={styles["social-media-links"]} />
+              </a>
+
+              <a
+                href="https://youtu.be/D7dLE5JTxWU"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to youTube video"
+              >
+                {" "}
+                <FaYoutube className={styles["social-media-links"]} />{" "}
+              </a>
+
+              <a
+                href="https://www.facebook.com/The.Dharma.Chain/"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to facebook page"
+              >
+                {" "}
+                <FaFacebookF className={styles["social-media-links"]} />{" "}
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-
-
-
-
+      <h2 className={styles["date-heading"]}>
+        Aftershow with Heller Than Hell & Flux Wildly
+      </h2>
+      <div className={styles["aftershow-container"]}>
+        <div className={styles["aftershow-acts"]}>
+          <h3 className={`${styles["band-heading"]} ${styles["acts-heading"]}`}>
+            Heller Than Hell
+          </h3>
+          <p className={styles["acts-text"]}>
+            Funk, Afro-Hi-Life, Psychedelic Cumbia, Latin Jazz, Oriental Breaks,
+            RnB, Disco.
+          </p>
+          <div className={styles["acts-social-container"]}>
+            <a
+              href="https://www.instagram.com/hellerthanhell"
+              target="_blank"
+              rel="noopener noreferrer"
+              alt="Link to Instagram page"
+            >
+              <FiInstagram className={styles["social-media-links"]} />
+            </a>
+            <a
+              href="https://soundcloud.com/hellerthanhell"
+              target="_blank"
+              rel="noopener noreferrer"
+              alt="Link to Soundcloud page"
+            >
+              <FaSoundcloud className={styles["social-media-links"]} />
+            </a>
+          </div>
+        </div>
+        <div className={styles["aftershow-acts"]}>
+          {" "}
+          <h3 className={`${styles["band-heading"]} ${styles["acts-heading"]}`}>
+            Flux Wildly
+          </h3>
+          <p className={styles["acts-text"]}>
+            Weird, Obscure, Rock, Crazy, Tropical, Surprising - Reverberation
+            Fest's long-time host jets up the road to deliver musical code.
+          </p>
+          <div className={styles["acts-social-container"]}>
+            <a
+              href="https://www.mixcloud.com/.../radio-brain-wave-20-march-2022/"
+              target="_blank"
+              rel="noopener noreferrer"
+              alt="Link to Mixcloud"
+            >
+              <FaMixcloud className={styles["social-media-links"]} />
+            </a>
+          </div>
+        </div>
+      </div>
       {/* // todo: */}
       <h3 className={styles["tickets"]}>
         Presale-Tickets via Love Your Artist & Ticket Toaster:
