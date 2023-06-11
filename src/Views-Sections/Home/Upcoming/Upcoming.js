@@ -662,7 +662,16 @@ const Upcoming = () => {
           >
             <div className={styles["social-icons-wrapper"]}>
               <a
-                href="https://www.instagram.com/vitornoah"
+                href="https://muscut.bandcamp.com/album/schax"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="Link to Bandcamp page"
+              >
+                <FaBandcamp className={styles["social-media-links"]} />
+              </a>
+
+              <a
+                href="https://www.instagram.com/chillerafun"
                 target="_blank"
                 rel="noopener noreferrer"
                 alt="Link to Instagram page"
@@ -671,7 +680,7 @@ const Upcoming = () => {
               </a>
 
               <a
-                href="https://youtu.be/KY_WMcwRV7U"
+                href="https://youtu.be/fBflvG7tgwI"
                 target="_blank"
                 rel="noopener noreferrer"
                 alt="Link to youTube video"
@@ -681,7 +690,7 @@ const Upcoming = () => {
               </a>
 
               <a
-                href="https://www.facebook.com/vitornoah/"
+                href="https://www.facebook.com/chillerafun/"
                 target="_blank"
                 rel="noopener noreferrer"
                 alt="Link to facebook page"
@@ -693,6 +702,11 @@ const Upcoming = () => {
           </div>
         </div>
       </div>
+
+
+
+
+      {/* // todo: */}
       <h3 className={styles["tickets"]}>
         Presale-Tickets via Love Your Artist & Ticket Toaster:
       </h3>
