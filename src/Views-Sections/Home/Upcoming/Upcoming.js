@@ -540,10 +540,10 @@ const Upcoming = () => {
         27.07.2023 <br />
         Live at Kantine am Berghain
         <br />
-        Reverberation Fest, FluxFM, Sharewood Booking & Dynamite Konzerte
+       .. Reverberation Fest, FluxFM, Sharewood Booking & Dynamite Konzerte
         present:
         <br />
-        Benefit show for Musicians Defend Ukraine.
+       Musicians Defend Ukraine benefit show
       </h2>
       <h2 className={styles["date-heading"]}>
         All proceeds go straight to the charity fund{" "}
@@ -557,13 +557,24 @@ const Upcoming = () => {
             Musicians Defend Ukraine
           </a>
         </span>
+        <br />
+        <span className={styles["inline-link"]}>
+          <a
+            href="https://www.facebook.com/events/778071130615277"
+            target="_blank"
+            rel="noopener noreferrer"
+            alt="Link to Musicians Defend Ukraine website"
+          >
+            Event Link
+          </a>
+        </span>
       </h2>
       <ul className={styles["times-list"]}>
         <li>Doors: 19.00</li>
         <li>Shows: 20.00</li>
       </ul>
       <div className={styles["bands-container"]}>
-        <h3 className={styles["band-heading"]}>LOVE'N'JOY (UKR)</h3>
+        <h3 className={styles["band-heading"]}>LOVE'N'JOY (UA)</h3>
         <div className={styles.band}>
           <p className={styles["band-text"]}>
             <img
@@ -637,7 +648,7 @@ const Upcoming = () => {
           </div>
         </div>
 
-        <h3 className={styles["band-heading"]}>CHILLERA (UKR)</h3>
+        <h3 className={styles["band-heading"]}>CHILLERA (UA)</h3>
         <div className={styles["band"]}>
           <p className={styles["band-text"]}>
             <img
@@ -760,79 +771,74 @@ const Upcoming = () => {
         </div>
       </div>
       <h2 className={styles["date-heading"]}>
-        Aftershow with Heller Than Hell & Flux Wildly
+        Aftershow of the benefit concert for Musicians Defend Ukraine at
+        Schokoladen
+        <br />
+        Start: 22.00
+        <br />
+        Entry: Donation based
+        <br/>
+        <span className={styles["inline-link"]}>
+          <a
+            href="https://www.facebook.com/events/592357302730248/"
+            target="_blank"
+            rel="noopener noreferrer"
+            alt="Link to Musicians Defend Ukraine website"
+          >
+            Event Link
+          </a>
+        </span>
       </h2>
       <div className={styles["aftershow-container"]}>
         <div className={styles["aftershow-acts"]}>
           <h3 className={`${styles["band-heading"]} ${styles["acts-heading"]}`}>
-            Heller Than Hell
+            DJ Passionfruit (UA){" "}
           </h3>
           <p className={styles["acts-text"]}>
-            Funk, Afro-Hi-Life, Psychedelic Cumbia, Latin Jazz, Oriental Breaks,
-            RnB, Disco.
+            Bass, broken rhythms, deep dub grooves and fatty UK sound.
           </p>
           <div className={styles["acts-social-container"]}>
             <a
-              href="https://www.instagram.com/hellerthanhell"
+              href="https://www.instagram.com/andyjocker"
               target="_blank"
               rel="noopener noreferrer"
               alt="Link to Instagram page"
             >
               <FiInstagram className={styles["social-media-links"]} />
             </a>
-            <a
-              href="https://soundcloud.com/hellerthanhell"
-              target="_blank"
-              rel="noopener noreferrer"
-              alt="Link to Soundcloud page"
-            >
-              <FaSoundcloud className={styles["social-media-links"]} />
-            </a>
           </div>
         </div>
         <div className={styles["aftershow-acts"]}>
           {" "}
           <h3 className={`${styles["band-heading"]} ${styles["acts-heading"]}`}>
-            Flux Wildly
+            Roman Selezinka (UA)
           </h3>
-          <p className={styles["acts-text"]}>
-            Weird, Obscure, Rock, Crazy, Tropical, Surprising - Reverberation
-            Fest's long-time host jets up the road to deliver musical code.
-          </p>
+          <p className={styles["acts-text"]}>Afrobeat, Tribal, Ethanol Beats</p>
           <div className={styles["acts-social-container"]}>
             <a
-              href="https://www.mixcloud.com/.../radio-brain-wave-20-march-2022/"
+              href="https://www.instagram.com/habitat_shaking/"
               target="_blank"
               rel="noopener noreferrer"
-              alt="Link to Mixcloud"
+              alt="Link to Instagram page"
             >
-              <FaMixcloud className={styles["social-media-links"]} />
+              <FiInstagram className={styles["social-media-links"]} />
             </a>
           </div>
         </div>
       </div>
       {/* // todo: */}
       <h3 className={styles["tickets"]}>
-        Presale-Tickets via Love Your Artist & Ticket Toaster:
+        Presale-Tickets via Love Your Artist:
       </h3>
       <div className={styles["tickets-container"]}>
         <a
           className={styles["anchor-tags"]}
-          href="https://loveyourartist.com/de/events/glue-trip-vitor-noah-berlin-7FNXVS/overview"
+          href="https://loveyourartist.com/de/events/lovenjoy-chillera-dharma-berlin-U08K13/overview"
           target="_blank"
           rel="noreferrer noopener"
           alt="Link to Love Your Artist tickets"
         >
           Love Your Artist{" "}
-        </a>
-        <a
-          className={styles["anchor-tags"]}
-          href="https://schokoladen.tickettoaster.de/produkte"
-          target="_blank"
-          rel="noreferrer noopener"
-          alt="Link to Tcket Toaster tickets"
-        >
-          Ticket Toaster{" "}
         </a>
       </div>
       {/* // ! end  */}

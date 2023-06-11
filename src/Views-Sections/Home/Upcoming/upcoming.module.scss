@@ -206,7 +206,21 @@
   font-size: 2.5rem;
   margin-bottom: 2rem;
   @include gradient-text-from-palette;
-  border-bottom: 1px solid $mauve,
+  border-bottom: 1px solid $mauve;
+  
+  &:active{
+    transform: scale(1.1);
+    transition: ease-in-out;
+    @include gradient-text-from-palette-opposite-direction;
+  }
+}
+
+@media (hover: hover) {
+  .inline-link:hover {
+    transform: scale(1.1);
+    transition: ease-in-out;
+    @include gradient-text-from-palette-opposite-direction;
+  }
 }
 
 .tickets {
