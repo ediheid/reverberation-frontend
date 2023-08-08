@@ -47,19 +47,61 @@ const Upcoming = () => {
       loveYourArtistTicketLink:
         "https://loveyourartist.com/de/events/glue-trip-vitor-noah-berlin-7FNXVS/overview",
       venueLink: "https://schokoladen.tickettoaster.de/produkte",
-      venueLinkName: "Love Your Artist",
+      venueLinkName: "Ticket Toaster",
     },
   ];
 
-  // ! todo: update styling to fit new mapping
+  // ! todo: update styling to fit new mapping (odd and even / left and right)
   return (
     <div className={styles["upcoming-container"]} id="upcoming">
       {" "}
       <h2 className={styles["section-heading"]}>Upcoming Events</h2>
       <div>
-        {/* event */}
+        {/* events */}
+
+        {/* // ! todo: remove this once correct info can be added to object */}
+        <section className={styles["event-container"]}>
+          <h2 className={styles["date-heading"]}>
+            13.09.2023 <br />
+            Schokoladen <br /> REVERBERATION NIGHT: <br />
+            Riversound meets Reverberation
+            <br />
+            Lineup:
+          </h2>
+
+          <ul className={styles["times-list"]}>
+            <li>Winner of Riversound 2023</li>
+            <li>Peelers (CZ)</li>
+            <li>Ed Rosenthal (CZ)</li>
+            <li>Bar-DJ Set with Nikki (Ed Rosenthal)</li>
+          </ul>
+
+          <br />
+
+          <ul className={styles["times-list"]}>
+            <li>Doors: 19.00</li>
+            <li>Shows: 20.00</li>
+          </ul>
+
+          <p className={styles["event-info-text"]}>
+            For 3 years, there is a cultural exchange between the curators and
+            promoters from Plzen (Czech Republic) and the Reverberation
+            Festival, resulting in an annual newcomer contest where young
+            artists from Plzen are chosen to represent their cities and
+            countries aspiring, contemporary music scene by participating at
+            Reverberation Festival. While the festival is taking a break in 2023
+            and potentially moving to Berlin in 2024, we will present a special
+            night with young bands from Czech Republic that have been
+            participating at our festival and this year's winner that will be
+            decided on 19.08.2023 at the Riversound Festival in Plzen.
+            <br />
+            Stay tuned for more info!
+          </p>
+        </section>
+        {/* // ! end remove */}
+
         {events.map((event, index) => (
-          <section key={index}>
+          <section key={index} className={styles["event-container"]}>
             <h2 className={styles["date-heading"]}>
               {event.eventDate} <br />
               {event.evenLocation}
