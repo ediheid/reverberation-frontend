@@ -3,7 +3,6 @@
 @import "../../../Styling/reset.module";
 
 .upcoming-container {
-  width: 100vw;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -16,6 +15,12 @@
 .section-heading {
   @include section-headings;
   margin-bottom: 2rem;
+}
+
+.event-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .date-heading {
@@ -84,11 +89,12 @@
   }
 }
 
+// ! todo: update styling to fit new mapping (odd and even / left and right)
 .band-img {
   float: right;
   width: 40%;
   max-width: 60rem;
-  // height: fit-content;s
+  // height: fit-content;
   object-fit: contain;
   margin: 0 0 0 2rem;
 
@@ -202,12 +208,12 @@
   }
 }
 
-.inline-link{
+.inline-link {
   margin-bottom: 2rem;
   @include gradient-text-from-palette;
   border-bottom: 1px solid $mauve;
-  
-  &:active{
+
+  &:active {
     transform: scale(1.1);
     transition: ease-in-out;
     @include gradient-text-from-palette-opposite-direction;
@@ -236,6 +242,9 @@
   text-align: center;
   font-family: $main-font-regular-font-family;
   @include gradient-text-from-palette;
+  &:nth-of-type(1) {
+    padding-right: 2rem;
+  }
 }
 
 @media (hover: hover) {
@@ -279,4 +288,12 @@
   justify-content: space-around;
   width: 8rem;
   margin-top: 1rem;
+}
+
+// ! todo: REMOVE once no longer using
+.event-info-text {
+  @include section-text;
+  width: 80% !important;
+  max-width: 1000rem !important;
+  text-align: justify !important;
 }

@@ -13,17 +13,17 @@ const Contact = () => {
             <span
               className={`${styles["contact-text"]} ${styles["address-heading"]}`}
             >
-              Dresden Psych Family e.V.
+              Reverberation Festival <br /> c/o Dresden Psych Family e.V.{" "}
             </span>
             <span
               className={`${styles["contact-text"]} ${styles["address-heading"]}`}
             >
-              Sternstraße 35
+              Sebnitzer Straße 35
             </span>
             <span
               className={`${styles["contact-text"]} ${styles["address-heading"]}`}
             >
-              01139 Dresden
+              01099 Dresden
             </span>
           </div>
 
@@ -58,7 +58,9 @@ const Contact = () => {
           </div>
 
           <div className={styles["contact-div"]}>
-            <span className={styles["contact-text"]}>Public Relations & Production</span>
+            <span className={styles["contact-text"]}>
+              Public Relations & Production
+            </span>
 
             <span className={styles["name-text"]}>Hannes Fröhlich </span>
             <a
