@@ -22,16 +22,27 @@ const DesktopNavLinks = () => {
             <li>Tickets</li>
           </HashLink> */}
 
-          <HashLink smooth to="/#upcoming">
+          {/* // todo: add hashlink back */}
+
+          {/* <HashLink smooth to="/#upcoming">
             <li>Upcoming Events</li>
-          </HashLink>
+          </HashLink> */}
+          {/* // todo: remove this and add hashlink above back.. */}
+          <a
+            href="https://reverberation.loveyourartist.store/de/"
+            target="_blank"
+            rel="noopener noreferrer"
+            alt="Link to Ticket Shop"
+          >
+            <li>Upcoming Events</li>
+          </a>
 
           <HashLink smooth to="/#about">
             <li>About</li>
           </HashLink>
 
           <HashLink smooth to="/#past-events">
-            <li>Past Events</li>
+            <li>Past Festivals</li>
           </HashLink>
 
           <HashLink smooth to="/#contact">

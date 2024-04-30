@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../Upcoming/upcoming.module.scss";
-import glueTrip from "./static/glue-trip.jpeg";
-import vitorNoah from "./static/vitor-noah.jpeg";
+// import glueTrip from "./static/glue-trip.jpeg";
+// import vitorNoah from "./static/vitor-noah.jpeg";
 import { FaFacebookF } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { FaBandcamp } from "react-icons/fa";
@@ -10,45 +10,43 @@ import { FaSoundcloud } from "react-icons/fa";
 import { FaMixcloud } from "react-icons/fa";
 
 const Upcoming = () => {
-  // todo: refactor events and create a reusable component
-
+// * layout for event mapping
   const events = [
-    {
-      eventDate: "16.11.2023",
-      evenLocation: "Schokoladen",
-      doors: "19.00",
-      shows: "20.00",
-      curfew: "22.00",
+    // {
+    //   eventDate: "16.11.2023",
+    //   evenLocation: "Schokoladen",
+    //   doors: "19.00",
+    //   shows: "20.00",
+    //   curfew: "22.00",
 
-      bands: [
-        {
-          bandName: "GLUE TRIP (BR)",
-          img: glueTrip,
-          alt: "Glue Trip band portrait",
-          bandText:
-            'Glue Trip is a musical project led by Brazilian musician Lucas Santa Cruz. Formed in 2013 as an experimental recording project, it was quickly invited to perform live for the first time at the Prata da Casa project (SESC Pompeia). With three albums released and viral hits like "Elbow Pain" (17 million views on Youtube) and "La Edad del Futuro," Glue Trip has become a reference for contemporary Brazilian psychedelic music in Brazil and around the world. Showing maturity with their album "Nada Tropical," released in July 2022, the band has been solidifying their career for a decade, increasingly incorporating their Brazilian roots into their compositions. Produced by Zé Nigro, this album features collaborations with great names in Brazilian music, including maestro Arthur Verocai, São Paulo singer YMA, and musicians Otto and Felipe S from Pernambuco. With several international tours under their belt, including sold-out shows in London and Paris on their last tour, Glue Trip is building a solid background and a steady rise. They stand out as one of the most interesting and innovative musical projects of today.',
-          bandcampLink: "https://gluetrip.bandcamp.com/album/nada-tropical",
-          instagramLink: "https://www.instagram.com/gluetrip",
-          youTubeLink: "https://youtu.be/tQ-WI46nmu0",
-          facebookLink: "https://www.facebook.com/GlueTrip",
-        },
-        // Add a second band here
-        {
-          bandName: "VITOR NOAH (BR)",
-          img: vitorNoah,
-          alt: "Vitor Noah portrait",
-          bandText:
-            "Vitor Noah is a Brazilian-born classical guitarist currently based in Berlin. His first musical experiences were with the electric bass, as a founding member of the stoner rock band 'Hellbenders', with whom he recorded the band's first album. Vitor has participated in various music festivals and seminars, working with leading guitarists such as David Russell, Manuel Barrueco, Pepe Romero, Judicael Perroy, Zoran Dukic, Tillman Hoppstock, Pablo Márquez, Eduardo Isaac, Fábio Zanon, Paul Galbraith, Roberto Aussel, Eduardo Fernández, and Paul O’Dette. He will open this night of Brazilian music with a solo guitar performance that will probably leave the audience's mouths wide open.",
-          instagramLink: "https://www.instagram.com/vitornoah",
-          youTubeLink: "https://youtu.be/KY_WMcwRV7U",
-          facebookLink: "hhttps://www.facebook.com/vitornoah/",
-        },
-      ],
-      loveYourArtistTicketLink:
-        "https://loveyourartist.com/de/events/glue-trip-vitor-noah-berlin-7FNXVS/overview",
-      venueLink: "https://schokoladen.tickettoaster.de/produkte",
-      venueLinkName: "Ticket Toaster",
-    },
+    //   bands: [
+    //     {
+    //       bandName: "GLUE TRIP (BR)",
+    //       img: glueTrip,
+    //       alt: "Glue Trip band portrait",
+    //       bandText:
+    //         'Glue Trip is a musical project led by Brazilian musician Lucas Santa Cruz. Formed in 2013 as an experimental recording project, it was quickly invited to perform live for the first time at the Prata da Casa project (SESC Pompeia). With three albums released and viral hits like "Elbow Pain" (17 million views on Youtube) and "La Edad del Futuro," Glue Trip has become a reference for contemporary Brazilian psychedelic music in Brazil and around the world. Showing maturity with their album "Nada Tropical," released in July 2022, the band has been solidifying their career for a decade, increasingly incorporating their Brazilian roots into their compositions. Produced by Zé Nigro, this album features collaborations with great names in Brazilian music, including maestro Arthur Verocai, São Paulo singer YMA, and musicians Otto and Felipe S from Pernambuco. With several international tours under their belt, including sold-out shows in London and Paris on their last tour, Glue Trip is building a solid background and a steady rise. They stand out as one of the most interesting and innovative musical projects of today.',
+    //       bandcampLink: "https://gluetrip.bandcamp.com/album/nada-tropical",
+    //       instagramLink: "https://www.instagram.com/gluetrip",
+    //       youTubeLink: "https://youtu.be/tQ-WI46nmu0",
+    //       facebookLink: "https://www.facebook.com/GlueTrip",
+    //     },
+    //     {
+    //       bandName: "VITOR NOAH (BR)",
+    //       img: vitorNoah,
+    //       alt: "Vitor Noah portrait",
+    //       bandText:
+    //         "Vitor Noah is a Brazilian-born classical guitarist currently based in Berlin. His first musical experiences were with the electric bass, as a founding member of the stoner rock band 'Hellbenders', with whom he recorded the band's first album. Vitor has participated in various music festivals and seminars, working with leading guitarists such as David Russell, Manuel Barrueco, Pepe Romero, Judicael Perroy, Zoran Dukic, Tillman Hoppstock, Pablo Márquez, Eduardo Isaac, Fábio Zanon, Paul Galbraith, Roberto Aussel, Eduardo Fernández, and Paul O’Dette. He will open this night of Brazilian music with a solo guitar performance that will probably leave the audience's mouths wide open.",
+    //       instagramLink: "https://www.instagram.com/vitornoah",
+    //       youTubeLink: "https://youtu.be/KY_WMcwRV7U",
+    //       facebookLink: "hhttps://www.facebook.com/vitornoah/",
+    //     },
+    //   ],
+    //   loveYourArtistTicketLink:
+    //     "https://loveyourartist.com/de/events/glue-trip-vitor-noah-berlin-7FNXVS/overview",
+    //   venueLink: "https://schokoladen.tickettoaster.de/produkte",
+    //   venueLinkName: "Ticket Toaster",
+    // },
   ];
 
   // ! todo: update styling to fit new mapping (odd and even / left and right)
@@ -57,49 +55,8 @@ const Upcoming = () => {
       {" "}
       <h2 className={styles["section-heading"]}>Upcoming Events</h2>
       <div>
+        
         {/* events */}
-
-        {/* // ! todo: remove this once correct info can be added to object */}
-        <section className={styles["event-container"]}>
-          <h2 className={styles["date-heading"]}>
-            13.09.2023 <br />
-            Schokoladen <br /> REVERBERATION NIGHT: <br />
-            Riversound meets Reverberation
-            <br />
-            Lineup:
-          </h2>
-
-          <ul className={styles["times-list"]}>
-            <li>Winner of Riversound 2023</li>
-            <li>Peelers (CZ)</li>
-            <li>Ed Rosenthal (CZ)</li>
-            <li>Bar-DJ Set with Nikki (Ed Rosenthal)</li>
-          </ul>
-
-          <br />
-
-          <ul className={styles["times-list"]}>
-            <li>Doors: 19.00</li>
-            <li>Shows: 20.00</li>
-          </ul>
-
-          <p className={styles["event-info-text"]}>
-            For 3 years, there is a cultural exchange between the curators and
-            promoters from Plzen (Czech Republic) and the Reverberation
-            Festival, resulting in an annual newcomer contest where young
-            artists from Plzen are chosen to represent their cities and
-            countries aspiring, contemporary music scene by participating at
-            Reverberation Festival. While the festival is taking a break in 2023
-            and potentially moving to Berlin in 2024, we will present a special
-            night with young bands from Czech Republic that have been
-            participating at our festival and this year's winner that will be
-            decided on 19.08.2023 at the Riversound Festival in Plzen.
-            <br />
-            Stay tuned for more info!
-          </p>
-        </section>
-        {/* // ! end remove */}
-
         {events.map((event, index) => (
           <section key={index} className={styles["event-container"]}>
             <h2 className={styles["date-heading"]}>

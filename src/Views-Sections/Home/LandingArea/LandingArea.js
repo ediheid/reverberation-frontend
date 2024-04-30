@@ -84,14 +84,6 @@ const LandingArea = () => {
 
         <h2 className={styles["sub-headings"]}>A selection of Berlin shows</h2>
 
-        {/* <HashLink smooth to="/#tickets">
-          <button className={styles["ticket-info-button"]}>Ticket info</button>
-        </HashLink> */}
-
-        <HashLink smooth to="/#upcoming">
-          <button className={styles["ticket-info-button"]}>More info</button>
-        </HashLink>
-
         <a
           href="https://reverberation.loveyourartist.store/de/"
           target="_blank"

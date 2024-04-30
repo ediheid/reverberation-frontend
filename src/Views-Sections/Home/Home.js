@@ -17,7 +17,8 @@ const Home = () => {
     <div className={styles["home-container"]}>
       <LandingArea />
 
-      <Upcoming/>
+      {/* // todo: add back when new events are added */}
+      {/* <Upcoming/> */}
 
       {/* <LineUp /> */}
 
