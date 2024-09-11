@@ -37,32 +37,28 @@
 
   margin: 3rem;
 
+  // artouette
   &:nth-of-type(1) {
     width: 20rem;
   }
 
-  &:nth-of-type(2) {
-    width: 25rem;
-  }
-
- // ! Bring back for dresdenerKulturstiftung when I comment it back in
-  // &:nth-of-type(4) {
-  //   width: 30rem;
-  // }
-
-
-  // ! Change to nth of type 5 when dresdenerKulturstiftung is back
+  // Kawa
   &:nth-of-type(4) {
-    width: 20rem;
+    width: 10rem;
   }
 
-  &:nth-last-of-type(2){
+  // Rauze
+  &:nth-of-type(6) {
+    width: 10rem;
+  }
+
+  // Sachsen
+  &:nth-last-of-type(2) {
     width: 30rem;
   }
 
+  // Sharewood
   &:last-of-type {
     width: 25rem;
   }
 }
-
-
